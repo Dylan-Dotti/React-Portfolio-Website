@@ -1,23 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./Components/About";
+import Education from "./Components/Education";
+import Employment from "./Components/Employment";
+import Layout from "./Components/Layout";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <div className="title-group">
-          <h1>Dylan Dotti</h1>
-        </div>
-        <nav>
-          <ul>
-            <li>About</li>
-            <li>Education</li>
-            <li>Employment</li>
-            <li>Projects</li>
-          </ul>
-        </nav>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<About />}></Route>
+            <Route path="/education" element={<Education />}></Route>
+            <Route path="/employment" element={<Employment />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
