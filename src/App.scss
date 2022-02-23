@@ -6,6 +6,7 @@ body {
 }
 
 .App {
+
   > .header {
     display: flex;
     justify-content: space-between;
@@ -19,12 +20,7 @@ body {
       border: 1px solid green;
     }
 
-    .title-group {
-      float: left;
-    }
-
     nav {
-      float: right;
 
       li {
         display: inline-block;
