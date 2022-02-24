@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
             <h1>Dylan Dotti</h1>
           </div>
           <nav>
-            <ul>
+            <ul className="nav-list">
               <li>
                 <Link to="/">About</Link>
               </li>

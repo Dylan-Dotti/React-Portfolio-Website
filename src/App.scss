@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 0px 10%;
+    margin: 0px auto;
     border: 1px solid #333;
     box-shadow: 1px 1px 10px 1px #888888;
 
@@ -21,13 +21,21 @@ body {
     }
 
     nav {
+      
+      .nav-list {
+        display: flex;
+        height: 100%;
 
-      li {
-        display: inline-block;
-        list-style-type: none;
-        margin: 0px 15px;
+        li {
+          list-style-type: none;
+          margin: auto 15px;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
       }
+
     }
+
   }
 }
 
