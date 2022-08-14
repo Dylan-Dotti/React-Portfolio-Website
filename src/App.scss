@@ -5,7 +5,7 @@ body {
   color: $main-text-white;
 }
 
-.App {
+#App {
 
   > .header {
     display: flex;
@@ -42,9 +42,32 @@ body {
     }
 
   }
-}
+  
+  a {
+    text-decoration: none;
+    color: #ddd;
+  }
 
-a {
-  text-decoration: none;
-  color: #ddd;
+  .relative-cover-panel {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .absolute-cover-panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }

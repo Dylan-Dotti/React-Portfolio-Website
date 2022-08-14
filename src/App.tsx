@@ -6,9 +6,9 @@ import Employment from "./Components/Employment";
 import Layout from "./Components/Layout";
 import Projects from "./Components/Projects";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <div id="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -22,5 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
