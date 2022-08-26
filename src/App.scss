@@ -6,42 +6,6 @@ body {
 }
 
 #App {
-
-  > .header {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    height: 150px;
-    margin: 0px auto;
-    border: 1px solid #333;
-    box-shadow: 1px 1px 10px 1px #888888;
-
-    .title-group {
-      margin: auto 0px;
-      border: 1px solid blue;
-    }
-
-    nav {
-      display: flex;
-      border: 1px solid green;
-      
-      .nav-list {
-        display: flex;
-        margin: auto;
-        margin-right: 15px;
-        border: 1px solid blue;
-
-        li {
-          list-style-type: none;
-          margin: auto 15px;
-          font-size: 1.3rem;
-          font-weight: bold;
-        }
-      }
-
-    }
-
-  }
   
   a {
     text-decoration: none;
