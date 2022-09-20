@@ -1,0 +1,8 @@
+
+.fixed-size-img-container {
+    overflow: hidden;
+
+    > img {
+        width: 100%;
+    }
+}
