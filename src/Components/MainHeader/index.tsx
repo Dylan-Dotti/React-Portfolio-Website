@@ -11,18 +11,20 @@ export default class MainHeader extends React.Component {
                 <div className="main-header">
                     <FixedSizeImg src="Img\Deviant\deviant_action.PNG" imgClassName="header-img" height="400px"/>
                     <div className="header-bar">
-                        <div className="title-group">
-                            <h1 className="name"><strong>Dylan Dotti</strong></h1>
-                            <span className="subtitle">Software Developer</span>
+                        <div className="header-bar-contents">
+                            <div className="title-group">
+                                <h1 className="name"><strong>Dylan Dotti</strong></h1>
+                                <div className="subtitle">Software Developer</div>
+                            </div>
+                            <nav>
+                                <ul className="nav-list">
+                                    <li><Link to="/">About</Link></li>
+                                    <li><Link to="/education">Education</Link></li>
+                                    <li><Link to="/employment">Employment</Link></li>
+                                    <li><Link to="/projects">Projects</Link></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <nav>
-                            <ul className="nav-list">
-                                <li><Link to="/">About</Link></li>
-                                <li><Link to="/education">Education</Link></li>
-                                <li><Link to="/employment">Employment</Link></li>
-                                <li><Link to="/projects">Projects</Link></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </>

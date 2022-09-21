@@ -12,6 +12,10 @@ body {
     color: #ddd;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .relative-cover-panel {
     position: relative;
     left: 0;
