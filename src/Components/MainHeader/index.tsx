@@ -9,7 +9,7 @@ export default class MainHeader extends React.Component {
         return (
             <>
                 <div className="main-header">
-                    <FixedSizeImg src="Img\Deviant\deviant_action.PNG" imgClassName="header-img" height="400px"/>
+                    {/* <img src="Img\Deviant\deviant_action_header_2.PNG" alt="deviant_header" className="header-img"/> */}
                     <div className="header-bar">
                         <div className="header-bar-contents">
                             <div className="title-group">
