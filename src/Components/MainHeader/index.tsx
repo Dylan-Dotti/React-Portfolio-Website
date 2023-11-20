@@ -10,7 +10,7 @@ export default class MainHeader extends React.Component {
             <>
                 <div className="main-header">
                     {/* <img src="Img\Deviant\deviant_action_header_2.PNG" alt="deviant_header" className="header-img"/> */}
-                    <div className="header-bar">
+                    <div className="white-glow-outline-panel header-bar">
                         <div className="header-bar-contents">
                             <div className="title-group">
                                 <h1 className="name"><strong>Dylan Dotti</strong></h1>

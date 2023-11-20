@@ -4,38 +4,40 @@ body {
   background-color: $main-background;
   color: $main-text-white;
 }
-
-#App {
   
-  a {
-    text-decoration: none;
-    //color: #ddd;
-  }
+a {
+  text-decoration: none;
+}
 
-  li {
-    list-style-type: none;
-  }
+li {
+  list-style-type: none;
+}
 
-  .relative-cover-panel {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
+.relative-cover-panel {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 
-  .absolute-cover-panel {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.absolute-cover-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styled panels
+.white-glow-outline-panel {
+  border: 2px solid $main-text-white;
+  box-shadow: 1px 1px 10px 1px #888888;
+  background-color: #111;
 }
