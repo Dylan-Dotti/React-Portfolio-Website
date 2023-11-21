@@ -1,33 +1,31 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
-import FixedSizeImg from '../FixedSizeImg';
+import { Link, useLocation } from 'react-router-dom';
 import './main-header.scss';
 
-export default class MainHeader extends React.Component {
+const MainHeader: React.FC = () => {
 
-    public render(): React.ReactNode {
-        return (
-            <>
-                <div className="main-header">
-                    {/* <img src="Img\Deviant\deviant_action_header_2.PNG" alt="deviant_header" className="header-img"/> */}
-                    <div className="white-glow-outline-panel header-bar">
-                        <div className="header-bar-contents">
-                            <div className="title-group">
-                                <h1 className="name"><strong>Dylan Dotti</strong></h1>
-                                <div className="subtitle">Software Developer</div>
-                            </div>
-                            <nav>
-                                <ul className="nav-list">
-                                    <li><Link to="/">About</Link></li>
-                                    <li><Link to="/education">Education</Link></li>
-                                    <li><Link to="/employment">Employment</Link></li>
-                                    <li><Link to="/projects">Projects</Link></li>
-                                </ul>
-                            </nav>
-                        </div>
+    const location = useLocation();
+
+    return (
+        <div className="main-header">
+            <div className="white-glow-outline-panel header-bar">
+                <div className="header-bar-contents">
+                    <div className="title-group">
+                        <h1 className="name"><strong>Dylan Dotti</strong></h1>
+                        <div className="subtitle">Software Developer</div>
                     </div>
+                    <nav>
+                        <ul className="nav-list">
+                            <li className={location.pathname === '/' ? 'active' : ''}><Link to="/">Home</Link></li>
+                            <li className={location.pathname.startsWith('/education') ? 'active' : ''}><Link to="/education">Education</Link></li>
+                            <li className={location.pathname.startsWith('/employment') ? 'active' : ''}><Link to="/employment">Employment</Link></li>
+                            <li className={location.pathname.startsWith('/projects') ? 'active' : ''}><Link to="/projects">Projects</Link></li>
+                        </ul>
+                    </nav>
                 </div>
-            </>
-        );
-    }
+            </div>
+        </div>
+    );
 }
+
+export default MainHeader;

@@ -46,9 +46,18 @@
                             padding: 5px;
                             color: $main-text-white;
                             transition: all .1s linear;
+                        }
 
-                            &:hover {
-                                color: $blue-200;
+                        &:hover {
+                            a {
+                                color: $blue-300;
+                            }
+                        }
+
+                        &.active {
+
+                            a {
+                                color: $blue-300;
                             }
                         }
                     }
