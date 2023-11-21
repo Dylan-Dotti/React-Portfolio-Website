@@ -1,0 +1,12 @@
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    .project-grid-item {
+        min-height: 300px;
+        border: 1px solid whitesmoke;
+        padding: 20px;
+    }
+}
