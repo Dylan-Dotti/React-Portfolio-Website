@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
 
     render(): ReactNode {
         return (
-            <div className="projects">
+            <div id="projects">
                 <h2 className="title">Projects</h2>
                 <ProjectGrid projects={projectData}/>
             </div>
