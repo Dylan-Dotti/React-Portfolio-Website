@@ -1,14 +1,20 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 import MainHeader from "../MainHeader";
+import "./layout.scss";
+import ScrollableArea from "../ScrollableArea";
 
-export default class Layout extends React.Component {
-  render(): React.ReactNode {
+const Layout: React.FC = () => {
     return (
-      <>
-        <MainHeader />
-        <Outlet />
-      </>
+        <div id="page-layout">
+            <MainHeader />
+            <div id="page-content">
+                <ScrollableArea>
+                    <Outlet />
+                </ScrollableArea>
+            </div>
+        </div>
     );
-  }
 }
+
+export default Layout;
