@@ -17,9 +17,9 @@ const MainHeader: React.FC = () => {
                     <nav>
                         <ul className="nav-list">
                             <li className={location.pathname === '/' ? 'active' : ''}><Link to="/">Home</Link></li>
-                            <li className={location.pathname.startsWith('/education') ? 'active' : ''}><Link to="/education">Education</Link></li>
-                            <li className={location.pathname.startsWith('/employment') ? 'active' : ''}><Link to="/employment">Employment</Link></li>
                             <li className={location.pathname.startsWith('/projects') ? 'active' : ''}><Link to="/projects">Projects</Link></li>
+                            <li className={location.pathname.startsWith('/employment') ? 'active' : ''}><Link to="/employment">Employment</Link></li>
+                            <li className={location.pathname.startsWith('/education') ? 'active' : ''}><Link to="/education">Education</Link></li>
                         </ul>
                     </nav>
                 </div>
