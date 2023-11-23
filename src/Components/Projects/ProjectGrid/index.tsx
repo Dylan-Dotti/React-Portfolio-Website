@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ProjectGridItem from './ProjectGridItem';
 import { IProjectData } from '../../../Interfaces/IProjectData';
 import './project-grid.scss';
 
@@ -15,10 +16,10 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
             {(!projects || projects.length === 0) && <p>No projects to display.</p>}
             {projects && projects.length > 0 && projects.map((project, index) => {
                 return (
-                    <div key={project.id} className="project-grid-item">
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                    </div>
+                    <ProjectGridItem
+                        key={project.id}
+                        project={project}
+                    />
                 );
             })}
         </div>

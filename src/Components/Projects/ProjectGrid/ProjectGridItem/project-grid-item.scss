@@ -1,0 +1,30 @@
+
+.project-grid-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    .img-wrapper {
+        transition: transform 0.15s linear;
+    }
+
+    .img-opacity-cover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .text-wrapper {
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover {
+        
+        .img-wrapper {
+            transform: scale(1.2);
+        }
+    }
+}

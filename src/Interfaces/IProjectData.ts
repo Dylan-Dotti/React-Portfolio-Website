@@ -5,4 +5,6 @@ export interface IProjectData {
     description : string
     challenges? : string
     startDate?  : Date
+    endDate?    : Date
+    imgSrc?     : string
 }

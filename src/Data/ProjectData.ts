@@ -5,7 +5,8 @@ const deviantProjectData: IProjectData = {
     name: "Deviant",
     description: "A game made with the Unity engine for my senior capstone project. Coding was done in C#. Utilized 3D models I created with Blender. Awarded as best project in a pool of about 30 student projects.",
     challenges: "This was my first project using React and Redux. I had to learn how to use Redux and how to structure my code to work with Redux. I also had to learn how to use Redux-Thunk to make asynchronous calls to the backend.",
-    startDate: new Date(2020, 5, 1)
+    startDate: new Date(2020, 5, 1),
+    imgSrc: "./img/Deviant/deviant_action.PNG"
 };
 
 const ghdAutoTimeEntryData: IProjectData = {
