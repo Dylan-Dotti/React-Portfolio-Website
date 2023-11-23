@@ -8,11 +8,11 @@ const Layout: React.FC = () => {
     return (
         <div id="page-layout">
             <MainHeader />
-            <div id="page-content">
-                <ScrollableArea>
+            <ScrollableArea>
+                <div id="page-content">
                     <Outlet />
-                </ScrollableArea>
-            </div>
+                </div>
+            </ScrollableArea>
         </div>
     );
 }
