@@ -15,7 +15,7 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
             {(!projects || projects.length === 0) && <p>No projects to display.</p>}
             {projects && projects.length > 0 && projects.map((project, index) => {
                 return (
-                    <div className="project-grid-item">
+                    <div key={project.id} className="project-grid-item">
                         <h3>{project.name}</h3>
                         <p>{project.description}</p>
                     </div>
