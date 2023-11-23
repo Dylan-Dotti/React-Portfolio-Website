@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./Styles/panels.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/About";
 import Education from "./Components/Education";
