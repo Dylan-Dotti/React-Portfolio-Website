@@ -32,3 +32,30 @@ li {
   top: 0;
   bottom: 0;
 }
+
+html {
+  scrollbar-color: #222;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+/* The track */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* The track */
+::-webkit-scrollbar-track {
+  background: $main-background-light; /* Set the color of the scrollbar track */
+  //border-left: 1px solid grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar handle */
+  //border-left: 1px solid grey;
+}
