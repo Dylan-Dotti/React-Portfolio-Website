@@ -1,0 +1,17 @@
+
+#footer {
+
+    .white-glow-outline-panel {
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 20%;
+        width: 90%;
+    }
+}

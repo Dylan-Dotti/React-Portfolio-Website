@@ -15,5 +15,10 @@
 
     > .scrollable-area {
         flex-grow: 1;
+
+        .scrollable-content {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

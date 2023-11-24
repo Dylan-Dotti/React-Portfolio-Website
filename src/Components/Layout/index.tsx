@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import MainHeader from "../MainHeader";
 import "./layout.scss";
 import ScrollableArea from "../ScrollableArea";
+import Footer from "../Footer";
 
 const Layout: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ const Layout: React.FC = () => {
                 <div id="page-content">
                     <Outlet />
                 </div>
+                <Footer />
             </ScrollableArea>
         </div>
     );
