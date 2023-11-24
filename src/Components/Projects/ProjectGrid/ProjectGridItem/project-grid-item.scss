@@ -5,11 +5,11 @@
     cursor: pointer;
 
     .img-wrapper {
-        transition: transform 0.15s linear;
+        transition: transform 0.25s ease-out;
     }
 
     .img-opacity-cover {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.75);
     }
 
     .text-wrapper {
@@ -24,7 +24,7 @@
     &:hover {
         
         .img-wrapper {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 }

@@ -22,7 +22,8 @@ const pokemonMonopolyData: IProjectData = {
     name: "Pokémon Monopoly",
     description: "A Pokémon themed version of the classic board game Monopoly. Made with the Unity engine. Coding was done in C#. Utilized 3D models I created with Blender.",
     challenges: "This was my first project using Unity. I had to learn how to use Unity and how to structure my code to work with it. I also had to learn how to use Blender to create 3D models.",
-    startDate: new Date(2019, 5, 1)
+    startDate: new Date(2019, 5, 1),
+    imgSrc: "./img/PokemonMonopoly/pokemon_monopoly.png"
 };
 
 const emeraldAutoTrainerData: IProjectData = {
@@ -30,14 +31,35 @@ const emeraldAutoTrainerData: IProjectData = {
     name: "Emerald Auto Trainer",
     description: "A bot I made to automate the process of training Pokémon in Pokémon Emerald. Uses Python to parse the game's memory and simulate button presses.",
     challenges: "This was my first project using Python. I had to learn how to use Python and how to structure my code to work with it. I also had to learn how to use the PyAutoGUI library to simulate button presses.",
-    startDate: new Date(2019, 5, 1)
+    startDate: new Date(2019, 5, 1),
+    imgSrc: "./img/Emerald/emerald_title.png"
 };
+
+const pokemonClassifierData: IProjectData = {
+    id: 5,
+    name: "Pokémon Classifier",
+    description: "A machine learning model that classifies Pokémon given an image of the Pokémon. Uses Python and the Keras library.",
+    challenges: "This was my first project using machine learning. I had to learn how to use machine learning and how to structure my code to work with it. I also had to learn how to use the Keras library to create the model.",
+    startDate: new Date(2019, 5, 1),
+    imgSrc: "./img/PokemonClassifier/IMG_0278.JPG"
+}
+
+const missingBinFinderData: IProjectData = {
+    id: 6,
+    name: "Missing Bin Finder",
+    description: "A program I made to find missing bins in a list of bins. Uses C# and Windows Forms.",
+    challenges: "This was my first project using C#. I had to learn how to use C# and how to structure my code to work with it. I also had to learn how to use Windows Forms to create the GUI.",
+    startDate: new Date(2019, 5, 1),
+    imgSrc: "./img/MissingBinFinder/missing_bin_finder.PNG"
+}
 
 const projectData: IProjectData[] = [
     deviantProjectData,
     ghdAutoTimeEntryData,
     pokemonMonopolyData,
-    emeraldAutoTrainerData
+    emeraldAutoTrainerData,
+    pokemonClassifierData,
+    missingBinFinderData,
 ];
 
 export default projectData;
