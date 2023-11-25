@@ -41,7 +41,7 @@ const pokemonClassifierData: IProjectData = {
     description: "A machine learning model that classifies Pokémon given an image of the Pokémon. Uses Python and the Keras library.",
     challenges: "This was my first project using machine learning. I had to learn how to use machine learning and how to structure my code to work with it. I also had to learn how to use the Keras library to create the model.",
     startDate: new Date(2019, 5, 1),
-    imgSrc: "./img/PokemonClassifier/IMG_0278.JPG"
+    imgSrc: "./img/PokemonClassifier/charmander_classify.png"
 }
 
 const missingBinFinderData: IProjectData = {
