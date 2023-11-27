@@ -1,16 +1,24 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import ProjectGrid from "./ProjectGrid";
 import projectData from "../../Data/ProjectData";
 import "./projects.scss";
+import ScrollFadeInSection from "../ScrollFadeInSection";
+import { AppConstantsContext } from '../../App';
 
-export default class Projects extends React.Component {
+const Projects: React.FC = () => {
 
-    render(): ReactNode {
-        return (
-            <div id="projects">
+    const { fadeInTransitionDurationMS } = React.useContext(AppConstantsContext);
+    
+    return (
+        <div id="projects">
+            <ScrollFadeInSection durationMS={fadeInTransitionDurationMS}>
                 <h2 className="title">Projects</h2>
-                <ProjectGrid projects={projectData}/>
-            </div>
-        );
-    }
+                <hr className="half-centered"/>
+            </ScrollFadeInSection>
+            <ProjectGrid projects={projectData}/>
+        </div>
+    );
+
 }
+
+export default Projects;
