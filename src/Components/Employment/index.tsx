@@ -4,7 +4,17 @@ export default class Employment extends React.Component {
 
     render(): ReactNode {
         return (
-            <p>Employment component works!</p>
+            <div id="employment">
+                
+                <div className="software-engineer-group">
+                    <h2>Full-Stack Software Engineer</h2>
+                </div>
+
+                <div className="ghd-engineer-group">
+                    <h2>Global Helpdesk Support Engineer</h2>
+                </div>
+
+            </div>
         );
     }
 }
