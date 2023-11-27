@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './project-grid-item.scss';
-import { IProjectData } from '../../../../Interfaces/IProjectData';
+import IProjectData from '../../../../Interfaces/IProjectData';
 
 interface IProjectGridItemProps {
     project: IProjectData

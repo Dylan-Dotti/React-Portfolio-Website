@@ -1,5 +1,5 @@
 
-export interface IProjectData {
+export default interface IProjectData {
     id          : number
     name        : string
     description : string

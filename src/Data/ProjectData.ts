@@ -1,4 +1,4 @@
-import { IProjectData } from "../Interfaces/IProjectData";
+import IProjectData from "../Interfaces/IProjectData";
 
 const deviantProjectData: IProjectData = {
     id: 1,

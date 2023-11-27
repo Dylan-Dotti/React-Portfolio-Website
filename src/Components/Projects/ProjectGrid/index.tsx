@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ProjectGridItem from './ProjectGridItem';
-import { IProjectData } from '../../../Interfaces/IProjectData';
+import IProjectData from '../../../Interfaces/IProjectData';
 import './project-grid.scss';
 import ScrollFadeInSection, { ScrollFadeInDirection } from '../../ScrollFadeInSection';
 import { AppConstantsContext } from '../../../App';
