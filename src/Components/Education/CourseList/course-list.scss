@@ -1,0 +1,9 @@
+
+.course-list {
+    // display: flex;
+    // flex-direction: column;
+    gap: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
