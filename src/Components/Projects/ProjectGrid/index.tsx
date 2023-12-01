@@ -13,7 +13,7 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
     
     const { projects } = props;
 
-    const { fadeInTransitionDurationMS } = React.useContext(AppConstantsContext);
+    const { fadeInDurationMS: fadeInTransitionDurationMS } = React.useContext(AppConstantsContext);
 
     return (
         <div className="project-grid">

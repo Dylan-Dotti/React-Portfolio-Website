@@ -15,13 +15,13 @@ library.add(fas);
 library.add(fab);
 
 export const AppConstantsContext = React.createContext({
-  fadeInTransitionDurationMS: 0,
+  fadeInDurationMS: 0,
 });
 
 export default function App() {
   return (
     <div id="App">
-      <AppConstantsContext.Provider value={{ fadeInTransitionDurationMS: 2000 }}>
+      <AppConstantsContext.Provider value={{ fadeInDurationMS: 1200 }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>

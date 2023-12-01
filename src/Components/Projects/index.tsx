@@ -7,7 +7,7 @@ import { AppConstantsContext } from '../../App';
 
 const Projects: React.FC = () => {
 
-    const { fadeInTransitionDurationMS } = React.useContext(AppConstantsContext);
+    const { fadeInDurationMS: fadeInTransitionDurationMS } = React.useContext(AppConstantsContext);
     
     return (
         <div id="projects">
