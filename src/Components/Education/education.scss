@@ -1,0 +1,26 @@
+
+#education {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    p {
+        font-size: 1.25rem;
+        //text-align: justify;
+        margin-bottom: 0;
+    }
+
+    .main-image {
+        width: 100%;
+        border: 1px solid white;
+        margin-bottom: 20px;
+    }
+
+    .courses-section {
+
+        .title-group {
+            margin-bottom: 50px;
+        }
+    }
+}
