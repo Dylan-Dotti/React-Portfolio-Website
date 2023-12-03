@@ -79,7 +79,7 @@ const dbManagementSystemsData: ICourseData = {
     ],
     links: [
         {
-            name: "Projects Github",
+            name: "Projects",
             url: "https://github.com/Dylan-Dotti/Database-Projects"
         }
     ]
