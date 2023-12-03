@@ -21,5 +21,22 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .course-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: baseline;
+        
+        // .links-list {
+        //     display: flex;
+        //     gap: 20px;
+        // }
+
+        a {
+            font-size: 1.2rem;
+        }
     }
 }

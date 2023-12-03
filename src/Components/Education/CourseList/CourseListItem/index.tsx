@@ -30,6 +30,17 @@ const CourseListItem: React.FC<ICourseListItemProps> = (props) => {
                         ))}
                     </div>
                 )}
+                {course.links && (
+                    <div className="course-links">
+                        <h5>Links:</h5>
+                        {course.links.map((link, index) => (
+                            <span key={index}>
+                                <a href={link.url}>{link.name}</a>
+                                {index < course.links!.length - 1 && ', '}
+                            </span>
+                        ))}
+                    </div>
+                )}
             </ScrollFadeInSection>
             
         </div>
