@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './scroll-fade-in-section.scss';
+import classNames from 'classnames';
 
 export enum ScrollFadeInDirection {
     Up, Down, Left, Right
@@ -10,6 +11,7 @@ interface IScrollFadeInSectionProps {
     direction? : ScrollFadeInDirection
     durationMS?: number
     shiftValue?: string
+    className? : string
 }
 
 // A wrapper component that fades in its children when they are scrolled into view.
@@ -19,7 +21,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
         children,
         direction = ScrollFadeInDirection.Up,
         durationMS = 0, 
-        shiftValue = '0px'
+        shiftValue = '0px',
     } = props;
 
     const [isVisible, setVisible] = React.useState(false);
@@ -64,8 +66,10 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
             break;
     }
 
+    const className = classNames('scroll-fade-in-section', { 'is-visible': isVisible }, props.className);
+
     return (
-        <div className={`scroll-fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef} style={style}>
+        <div className={className} ref={domRef} style={style}>
             {children}
         </div>
     );
