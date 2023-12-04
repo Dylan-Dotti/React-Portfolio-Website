@@ -12,8 +12,10 @@ const Projects: React.FC = () => {
     return (
         <div id="projects">
             <ScrollFadeInSection durationMS={fadeInTransitionDurationMS}>
-                <h2 className="title">Projects</h2>
-                <hr className="half-centered"/>
+                <div className="content-container">
+                    <h2 className="title">Projects</h2>
+                    <hr className="half-centered"/>
+                </div>
             </ScrollFadeInSection>
             <ProjectGrid projects={projectData}/>
         </div>

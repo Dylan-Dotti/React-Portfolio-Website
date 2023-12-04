@@ -13,11 +13,13 @@ const About: React.FC = () => {
         <div id="about">
 
             <ScrollFadeInSection className="intro-section" durationMS={appConstants.fadeInDurationMS}>
-                <div className="profile-picture" style={{backgroundImage: `url(${profileImg})`}}></div>
-                <div className="intro-text">
-                    <h1>Lorem, ipsum dolor</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, itaque</h4>
+                <div className="content-container">
+                    <div className="profile-picture" style={{backgroundImage: `url(${profileImg})`}}></div>
+                    <div className="intro-text">
+                        <h1>Hi, I'm Dylan.</h1>
+                        <h4>I have a passion for creating quality software of all kinds.</h4>
+                        <h4>Scroll below to learn how my skillset can benefit your organization.</h4>
+                    </div>
                 </div>
             </ScrollFadeInSection>
             

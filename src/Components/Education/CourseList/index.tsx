@@ -11,7 +11,7 @@ const CourseList: React.FC<ICourseListProps> = (props) => {
     const courses = courseData;
 
     return (
-        <div className="course-list">
+        <div className="course-list content-container">
             {(!courses || courses.length === 0) && <p>No courses to display.</p>}
             {courses && courses.length > 0 && courses.sort((a, b) => (b.overview?.length ?? 0) - (a.overview?.length ?? 0)).map((course) => {
                 return (
