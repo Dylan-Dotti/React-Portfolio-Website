@@ -48,6 +48,10 @@ hr.quarter-centered {
   right: 0;
   top: 0;
   bottom: 0;
+
+  .primary-color-text {
+    color: $blue-300;
+  }
 }
 
 html {
