@@ -1,13 +1,17 @@
+@import "../../Styles/colors.scss";
 
 #about {
     flex: 1;
 
     .intro-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        height: calc(100svh - 78px);
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 175px 0;
+        }
 
         .intro-text {
             display: flex;
@@ -16,6 +20,59 @@
 
             h1 {
                 font-size: 3.5rem;
+            }
+        }
+    }
+
+    .gradient-section {
+        height: 200px;
+
+        &.gradient-1 {
+            background-image: linear-gradient($main-background, $main-background-dark);
+        }
+
+        &.gradient-2 {
+            background-image: linear-gradient($main-background-dark, $main-background);
+        }
+    }
+
+    .technologies-section {
+        background-color: $main-background-dark;
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .strengths-section {
+        padding-bottom: 100px;
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5%;
+
+            .strength-card {
+                border: 1px solid whitesmoke;
+                min-height: 300px;
+                padding: 25px;
+                
+                h2 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                .strength-icon {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
