@@ -21,3 +21,9 @@
     box-shadow: 1px 1px 10px 1px #888888;
     background-color: #111;
   }
+
+  .blue-glow-outline-panel {
+    border: 2px solid $blue-300;
+    box-shadow: 1px 1px 10px 1px $blue-300;
+    background-color: #111;
+  }
