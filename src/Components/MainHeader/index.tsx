@@ -21,6 +21,9 @@ const MainHeader: React.FC = () => {
                             <li className={location.pathname.startsWith('/employment') ? 'active' : ''}><Link to="/employment">Employment</Link></li>
                             <li className={location.pathname.startsWith('/education') ? 'active' : ''}><Link to="/education">Education</Link></li>
                         </ul>
+                        <button className="btn btn-primary contact-button">
+                            <strong>Contact</strong>
+                        </button>
                     </nav>
                 </div>
             </div>

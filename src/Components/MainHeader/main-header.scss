@@ -34,6 +34,8 @@
         
             nav {
                 display: flex;
+                gap: 35px;
+                align-items: center;
                 
                 .nav-list {
                     display: flex;
@@ -62,6 +64,14 @@
                             }
                         }
                     }
+                }
+
+                .contact-button {
+                    display: flex;
+                    border-radius: 40px;
+                    font-size: 1.2rem;
+                    padding: 6px 15px;
+                    padding-bottom: 8px;
                 }
         
             }
