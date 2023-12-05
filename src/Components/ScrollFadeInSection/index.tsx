@@ -9,6 +9,7 @@ export enum ScrollFadeInDirection {
 interface IScrollFadeInSectionProps {
     children   : React.ReactNode
     direction? : ScrollFadeInDirection
+    delayMS?   : number
     durationMS?: number
     shiftValue?: string
     className? : string
@@ -20,7 +21,8 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     const { 
         children,
         direction = ScrollFadeInDirection.Up,
-        durationMS = 0, 
+        durationMS = 0,
+        delayMS = 0,
         shiftValue = '0px',
     } = props;
 
@@ -31,8 +33,8 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                setVisible(entry.isIntersecting)
                 if (entry.isIntersecting) {
+                    setTimeout(() => setVisible(entry.isIntersecting), delayMS);
                     observer.unobserve(entry.target);
                 }
             });
