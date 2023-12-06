@@ -24,13 +24,24 @@ li {
   align-items: center;
 }
 
-hr.half-centered {
+.custom-hr {
+  border-bottom: 1px solid $main-text-white;
+  margin: 16px 0;
+}
+
+hr {
+  border: 1px solid $main-text-white;
+  background-color: $main-text-white;
+  //box-shadow: 0 0 10px $main-text-white;
+}
+
+hr.half-centered, .custom-hr.half-centered {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-hr.quarter-centered {
+hr.quarter-centered, .custom-hr.quarter-centered {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
