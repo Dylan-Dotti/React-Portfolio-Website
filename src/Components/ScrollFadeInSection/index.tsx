@@ -59,10 +59,10 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
             style.bottom = isVisible ? '0' : shiftValue;
             break;
         case ScrollFadeInDirection.Left:
-            style.right = isVisible ? '0' : shiftValue;
+            style.left = isVisible ? '0' : shiftValue;
             break;
         case ScrollFadeInDirection.Right:
-            style.left = isVisible ? '0' : shiftValue;
+            style.right = isVisible ? '0' : shiftValue;
             break;
         default:
             break;
