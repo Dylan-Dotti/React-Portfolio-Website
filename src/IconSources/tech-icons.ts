@@ -53,6 +53,8 @@ const techIconSrcs = {
     blenderOriginal: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
     blenderOriginalWordmark: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original-wordmark.svg",
 
+    sqlServerPlainWordmark: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg",
+
 };
 
 const getTechIcons = () => {
