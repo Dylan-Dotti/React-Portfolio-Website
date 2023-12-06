@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./about.scss";
-import ScrollFadeInSection from "../ScrollFadeInSection";
+import ScrollFadeInSection, { ScrollFadeInDirection } from "../ScrollFadeInSection";
 import { AppConstantsContext } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faSitemap, faRobot } from '@fortawesome/free-solid-svg-icons';
@@ -16,16 +16,18 @@ const About: React.FC = () => {
     return (
         <div id="about">
 
-            <ScrollFadeInSection className="intro-section" durationMS={appConstants.fadeInDurationMS}>
+            <div className="intro-section">
                 <div className="content-container">
-                    <div className="profile-picture" style={{backgroundImage: `url(${profileImg})`}}></div>
-                    <div className="intro-text">
-                        <h1>Hi, I'm <span className="primary-color-text">Dylan</span>.</h1>
-                        <h4>I have a passion for creating quality software of all kinds.</h4>
-                        <h4>Scroll below to learn how my skillset can benefit your organization.</h4>
-                    </div>
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                        <div className="profile-picture white-glow-outline-panel" style={{backgroundImage: `url(${profileImg})`}}></div>
+                    </ScrollFadeInSection>
+                    <ScrollFadeInSection className="intro-text" durationMS={appConstants.fadeInDurationMS} delayMS={400}>
+                        <h1>Hi, I'm <span className="primary-color-text">Dylan</span></h1>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, eveniet.</h4>
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, consequatur?</h4>
+                    </ScrollFadeInSection>
                 </div>
-            </ScrollFadeInSection>
+            </div>
 
             <div className="gradient-section gradient-1"></div>
 
@@ -45,6 +47,7 @@ const About: React.FC = () => {
                     <img src={techIcons.bootstrapOriginal} alt="" />
                     <img src={techIcons.visualStudioPlain} alt="" />
                     <img src={techIcons.vsCodeOriginal} alt="" />
+                    {/* <img src={techIcons.sqlServerPlainWordmark} alt="" style={{backgroundColor: "rgb(243, 101, 240)"}} /> */}
                     <img src={techIcons.nodeJSOriginal} alt="" />
                     <img src={techIcons.gitOriginal} alt="" />
                     <img src={techIcons.jiraOriginalWordmark} alt="" />
@@ -65,30 +68,54 @@ const About: React.FC = () => {
 
             <div className="strengths-section">
                 <div className="content-container">
-                    <h1 className="section-title">Development Strengths</h1>
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                        <h1 className="section-title primary-color-text">Development Strengths</h1>
+                    </ScrollFadeInSection>
                     
                     <div className="cards-grid">
-                        <div className="strength-card">
-                            <div className="strength-icon">
+
+                        <ScrollFadeInSection
+                            className="strength-card"
+                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            delayMS={400}
+                            direction={ScrollFadeInDirection.Right}
+                            shiftValue="50px"
+                        >
+                            <div className="card-icon">
                                 <FontAwesomeIcon icon={faLayerGroup} size="3x" />
                             </div>
-                            <h2>Full Stack</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis porro, praesentium facere laudantium molestiae numquam!</h4>
-                        </div>
-                        <div className="strength-card">
-                            <div className="strength-icon">
+                            <h2 className="card-title">Full Stack</h2>
+                            <h4>From UIs to APIs to databases, I am capable of working on any and every layer of a software application.</h4>
+                        </ScrollFadeInSection>
+
+                        <ScrollFadeInSection
+                            className="strength-card"
+                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            delayMS={650}
+                            direction={ScrollFadeInDirection.Right}
+                            shiftValue="50px"
+                        >
+                            <div className="card-icon">
                                 <FontAwesomeIcon icon={faSitemap} size="3x" />
                             </div>
-                            <h2>OOP</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia alias consectetur assumenda sapiente illum optio.</h4>
-                        </div>
-                        <div className="strength-card">
-                            <div className="strength-icon">
+                            <h2 className="card-title">OOP</h2>
+                            <h4>I have a strong grasp of OOP design principles and an extensive history of utilizing the paradigm in my software.</h4>
+                        </ScrollFadeInSection>
+
+                        <ScrollFadeInSection
+                            className="strength-card"
+                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            delayMS={900}
+                            direction={ScrollFadeInDirection.Right}
+                            shiftValue="50px"
+                        >
+                            <div className="card-icon">
                                 <FontAwesomeIcon icon={faRobot} size="3x" />
                             </div>
-                            <h2>AI</h2>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam quam, quisquam culpa sunt voluptate!</h4>
-                        </div>
+                            <h2 className="card-title">AI</h2>
+                            <h4><span>I can leverage AI tools and libraries to integrate learning models into an application.</span></h4>
+                        </ScrollFadeInSection>
+
                     </div>
                 </div>
             </div>
