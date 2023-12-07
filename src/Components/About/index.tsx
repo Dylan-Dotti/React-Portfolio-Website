@@ -69,7 +69,7 @@ const About: React.FC = () => {
             <div className="strengths-section">
                 <div className="content-container">
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
-                        <h1 className="section-title primary-color-text">Development Strengths</h1>
+                        <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
                     </ScrollFadeInSection>
                     
                     <div className="cards-grid">
