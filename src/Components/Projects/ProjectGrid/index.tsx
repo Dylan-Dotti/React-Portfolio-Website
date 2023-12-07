@@ -22,7 +22,7 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
                 return (
                     <ScrollFadeInSection
                         key={project.id}
-                        direction={index % 2 === 0 ? ScrollFadeInDirection.Left : ScrollFadeInDirection.Right}
+                        direction={index % 2 === 0 ? ScrollFadeInDirection.Right : ScrollFadeInDirection.Left}
                         durationMS={fadeInTransitionDurationMS}
                         shiftValue='30px'
                     >
