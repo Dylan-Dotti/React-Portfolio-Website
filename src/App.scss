@@ -52,6 +52,11 @@ hr.quarter-centered, .custom-hr.quarter-centered {
   margin: 0 auto;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 #App {
   position: absolute;
