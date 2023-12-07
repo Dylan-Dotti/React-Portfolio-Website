@@ -11,9 +11,10 @@ const Education: React.FC = () => {
         <div id="education">
 
             <div className="header-group">
-                <ScrollFadeInSection durationMS={fadeInTransitionDurationMS} className="title-group content-container">
-                    <h1 className="text-center title">Education</h1>
-                    <hr className="half-centered"/>
+                <ScrollFadeInSection durationMS={fadeInTransitionDurationMS} className="title-section content-container">
+                    <h1 className="text-center page-header">Education</h1>
+                    {/* <hr className="half-centered"/> */}
+                    <div className="custom-hr half-centered"></div>
 
                     <img src="./Img/CNU/cnu_campus_1_cropped.jpg" alt="" className="main-image" />
                 </ScrollFadeInSection> 
@@ -27,7 +28,7 @@ const Education: React.FC = () => {
 
             <div className="courses-section">
 
-                <ScrollFadeInSection durationMS={fadeInTransitionDurationMS} direction={ScrollFadeInDirection.Up} className="title-group content-container">
+                <ScrollFadeInSection durationMS={fadeInTransitionDurationMS} direction={ScrollFadeInDirection.Up} className="title-section content-container">
                     <h2 className="text-center title">Courses</h2>
                     <p className="text-center">
                         Below I've summarized the most beneficial courses I took during my time at CNU.

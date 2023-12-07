@@ -1,3 +1,4 @@
+@import "../../Styles/colors.scss";
 
 #education {
     padding: 80px 0;
@@ -17,10 +18,21 @@
         margin-bottom: 20px;
     }
 
+    .title-section {
+
+        .page-header {
+            color: $primary-header-color;
+        }
+    }
+
     .courses-section {
 
-        .title-group {
+        .title-section {
             margin-bottom: 50px;
+
+            .title {
+                color: $primary-header-color;
+            }
         }
     }
 }
