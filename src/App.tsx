@@ -1,6 +1,9 @@
 import * as React from "react";
 import "./App.scss";
 import "./Styles/panels.scss";
+import "./Styles/colors.scss";
+import "./Styles/modals.scss";
+import "./Styles/form-controls.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/About";
 import Education from "./Components/Education";
