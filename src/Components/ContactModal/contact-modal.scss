@@ -1,0 +1,63 @@
+@import "../../Styles/colors.scss";
+
+.contact-modal {
+
+    .message-area {
+        resize: none;
+
+        font-size: 0.95rem;
+    }
+
+    .modal-header {
+
+        .title {
+            //color: $primary-header-color;
+        }
+    }
+
+    .modal-body {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        padding: 1.5rem;
+        gap: 20px;
+
+        .left-column {
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            .contact-methods {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                width: fit-content;
+
+                .contact-method {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: fit-content;
+                }
+            }
+        }
+
+        .form-group {
+
+            label {
+                font-size: 1.1rem;
+                margin-bottom: 0.3rem;
+                margin-left: 2px;
+            }
+        }
+    }
+}
