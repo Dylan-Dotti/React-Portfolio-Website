@@ -1,0 +1,48 @@
+
+@import "./colors.scss";
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}
+
+.modal-dialog {
+    flex-direction: column;
+    justify-content: center;
+
+    .modal-content {
+        //flex: 1;
+        border: 1px solid $main-text-white;
+    }
+
+    .modal-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .modal-header, .modal-footer {
+        min-height: 50px;
+        padding: 0.5rem 1rem;
+    }
+
+    .modal-body {
+    }
+}
+
+.modal-dark {
+
+    .modal-header {
+        background-color: $main-background-dark;
+    }
+
+    .modal-body {
+        background-color: $main-background-light;
+    }
+
+    .modal-footer {
+        background-color: $main-background;
+    }
+}
+
+.modal-backdrop {
+
+}
