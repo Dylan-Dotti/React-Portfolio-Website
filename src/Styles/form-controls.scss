@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+.form-control-dark {
+    background-color: $main-background;
+    color: $main-text-white;
+    border: 1px solid rgba(white, 0.25);
+    transition: background-color 0.2s ease-in-out;
+
+    &:focus, &:active {
+        background-color: $main-background-dark;
+        color: $main-text-white;
+        border: 1px solid rgba(white, 0.25);
+        transition: background-color 0.2s ease-in-out;
+    }
+}
