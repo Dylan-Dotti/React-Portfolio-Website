@@ -39,6 +39,7 @@
 
     .technologies-section {
         background-color: $main-background-dark;
+        padding: 60px 0;
         
         img {
             width: 100px;
@@ -47,7 +48,7 @@
     }
 
     .strengths-section {
-        padding: 60px;
+        padding: 60px 0;
 
         .section-title {
             text-align: center;
@@ -57,7 +58,7 @@
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 5%;
+            gap: 3%;
 
             .strength-card {
                 border: 2px solid whitesmoke;

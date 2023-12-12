@@ -32,35 +32,38 @@ const About: React.FC = () => {
             <div className="gradient-section gradient-1"></div>
 
             <div className="technologies-section">
-                <div className="familiar-techs">
+                <div className="content-container">
 
-                    <img src={techIcons.htmlOriginal} alt="" />
-                    <img src={techIcons.cssOriginal} alt="" />
-                    <img src={techIcons.sassOriginal} alt="" />
-                    <img src={techIcons.jsOriginal} alt="" />
-                    <img src={techIcons.tsOriginal} alt="" />
-                    <img src={techIcons.cSharpOriginal} alt="" />
-                    <img src={techIcons.pythonOriginal} alt="" />
-                    <img src={techIcons.dotNetPlainWordmark} alt="" />
-                    <img src={techIcons.reactOriginal} alt="" />
-                    <img src={techIcons.electronOriginal} alt="" />
-                    <img src={techIcons.bootstrapOriginal} alt="" />
-                    <img src={techIcons.visualStudioPlain} alt="" />
-                    <img src={techIcons.vsCodeOriginal} alt="" />
-                    {/* <img src={techIcons.sqlServerPlainWordmark} alt="" style={{backgroundColor: "rgb(243, 101, 240)"}} /> */}
-                    <img src={techIcons.nodeJSOriginal} alt="" />
-                    <img src={techIcons.gitOriginal} alt="" />
-                    <img src={techIcons.jiraOriginalWordmark} alt="" />
-                    <img src={techIcons.npmOriginalWordmark} alt="" />
-                    <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: 'whitesmoke'}} alt="" />
-                </div>
-                <div className="less-familiar-techs">
-                    <img src={techIcons.javaOriginal} alt="" />
-                    <img src={techIcons.cPlusPlusOriginal} alt="" />
-                    <img src={techIcons.angularJSOriginal} alt="" />
-                    <img src={techIcons.linuxOriginal} alt="" />
-                    <img src={techIcons.mongoDBPlainWordmark} alt="" />
-                    <img src={techIcons.blenderOriginal} alt="" />
+                    <div className="familiar-techs">
+
+                        <img src={techIcons.htmlOriginal} alt="" />
+                        <img src={techIcons.cssOriginal} alt="" />
+                        <img src={techIcons.sassOriginal} alt="" />
+                        <img src={techIcons.jsOriginal} alt="" />
+                        <img src={techIcons.tsOriginal} alt="" />
+                        <img src={techIcons.cSharpOriginal} alt="" />
+                        <img src={techIcons.pythonOriginal} alt="" />
+                        <img src={techIcons.dotNetPlainWordmark} alt="" />
+                        <img src={techIcons.reactOriginal} alt="" />
+                        <img src={techIcons.electronOriginal} alt="" />
+                        <img src={techIcons.bootstrapOriginal} alt="" />
+                        <img src={techIcons.visualStudioPlain} alt="" />
+                        <img src={techIcons.vsCodeOriginal} alt="" />
+                        {/* <img src={techIcons.sqlServerPlainWordmark} alt="" style={{backgroundColor: "rgb(243, 101, 240)"}} /> */}
+                        <img src={techIcons.nodeJSOriginal} alt="" />
+                        <img src={techIcons.gitOriginal} alt="" />
+                        <img src={techIcons.jiraOriginalWordmark} alt="" />
+                        <img src={techIcons.npmOriginalWordmark} alt="" />
+                        <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: 'whitesmoke'}} alt="" />
+                    </div>
+                    <div className="less-familiar-techs">
+                        <img src={techIcons.javaOriginal} alt="" />
+                        <img src={techIcons.cPlusPlusOriginal} alt="" />
+                        <img src={techIcons.angularJSOriginal} alt="" />
+                        <img src={techIcons.linuxOriginal} alt="" />
+                        <img src={techIcons.mongoDBPlainWordmark} alt="" />
+                        <img src={techIcons.blenderOriginal} alt="" />
+                    </div>
                 </div>
             </div>
 
@@ -85,7 +88,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faLayerGroup} size="3x" />
                             </div>
                             <h2 className="card-title">Full Stack</h2>
-                            <h4>From UIs to APIs to databases, I am capable of working on any and every layer of a software application.</h4>
+                            <h5>From UIs to APIs to databases, I am capable of working on any and every layer of a software application.</h5>
                         </ScrollFadeInSection>
 
                         <ScrollFadeInSection
@@ -99,7 +102,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faSitemap} size="3x" />
                             </div>
                             <h2 className="card-title">OOP</h2>
-                            <h4>I have a strong grasp of OOP design principles and an extensive history of utilizing the paradigm in my software.</h4>
+                            <h5>I have a strong grasp of OOP design principles and an extensive history of utilizing the paradigm in my software.</h5>
                         </ScrollFadeInSection>
 
                         <ScrollFadeInSection
@@ -113,7 +116,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faRobot} size="3x" />
                             </div>
                             <h2 className="card-title">AI</h2>
-                            <h4><span>I can leverage AI tools and libraries to integrate learning models into an application.</span></h4>
+                            <h5><span>I can leverage AI tools and libraries to integrate learning models into an application.</span></h5>
                         </ScrollFadeInSection>
 
                     </div>
