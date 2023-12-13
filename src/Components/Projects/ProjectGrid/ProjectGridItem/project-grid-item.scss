@@ -1,5 +1,8 @@
+@import "../../../../Styles/colors.scss";
 
 .project-grid-item {
+    display: block;
+    color: inherit;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -13,7 +16,7 @@
     }
 
     .text-wrapper {
-        padding: 50px;
+        padding: 0 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -22,6 +25,7 @@
     }
 
     &:hover {
+        color: inherit;
         
         .img-wrapper {
             transform: scale(1.1);

@@ -26,11 +26,9 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
                         durationMS={fadeInTransitionDurationMS}
                         shiftValue='30px'
                     >
-                        <ProjectGridItem
-                            project={project}
-                        />
+                        <ProjectGridItem project={project} />
                     </ScrollFadeInSection>
-                );
+                ); 
             })}
         </div>
     );

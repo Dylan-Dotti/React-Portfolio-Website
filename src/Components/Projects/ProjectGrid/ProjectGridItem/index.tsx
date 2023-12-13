@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './project-grid-item.scss';
 import IProjectData from '../../../../Interfaces/IProjectData';
+import { Link } from 'react-router-dom';
 
 interface IProjectGridItemProps {
     project: IProjectData
@@ -11,7 +12,7 @@ const ProjectGridItem: React.FC<IProjectGridItemProps> = (props) => {
     const { project } = props;
 
     return (
-        <div className="project-grid-item">
+        <Link to={project.detailSrc ?? "#"} className="project-grid-item">
             {project.imgSrc && (
                 <div
                     className="img-wrapper absolute-cover-panel"
@@ -28,7 +29,7 @@ const ProjectGridItem: React.FC<IProjectGridItemProps> = (props) => {
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
             </div>
-        </div>
+        </Link>
     );
 
 }
