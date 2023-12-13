@@ -45,7 +45,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
 
         return () => observer.unobserve(domRefCurrent!);
         
-    }, []);
+    }, [delayMS]);
 
     const style: React.CSSProperties = {
         transition: `all ${durationMS}ms ease-out`,
