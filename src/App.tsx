@@ -10,9 +10,12 @@ import Education from "./Components/Education";
 import Employment from "./Components/Employment";
 import Layout from "./Components/Layout";
 import Projects from "./Components/Projects";
+import projectData from "./Data/ProjectData";
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import ProjectOverview from "./Components/Projects/ProjectOverview";
+import DeviantProjectDetail from "./Components/Projects/ProjectDetail/DeviantProjectDetail";
 
 library.add(fas);
 library.add(fab);
@@ -31,7 +34,16 @@ export default function App() {
               <Route index element={<About />}></Route>
               <Route path="/education" element={<Education />}></Route>
               <Route path="/employment" element={<Employment />}></Route>
-              <Route path="/projects" element={<Projects />}></Route>
+              <Route path="/projects" element={<Projects />}>
+                <Route index element={<ProjectOverview />}></Route>
+                {projectData.map((project) => (
+                  <Route
+                    key={project.id}
+                    path={project.detailSrc}
+                    element={project.detailComponent?.() ?? <div>No project component found</div>}
+                  ></Route>
+                ))}
+              </Route>
             </Route>
           </Routes>
         </BrowserRouter>
