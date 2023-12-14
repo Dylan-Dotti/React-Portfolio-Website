@@ -18,6 +18,7 @@ const ghdAutoTimeEntryData: IProjectData = {
     description: "An app I made in collaboration with another engineer to automate time entry at my support desk job. Uses Python to parse excel sheets with time data, then uses simulated keystrokes to enter the time into SAP time management sheets.",
     challenges: "This was my first project using ASP.NET Core. I had to learn how to use ASP.NET Core and how to structure my code to work with it. I also had to learn how to use Entity Framework Core to interact with the database.",
     startDate: new Date(2020, 8, 1),
+    imgSrc: "./img/TimeEntry/time_entry.PNG",
     detailSrc: "ghd-auto-time-entry",
 };
 
