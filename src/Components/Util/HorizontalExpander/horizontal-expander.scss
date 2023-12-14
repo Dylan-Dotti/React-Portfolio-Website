@@ -1,0 +1,10 @@
+.horizontal-expander {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    transition: all 10s linear;
+
+    &.collapsed {
+        max-width: 0;
+    }
+}
