@@ -13,6 +13,7 @@ interface IScrollFadeInSectionProps {
     durationMS?: number
     shiftValue?: string
     className? : string
+    onClick?   : () => void
 }
 
 // A wrapper component that fades in its children when they are scrolled into view.
@@ -24,6 +25,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
         durationMS = 0,
         delayMS = 0,
         shiftValue = '0px',
+        onClick,
     } = props;
 
     const [isVisible, setVisible] = React.useState(false);
@@ -71,7 +73,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     const className = classNames('scroll-fade-in-section', { 'is-visible': isVisible }, props.className);
 
     return (
-        <div className={className} ref={domRef} style={style}>
+        <div className={className} ref={domRef} style={style} onClick={onClick}>
             {children}
         </div>
     );
