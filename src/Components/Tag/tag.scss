@@ -1,7 +1,7 @@
 @import "../../Styles/colors.scss";
 
 .custom-tag {
-    background-color: $blue-200;
+    background-color: map-get($blue-palette-1, 200);
     color: $main-text-white;
     padding: 5px 10px;
 }

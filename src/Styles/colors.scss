@@ -1,12 +1,21 @@
 
-$blue-100: #263EFA;
-$blue-200: #2F68DE;
-$blue-300: #40A0F5;
-$blue-400: #2fB1DE;
-$blue-500: #36F5FF;
+$blue-palette-1: (
+    100: #263EFA,
+    200: #2F68DE,
+    300: #40A0F5,
+    400: #2fB1DE,
+    500: #36F5FF
+);
 
+$comp-palette-1: (
+    100: #D49B4A,
+    200: #597C94,
+    300: #4A9DD4,
+    400: #7F6E57,
+    500: #484F54,
+);
 
-// Split complementary pallette
+// Split complementary palette
 $yellow-orange: #F5C540;
 $orange: #F59240;
 $blue-gray: #596875;
@@ -19,5 +28,5 @@ $main-background-dark: #1A1A1A;
 
 $main-text-white: rgb(245, 245, 245);
 
-$primary-header-color: $blue-300;
-$secondary-header-color: $orange;
+$primary-color-1: map-get($blue-palette-1, 300);
+$primary-color-2: $orange;
