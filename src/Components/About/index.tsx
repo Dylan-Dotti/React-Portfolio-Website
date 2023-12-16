@@ -34,7 +34,7 @@ const About: React.FC = () => {
             <div className="technologies-section">
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h1 className="section-title">
                             <span className="primary-color-text">Technologies</span> I use in my projects
                         </h1>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h1 className="section-title">
                             I <span className="primary-color-text">used</span> to use these, but not as much lately
                         </h1>
@@ -87,7 +87,7 @@ const About: React.FC = () => {
 
             <div className="strengths-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
                     </ScrollFadeInSection>
                     
