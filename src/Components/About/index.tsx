@@ -13,6 +13,42 @@ const About: React.FC = () => {
     const profileImg = "./img/Profile/IMG_0061_1.jpg";
     const techIcons = getTechIcons();
 
+    const familiarTechIcons = [
+        techIcons.htmlOriginal,
+        techIcons.cssOriginal,
+        techIcons.sassOriginal,
+        techIcons.jsOriginal,
+        techIcons.tsOriginal,
+        techIcons.cSharpOriginal,
+        techIcons.pythonOriginal,
+        techIcons.dotNetPlainWordmark,
+        techIcons.reactOriginal,
+        techIcons.electronOriginal,
+        techIcons.bootstrapOriginal,
+        techIcons.visualStudioPlain,
+        techIcons.vsCodeOriginal,
+        // techIcons.sqlServerPlainWordmark,
+        techIcons.nodeJSOriginal,
+        techIcons.gitOriginal,
+        techIcons.jiraOriginalWordmark,
+        techIcons.npmOriginalWordmark,
+    ];
+
+    const lessFamiliarTechIcons = [
+        techIcons.javaOriginal,
+        techIcons.cPlusPlusOriginal,
+        techIcons.angularJSOriginal,
+        techIcons.linuxOriginal,
+        techIcons.mongoDBPlainWordmark,
+        techIcons.blenderOriginal,
+    ];
+
+    const generateIconDelay = (index: number) => {
+        // generate a random delay between 0 and 200ms
+        const delay = Math.floor(Math.random() * 750);
+        return delay + 250;
+    }
+
     return (
         <div id="about">
 
@@ -42,25 +78,21 @@ const About: React.FC = () => {
 
                     <div className="tech-grid familiar-techs">
 
-                        <img src={techIcons.htmlOriginal} alt="" />
-                        <img src={techIcons.cssOriginal} alt="" />
-                        <img src={techIcons.sassOriginal} alt="" />
-                        <img src={techIcons.jsOriginal} alt="" />
-                        <img src={techIcons.tsOriginal} alt="" />
-                        <img src={techIcons.cSharpOriginal} alt="" />
-                        <img src={techIcons.pythonOriginal} alt="" />
-                        <img src={techIcons.dotNetPlainWordmark} alt="" />
-                        <img src={techIcons.reactOriginal} alt="" />
-                        <img src={techIcons.electronOriginal} alt="" />
-                        <img src={techIcons.bootstrapOriginal} alt="" />
-                        <img src={techIcons.visualStudioPlain} alt="" />
-                        <img src={techIcons.vsCodeOriginal} alt="" />
-                        {/* <img src={techIcons.sqlServerPlainWordmark} alt="" style={{backgroundColor: "rgb(243, 101, 240)"}} /> */}
-                        <img src={techIcons.nodeJSOriginal} alt="" />
-                        <img src={techIcons.gitOriginal} alt="" />
-                        <img src={techIcons.jiraOriginalWordmark} alt="" />
-                        <img src={techIcons.npmOriginalWordmark} alt="" />
-                        <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: 'whitesmoke'}} alt="" />
+                        {familiarTechIcons.map((icon, index) => (
+                            <ScrollFadeInSection
+                                key={index}
+                                durationMS={appConstants.fadeInDurationMS * 2}
+                                delayMS={generateIconDelay(index)}
+                            >
+                                <img src={icon} alt="" />
+                            </ScrollFadeInSection>
+                        ))}
+                        <ScrollFadeInSection
+                            durationMS={appConstants.fadeInDurationMS * 2}
+                            delayMS={generateIconDelay(familiarTechIcons.length)}
+                        >
+                            <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
+                        </ScrollFadeInSection>
                     </div>
                 </div>
 
@@ -72,12 +104,15 @@ const About: React.FC = () => {
                     </ScrollFadeInSection>
 
                     <div className="tech-grid less-familiar-techs">
-                        <img src={techIcons.javaOriginal} alt="" />
-                        <img src={techIcons.cPlusPlusOriginal} alt="" />
-                        <img src={techIcons.angularJSOriginal} alt="" />
-                        <img src={techIcons.linuxOriginal} alt="" />
-                        <img src={techIcons.mongoDBPlainWordmark} alt="" />
-                        <img src={techIcons.blenderOriginal} alt="" />
+                        {lessFamiliarTechIcons.map((icon, index) => (
+                            <ScrollFadeInSection
+                                key={index}
+                                durationMS={appConstants.fadeInDurationMS * 2}
+                                delayMS={generateIconDelay(index)}
+                            >
+                                <img src={icon} alt="" />
+                            </ScrollFadeInSection>
+                        ))}
                     </div>
                 </div>
                 
