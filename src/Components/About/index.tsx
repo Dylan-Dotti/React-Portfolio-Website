@@ -32,9 +32,15 @@ const About: React.FC = () => {
             <div className="gradient-section gradient-1"></div>
 
             <div className="technologies-section">
-                <div className="content-container">
 
-                    <div className="familiar-techs">
+                <div className="tech-group content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                        <h1 className="section-title">
+                            <span className="primary-color-text">Technologies</span> I use in my projects
+                        </h1>
+                    </ScrollFadeInSection>
+
+                    <div className="tech-grid familiar-techs">
 
                         <img src={techIcons.htmlOriginal} alt="" />
                         <img src={techIcons.cssOriginal} alt="" />
@@ -56,7 +62,16 @@ const About: React.FC = () => {
                         <img src={techIcons.npmOriginalWordmark} alt="" />
                         <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: 'whitesmoke'}} alt="" />
                     </div>
-                    <div className="less-familiar-techs">
+                </div>
+
+                <div className="tech-group content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                        <h1 className="section-title">
+                            I <span className="primary-color-text">used</span> to use these, but not as much lately
+                        </h1>
+                    </ScrollFadeInSection>
+
+                    <div className="tech-grid less-familiar-techs">
                         <img src={techIcons.javaOriginal} alt="" />
                         <img src={techIcons.cPlusPlusOriginal} alt="" />
                         <img src={techIcons.angularJSOriginal} alt="" />
@@ -65,6 +80,7 @@ const About: React.FC = () => {
                         <img src={techIcons.blenderOriginal} alt="" />
                     </div>
                 </div>
+                
             </div>
 
             <div className="gradient-section gradient-2"></div>
