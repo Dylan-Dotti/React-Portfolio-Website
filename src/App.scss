@@ -7,6 +7,7 @@ body {
   
 a {
   text-decoration: none;
+  color: $primary-color-1;
 }
 
 ul, ol {
@@ -58,18 +59,6 @@ hr.quarter-centered, .custom-hr.quarter-centered {
   display: table;
 }
 
-#App {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-
-  .primary-color-text {
-    color: $primary-color-1;
-  }
-}
-
 html {
   scrollbar-color: #222;
 }
@@ -95,4 +84,24 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #888; /* Set the color of the scrollbar handle */
   //border-left: 1px solid grey;
+}
+
+#App {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  .primary-color-text {
+    color: $primary-color-1;
+  }
+
+  .secondary-color-text {
+    color: $primary-color-2;
+  }
+
+  .accent-color-text {
+    color: $primary-color-3;
+  }
 }
