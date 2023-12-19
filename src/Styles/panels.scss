@@ -19,11 +19,11 @@
   .white-glow-outline-panel {
     border: 2px solid $main-text-white;
     box-shadow: 1px 1px 10px 1px #888888;
-    background-color: #111;
+    background-color: $main-background-darker;
   }
 
   .blue-glow-outline-panel {
     border: 2px solid $primary-color;
     box-shadow: 1px 1px 10px 1px $primary-color;
-    background-color: #111;
+    background-color: $main-background-darker;
   }
