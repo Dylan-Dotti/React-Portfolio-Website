@@ -3,6 +3,7 @@ import "./employment.scss";
 import { AppConstantsContext } from "../../App";
 import ScrollFadeInSection from "../ScrollFadeInSection";
 import CrossfadeImageCarousel from "../CrossfadeImageCarousel";
+import HrWithCircle from "../Visual/HrWithCircle";
 
 const Employment: React.FC = () => {
     const appConstants = React.useContext(AppConstantsContext);
@@ -11,8 +12,7 @@ const Employment: React.FC = () => {
         <div id="employment">
             <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="title-section content-container">
                 <h1 className="text-center page-header">Employment</h1>
-                {/* <hr className="half-centered"/> */}
-                <div className="custom-hr half-centered"></div>
+                <HrWithCircle widthClass="half-centered" />
             </ScrollFadeInSection>
                 
             <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="job-section ghd-section content-container">
