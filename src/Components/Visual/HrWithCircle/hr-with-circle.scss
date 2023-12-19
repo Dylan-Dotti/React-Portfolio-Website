@@ -1,0 +1,32 @@
+
+.hr-with-circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0 auto;
+
+    .custom-hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid whitesmoke;
+
+        &.solid-dot {
+            background-color: whitesmoke;
+        }
+    }
+
+    &.half-centered {
+        width: 50%;
+    }
+
+    &.quarter-centered {
+        width: 25%;
+    }
+}
