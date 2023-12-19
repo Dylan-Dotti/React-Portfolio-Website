@@ -26,6 +26,7 @@ $mauve: #9E7E7E;
 $gold: #D4AF37;
 $brass: #B5A642;
 
+$sky-blue: #7EC8E3;
 
 // Split complementary palette
 $yellow-orange: #F5C540;
@@ -34,12 +35,13 @@ $orange-2: #df843a;
 $blue-gray: #596875;
 $brown: #5F4B3F;
 
+$main-background-lighter: #2D2D2D;
+$main-background-light: #282828;
+$main-background: #1D1D1D;
+$main-background-dark: #181818;
+$main-background-darker: #121212;
 
-$main-background-light: #2A2A2A;
-$main-background: #222;
-$main-background-dark: #1A1A1A;
-
-$main-text-white: whitesmoke;
+$main-text-white: rgb(225, 225, 225);
 
 $primary-color: map-get($blue-palette-1, 300);
 $secondary-color: $orange-2;
