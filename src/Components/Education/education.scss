@@ -15,20 +15,54 @@
     .main-image {
         width: 100%;
         border: 1px solid white;
+        border-radius: 5px;
         margin-bottom: 20px;
     }
 
     .title-section {
+        margin-bottom: 10px;
 
-        .page-header {
+        .title {
             color: $primary-color-1;
+            margin-bottom: 0;
+        }
+    }
+
+    .awards-section {
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 3%;
+        }
+
+        .award {
+            border: 2px solid whitesmoke;
+            border-radius: 20px;
+            padding: 25px;
+            min-height: 300px;
+            box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 1);
+            background-color: $main-background-light;
+
+            .award-title {
+                text-align: center;
+                margin-bottom: 20px;
+                color: $primary-color-1;
+            }
+
+            .award-icon {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+                color: $primary-color-3;
+            }
         }
     }
 
     .courses-section {
 
         .title-section {
-            margin-bottom: 50px;
+            //margin-bottom: 50px;
 
             .title {
                 color: $primary-color-1;
