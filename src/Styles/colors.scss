@@ -41,6 +41,6 @@ $main-background-dark: #1A1A1A;
 
 $main-text-white: whitesmoke;
 
-$primary-color-1: map-get($blue-palette-1, 300);
-$primary-color-2: $orange-2;
-$primary-color-3: $cool-gray-2;
+$primary-color: map-get($blue-palette-1, 300);
+$secondary-color: $orange-2;
+$accent-color: $cool-gray-2;

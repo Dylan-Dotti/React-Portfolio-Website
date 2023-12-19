@@ -7,7 +7,7 @@ body {
   
 a {
   text-decoration: none;
-  color: $primary-color-1;
+  color: $primary-color;
 }
 
 ul, ol {
@@ -94,14 +94,14 @@ html {
   bottom: 0;
 
   .primary-color-text {
-    color: $primary-color-1;
+    color: $primary-color;
   }
 
   .secondary-color-text {
-    color: $primary-color-2;
+    color: $secondary-color;
   }
 
   .accent-color-text {
-    color: $primary-color-3;
+    color: $accent-color;
   }
 }
