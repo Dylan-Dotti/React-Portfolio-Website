@@ -2,7 +2,6 @@ import * as React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import MainHeader from "../MainHeader";
 import "./layout.scss";
-import ScrollableArea from "../ScrollableArea";
 import Footer from "../Footer";
 import ContactModal from "../ContactModal";
 import eventBus from "../../Events/EventBus";
@@ -10,7 +9,6 @@ import ContactModalEvents from "../../Events/ContactModalEvents";
 
 const Layout: React.FC = () => {
     const { pathname } = useLocation();
-    const scrollContentRef = React.useRef<HTMLDivElement>(null);
     const [showContactModal, setShowContactModal] = React.useState(false);
     
     React.useEffect(() => {
@@ -24,23 +22,27 @@ const Layout: React.FC = () => {
     }, []);
 
     React.useEffect(() => {
-        scrollContentRef.current?.scrollTo(0, 0);
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'auto',
+        });
     }, [pathname]);
 
     return (
-        <div id="page-layout">
-            <MainHeader />
-            <ScrollableArea contentRef={scrollContentRef}>
+        <>
+            <div id="page-layout">
+                <MainHeader />
                 <div id="page-content">
                     <Outlet />
                 </div>
                 <Footer />
-            </ScrollableArea>
+            </div>
             <ContactModal
                 isOpen={showContactModal}
                 toggle={() => setShowContactModal(!showContactModal)}
             />
-        </div>
+        </>
     );
 }
 
