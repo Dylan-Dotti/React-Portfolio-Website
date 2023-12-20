@@ -3,6 +3,7 @@
 body {
   background-color: $main-background;
   color: $main-text-white;
+  line-height: 1.75;
 }
   
 a {
@@ -60,11 +61,15 @@ hr.quarter-centered, .custom-hr.quarter-centered {
 }
 
 .soft {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .softer {
   opacity: 0.5;
+}
+
+p {
+  color: rgba($main-text-white, 0.85);
 }
 
 html {
