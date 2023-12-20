@@ -32,7 +32,7 @@ const MainHeader: React.FC = () => {
                             </li>
                         </ul>
                         <button className="btn btn-primary contact-button" onClick={() => eventBus.emit(ContactModalEvents.showModal)}>
-                            <strong>Contact</strong>
+                            <h5>Contact</h5>
                         </button>
                     </nav>
                 </div>
