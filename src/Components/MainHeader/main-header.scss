@@ -70,9 +70,14 @@
 
                 .contact-button {
                     display: flex;
+                    align-items: center;
                     border-radius: 40px;
                     padding: 6px 15px;
-                    padding-bottom: 8px;
+                    padding-bottom: 9px;
+
+                    h1, h2, h3, h4, h5, h6 {
+                        margin-bottom: 0;
+                    }
                 }
         
             }
