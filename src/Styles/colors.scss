@@ -4,7 +4,8 @@ $blue-palette-1: (
     200: #2F68DE,
     300: #40A0F5,
     400: #2fB1DE,
-    500: #36F5FF
+    500: #36F5FF,
+    600: hsl(219, 100%, 77% / 1),
 );
 
 $comp-palette-1: (
@@ -44,5 +45,5 @@ $main-background-darker: #121212;
 $main-text-white: rgb(225, 225, 225);
 
 $primary-color: map-get($blue-palette-1, 300);
-$secondary-color: $orange-2;
+$secondary-color: map-get($blue-palette-1, 600);
 $accent-color: $cool-gray-2;
