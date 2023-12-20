@@ -78,6 +78,10 @@ const Employment: React.FC = () => {
 
             </ScrollFadeInSection>
 
+            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="content-container job-divider">
+                <HrWithCircle className="softer" />
+            </ScrollFadeInSection>
+
             <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="job-section content-container">
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
 
@@ -88,18 +92,6 @@ const Employment: React.FC = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum aut odit natus nobis cupiditate esse soluta cum maxime ex iure amet, laudantium, ipsum veniam atque. Cupiditate cumque sed amet rem iure placeat esse reprehenderit animi veniam quis blanditiis asperiores ex totam consequatur repellendus eius inventore, nulla dolore maxime, perferendis aliquam ratione. Eligendi porro dolorem cupiditate! Praesentium magni doloremque, obcaecati voluptatum natus deleniti deserunt dolor dolores est nihil tempora fuga nobis ipsa suscipit, eligendi ratione accusantium expedita facilis earum. Ipsa ducimus quasi amet corporis illum excepturi debitis! Autem unde a accusantium dignissimos porro neque. Ex ullam repellendus mollitia. Minus, recusandae.
                 </p>
             </ScrollFadeInSection>
-
-
-            {/* <CrossfadeImageCarousel
-                className="ghd-carousel"
-                images={[
-                    "Img/GHD/IMG_0114.JPG",
-                    "Img/GHD/IMG_0116.JPG",
-                    "Img/GHD/IMG_0128.JPG",
-                    "Img/GHD/IMG_0129.JPG",
-
-                ]}
-            /> */}
 
         </div>
     );
