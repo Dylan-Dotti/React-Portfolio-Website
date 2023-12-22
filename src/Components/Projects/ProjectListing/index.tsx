@@ -43,66 +43,83 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
 
     return (
         <div className="project-listing">
+
             <div className="content-container">
                 {(!props.projects || props.projects.length === 0) && <p>No projects to display.</p>}
-                {props.projects && props.projects.length > 0 && props.projects.map((project, index) => {
-                    return (
-                            <div className="project-listing-item" key={project.id}>
+                {props.projects && props.projects.length > 0 && 
+                    <div className="content-layout">
 
-                                <div className="item-content">
-                                    
-                                    <div className="left-column">
-                                        <div className="project-section title-section">
-                                            <h2 className="project-name">{project.name}</h2>
-                                            <img src={project.imgSrc} alt="" className="main-image"/>
-                                            <div className="button-links">
-                                                {project.codeSrc && (
-                                                    <a href={project.codeSrc} target="_blank" rel="noreferrer" className="btn btn-primary view-code-button">
-                                                        View Code
-                                                    </a>
-                                                )}
-                                                <a href="#" className="btn btn-secondary">View Demos</a>
+                        <div className="list-content">
+                            {props.projects.map((project, index) => (
+                                <div className="project-listing-item header-bar-nav-buffer" key={project.id} id={`project-${project.id}`}>
+                                    <div className="item-content">
+                            
+                                        <div className="left-column">
+                                            <div className="project-section title-section">
+                                                <h2 className="project-name">{project.name}</h2>
+                                                <img src={project.imgSrc} alt="" className="main-image"/>
+                                                <div className="button-links">
+                                                    {project.codeSrc && (
+                                                        <a href={project.codeSrc} target="_blank" rel="noreferrer" className="btn btn-primary view-code-button">
+                                                            View Code
+                                                        </a>
+                                                    )}
+                                                    <a href="#" className="btn btn-secondary">View Demos</a>
+                                                </div>
+                                            </div>
+                                            <div className="project-section technologies-section">
+                                                <h3 className="section-header">Technologies Used</h3>
+                                                <ul className="technologies-list">
+                                                    {/* TODO: add project technologies */}
+                                                    {placeholderTechs.map((tech, index) => (
+                                                        <li key={index}>{tech}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            <div className="project-section skills-section">
+                                                <h3 className="section-header">Relevant Skills</h3>
+                                                <ul className="skills-list">
+                                                    {placeholderSkills.map((skill, index) => (
+                                                        <li key={index}>{skill}</li>
+                                                    ))}
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div className="project-section technologies-section">
-                                            <h3 className="section-header">Technologies Used</h3>
-                                            <ul className="technologies-list">
-                                                {/* TODO: add project technologies */}
-                                                {placeholderTechs.map((tech, index) => (
-                                                    <li key={index}>{tech}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                        <div className="project-section skills-section">
-                                            <h3 className="section-header">Relevant Skills</h3>
-                                            <ul className="skills-list">
-                                                {placeholderSkills.map((skill, index) => (
-                                                    <li key={index}>{skill}</li>
-                                                ))}
-                                            </ul>
+                            
+                                        <div className="right-column">
+                                            <div className="project-section">
+                                                <h3 className="section-header">Overview</h3>
+                                                <p>{project.description}</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti est assumenda dolorum eveniet aut sapiente, sint illum iure commodi laudantium corrupti provident voluptatum doloribus quas a vero exercitationem nam veniam. Quaerat, iste porro? Vitae delectus iure, eius voluptatum tempore maiores.</p>
+                                            </div>
+                                            <div className="project-section">
+                                                <h3 className="section-header">Challenges</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    
-                                    <div className="right-column">
-                                        <div className="project-section">
-                                            <h3 className="section-header">Overview</h3>
-                                            <p>{project.description}</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti est assumenda dolorum eveniet aut sapiente, sint illum iure commodi laudantium corrupti provident voluptatum doloribus quas a vero exercitationem nam veniam. Quaerat, iste porro? Vitae delectus iure, eius voluptatum tempore maiores.</p>
-                                        </div>
-                                        <div className="project-section">
-                                            <h3 className="section-header">Challenges</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
-                                        </div>
-                                    </div>
-
+                                    {index < props.projects.length - 1 && <HrWithCircle className="softer" />}
                                 </div>
+                            ))}
+                        </div>
 
-                                {index < props.projects.length - 1 && <HrWithCircle className="softer" />}
-                            </div>
-                        
-                    );
-                })}
+                        {props.projects && props.projects.length > 0 && 
+                            <ol className="project-navigation">
+                                {props.projects.map((project, index) => {
+                                    return (
+                                        <li key={project.id}>
+                                            <a href={`#project-${project.id}`} className="project-link">
+                                                {project.name}
+                                            </a>
+                                        </li>
+                                    );
+                                })}
+                            </ol>
+                        }
+
+                    </div>
+                }
             </div>
         </div>
     );

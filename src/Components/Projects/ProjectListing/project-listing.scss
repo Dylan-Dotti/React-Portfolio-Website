@@ -2,11 +2,47 @@
 
 .project-listing {
 
+    .content-container {
+        width: 70%;
+    }
+    
+    .content-layout {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: start;
+        width: fit-content;
+        gap: clamp(20px, 4%, 4%);
+    }
+
+    .project-navigation {
+        @include background-tint(0.04);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem 1.5rem;
+        position: sticky;
+        top: 120px;
+        right: 0;
+        width: max-content;
+        border-radius: .67rem;
+        box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .33);
+
+        li {
+            list-style-type: decimal;
+            list-style-position: inside;
+            
+            a {
+                margin-left: .5rem;
+            }
+        }
+    }
+
     .project-listing-item {
         
         .item-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 4fr 5fr;
             gap: 5%;
             padding: 40px 0;
 
@@ -29,8 +65,9 @@
         }
 
         .main-image {
-            height: 350px;
+            //height: 350px;
             width: 100%;
+            aspect-ratio: 16/9;
             object-fit: cover;
             border: 1px solid whitesmoke;
             border-radius: 10px;
