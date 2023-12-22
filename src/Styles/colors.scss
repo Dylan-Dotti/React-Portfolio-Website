@@ -43,6 +43,7 @@ $main-background-dark: #181818;
 $main-background-darker: #121212;
 
 $main-text-white: rgb(225, 225, 225);
+$faded-text-white: rgba($main-text-white, 0.85);
 
 $primary-color: map-get($blue-palette-1, 300);
 $secondary-color: map-get($blue-palette-1, 600);
