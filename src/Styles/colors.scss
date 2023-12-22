@@ -48,3 +48,15 @@ $faded-text-white: rgba($main-text-white, 0.85);
 $primary-color: map-get($blue-palette-1, 300);
 $secondary-color: map-get($blue-palette-1, 600);
 $accent-color: $cool-gray-2;
+
+
+
+// Mixins
+
+@mixin background-tint($opacity) {
+    background-color: rgba(white, $opacity);
+}
+
+@mixin background-shade($opacity) {
+    background-color: rgba(black, $opacity);
+}
