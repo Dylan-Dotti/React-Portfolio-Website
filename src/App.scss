@@ -61,7 +61,7 @@ hr.quarter-centered, .custom-hr.quarter-centered {
 }
 
 .content-container {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -124,5 +124,16 @@ html {
 
   .accent-color-text {
     color: $accent-color;
+  }
+
+  .header-bar-nav-buffer {
+    &::before {
+      content: "";
+      display: block;
+      height: 80px; // Adjust this value to the height of your header navigation bar
+      margin-top: -80px; // Adjust this value to the height of your header navigation bar
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 }
