@@ -66,7 +66,17 @@ const missingBinFinderData: IProjectData = {
     imgSrc: "./img/MissingBinFinder/missing_bin_finder.PNG",
     codeSrc: "https://github.com/Dylan-Dotti/GHD-AutoStore-Utilities",
     detailSrc: "missing-bin-finder",
-}
+};
+
+const logSaverData: IProjectData = {
+    id: 7,
+    name: "Log Saver",
+    description: "A program I made to save log files from a remote server. Uses C# and Windows Forms.",
+    challenges: "This was my first project using C#. I had to learn how to use C# and how to structure my code to work with it. I also had to learn how to use Windows Forms to create the GUI.",
+    startDate: new Date(2019, 5, 1),
+    imgSrc: "./img/LogSaver/log_saver.PNG",
+    codeSrc: "https://github.com/Dylan-Dotti/Log-Saver",
+};
 
 const projectData: IProjectData[] = [
     deviantProjectData,
@@ -75,6 +85,7 @@ const projectData: IProjectData[] = [
     emeraldAutoTrainerData,
     pokemonClassifierData,
     missingBinFinderData,
+    logSaverData,
 ];
 
 export default projectData;
