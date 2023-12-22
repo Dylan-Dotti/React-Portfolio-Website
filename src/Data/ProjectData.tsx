@@ -8,6 +8,7 @@ const deviantProjectData: IProjectData = {
     challenges: "This was my first project using React and Redux. I had to learn how to use Redux and how to structure my code to work with Redux. I also had to learn how to use Redux-Thunk to make asynchronous calls to the backend.",
     startDate: new Date(2020, 5, 1),
     imgSrc: "./img/Deviant/deviant_action.PNG",
+    codeSrc: "https://github.com/Dylan-Dotti/Deviant",
     detailSrc: "deviant",
     detailComponent: () => <DeviantProjectDetail />
 };
@@ -19,6 +20,7 @@ const ghdAutoTimeEntryData: IProjectData = {
     challenges: "This was my first project using ASP.NET Core. I had to learn how to use ASP.NET Core and how to structure my code to work with it. I also had to learn how to use Entity Framework Core to interact with the database.",
     startDate: new Date(2020, 8, 1),
     imgSrc: "./img/TimeEntry/time_entry.PNG",
+    codeSrc: "https://github.com/Dylan-Dotti/GHD-Auto-Time-Entry",
     detailSrc: "ghd-auto-time-entry",
 };
 
@@ -29,6 +31,7 @@ const pokemonMonopolyData: IProjectData = {
     challenges: "This was my first project using Unity. I had to learn how to use Unity and how to structure my code to work with it. I also had to learn how to use Blender to create 3D models.",
     startDate: new Date(2019, 5, 1),
     imgSrc: "./img/PokemonMonopoly/pokemon_monopoly.png",
+    codeSrc: "https://github.com/Dylan-Dotti/Pokemon-Monopoly/",
     detailSrc: "pokemon-monopoly",
 };
 
@@ -39,6 +42,7 @@ const emeraldAutoTrainerData: IProjectData = {
     challenges: "This was my first project using Python. I had to learn how to use Python and how to structure my code to work with it. I also had to learn how to use the PyAutoGUI library to simulate button presses.",
     startDate: new Date(2019, 5, 1),
     imgSrc: "./img/Emerald/emerald_title.png",
+    codeSrc: "https://github.com/Dylan-Dotti/Emerald-Auto-Trainer",
     detailSrc: "emerald-auto-trainer",
 };
 
@@ -49,8 +53,9 @@ const pokemonClassifierData: IProjectData = {
     challenges: "This was my first project using machine learning. I had to learn how to use machine learning and how to structure my code to work with it. I also had to learn how to use the Keras library to create the model.",
     startDate: new Date(2019, 5, 1),
     imgSrc: "./img/PokemonClassifier/charmander_classify.png",
+    codeSrc: "https://github.com/Dylan-Dotti/Pokemon-Classifier",
     detailSrc: "pokemon-classifier",
-}
+};
 
 const missingBinFinderData: IProjectData = {
     id: 6,
@@ -59,6 +64,7 @@ const missingBinFinderData: IProjectData = {
     challenges: "This was my first project using C#. I had to learn how to use C# and how to structure my code to work with it. I also had to learn how to use Windows Forms to create the GUI.",
     startDate: new Date(2019, 5, 1),
     imgSrc: "./img/MissingBinFinder/missing_bin_finder.PNG",
+    codeSrc: "https://github.com/Dylan-Dotti/GHD-AutoStore-Utilities",
     detailSrc: "missing-bin-finder",
 }
 

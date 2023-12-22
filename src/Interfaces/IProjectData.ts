@@ -8,6 +8,7 @@ export default interface IProjectData {
     startDate?      : Date
     endDate?        : Date
     imgSrc?         : string
+    codeSrc?        : string
     detailSrc?      : string
     detailComponent?: () => React.ReactNode
 }
