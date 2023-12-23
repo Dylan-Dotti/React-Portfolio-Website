@@ -5,6 +5,30 @@ body {
   color: $main-text-white;
   line-height: 1.75;
 }
+
+// h1 {
+//   font-size: 3.2rem;
+// }
+
+h2 {
+  font-size: 2.1rem;
+}
+
+// h3 {
+//   font-size: 2.1rem;
+// }
+
+// h4 {
+//   font-size: 1.8rem;
+// }
+
+// h5 {
+//   font-size: 1.5rem;
+// }
+
+// h6 {
+//   font-size: 1.25rem;
+// }
   
 a {
   text-decoration: none;
@@ -18,7 +42,7 @@ ul, ol {
 
 li {
   list-style-type: none;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 img {
@@ -29,6 +53,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   shape-margin: 0.75rem;
+}
+
+small {
+  font-size: 0.9rem;
 }
 
 .flex-center {
@@ -81,10 +109,11 @@ hr.quarter-centered, .custom-hr.quarter-centered {
 
 p {
   color: $faded-text-white;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 html {
+  font-size: 18px;
   scrollbar-color: #222;
 }
 

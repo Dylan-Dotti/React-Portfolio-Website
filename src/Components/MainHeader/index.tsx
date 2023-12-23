@@ -13,7 +13,7 @@ const MainHeader: React.FC = () => {
             <div className="white-glow-outline-panel header-bar">
                 <div className="header-bar-contents">
                     <div className="title-group">
-                        <h1 className="name primary-color-text">Dylan Dotti</h1>
+                        <h1 className="title primary-color-text">Dylan Dotti</h1>
                         <div className="subtitle">Software Developer</div>
                     </div>
                     <nav>

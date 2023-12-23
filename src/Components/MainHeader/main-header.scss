@@ -15,6 +15,7 @@
         align-items: center;
         width: 100%;
         height: fit-content;
+        padding: 4px 0;
         border-width: 0 0 2px 0;
 
         .header-bar-contents {
@@ -27,6 +28,10 @@
                 display: flex;
                 align-items: baseline;
                 gap: 5px;
+
+                .title {
+                    font-weight: bold;
+                }
         
                 .subtitle {
                     color: $accent-color;
@@ -44,7 +49,7 @@
         
                     li {
                         margin: auto 10px;
-                        font-size: 1.3rem;
+                        font-size: 1.25rem;
                         font-weight: bolder;
 
                         a {
@@ -72,11 +77,11 @@
                     display: flex;
                     align-items: center;
                     border-radius: 40px;
-                    padding: 6px 15px;
-                    padding-bottom: 9px;
-
+                    padding: 8px 15px;
+                    
                     h1, h2, h3, h4, h5, h6 {
-                        margin-bottom: 0;
+                        font-weight: bolder;
+                        margin-bottom: 1px;
                     }
                 }
         
