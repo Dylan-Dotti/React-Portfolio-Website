@@ -6,6 +6,7 @@ import CourseList from './CourseList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faMedal, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import HrWithCircle from '../Visual/HrWithCircle';
+import awardData from '../../Data/AcademicAwardsData';
 
 const Education: React.FC = () => {
     const {fadeInDurationMS: fadeInTransitionDurationMS } = useContext(AppConstantsContext);
@@ -34,35 +35,17 @@ const Education: React.FC = () => {
                 </ScrollFadeInSection>
                 <div className="awards-grid content-container">
 
-                    <ScrollFadeInSection className="award" durationMS={fadeInTransitionDurationMS}>
-                        <div className="award-icon">
-                            <FontAwesomeIcon icon={faAward} size="3x" />
-                        </div>
-                        <h4 className="award-title">Newport News Shipbuilding Scholarship</h4>
-                        <h5 className="award-description">
-                            Awarded by the Newport News shipyard to a few students each year.
-                        </h5>
-                    </ScrollFadeInSection>
-
-                    <ScrollFadeInSection className="award" durationMS={fadeInTransitionDurationMS}>
-                        <div className="award-icon">
-                            <FontAwesomeIcon icon={faTrophy} size="3x" />
-                        </div>
-                        <h4 className="award-title">Capstone Fair Best Project</h4>
-                        <h5 className="award-description">
-                            My senior capstone project was voted as one of two best projects at the CNU capstone fair.
-                        </h5>
-                    </ScrollFadeInSection>
-
-                    <ScrollFadeInSection className="award" durationMS={fadeInTransitionDurationMS}>
-                        <div className="award-icon">
-                            <FontAwesomeIcon icon={faMedal} size="3x" />
-                        </div>
-                        <h4 className="award-title">PCSE Departmental Highest Honors</h4>
-                        <h5 className="award-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quibusdam.
-                        </h5>
-                    </ScrollFadeInSection>
+                    {awardData && awardData.map((award, index) => (
+                        <ScrollFadeInSection className="award" durationMS={fadeInTransitionDurationMS} key={award.id}>
+                            <div className="award-icon">
+                                <FontAwesomeIcon icon={award.icon} size="3x" />
+                            </div>
+                            <h5 className="award-title">{award.name}</h5>
+                            <h6 className="award-description">
+                                {award.description}
+                            </h6>
+                        </ScrollFadeInSection>
+                    ))}
 
                 </div>
             </div>
