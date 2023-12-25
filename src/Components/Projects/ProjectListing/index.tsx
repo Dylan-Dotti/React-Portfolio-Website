@@ -8,38 +8,6 @@ interface ProjectListingProps {
 }
 
 const ProjectListing: React.FC<ProjectListingProps> = (props) => {
-    const placeholderTechs = [
-        "React",
-        "TypeScript",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "Express",
-        "Git",
-        "AWS",
-        "Azure",
-        "C#",
-        ".NET",
-        "Python",
-        "Java",
-        "C++",
-        "SQL",
-        "Firebase",
-        "REST",
-    ];
-
-    const placeholderSkills = [
-        "Problem Solving",
-        "Communication",
-        "Teamwork",
-        "Time Management",
-        "Adaptability",
-        "Leadership",
-        "Creativity",
-        "Work Ethic",
-        "Attention to Detail",
-    ]
 
     return (
         <div className="project-listing">
@@ -64,26 +32,39 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
                                                             View Code
                                                         </a>
                                                     )}
-                                                    <a href="#" className="btn btn-secondary">View Demos</a>
+                                                    <a href="#" className="btn btn-secondary">View Media</a>
                                                 </div>
                                             </div>
-                                            <div className="project-section technologies-section">
-                                                <h3 className="section-header">Technologies Used</h3>
-                                                <ul className="technologies-list">
-                                                    {/* TODO: add project technologies */}
-                                                    {placeholderTechs.map((tech, index) => (
-                                                        <li key={index}>{tech}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div className="project-section skills-section">
-                                                <h3 className="section-header">Relevant Skills</h3>
-                                                <ul className="skills-list">
-                                                    {placeholderSkills.map((skill, index) => (
-                                                        <li key={index}>{skill}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                            {project.technologies &&
+                                                <div className="project-section technologies-section">
+                                                    <h3 className="section-header">Technologies Used</h3>
+                                                    <ul>
+                                                        {project.technologies.map((tech, index) => (
+                                                            <li key={index}>{tech}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            }
+                                            {project.skills &&
+                                                <div className="project-section skills-section">
+                                                    <h3 className="section-header">Relevant Skills</h3>
+                                                    <ul>
+                                                        {project.skills.map((skill, index) => (
+                                                            <li key={index}>{skill}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            }
+                                            {project.features && 
+                                                <div className="project-section features-section">
+                                                    <h3 className="section-header">Notable Features</h3>
+                                                    <ul>
+                                                        {project.features.map((skill, index) => (
+                                                            <li key={index}>{skill}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            }
                                         </div>
                             
                                         <div className="right-column">

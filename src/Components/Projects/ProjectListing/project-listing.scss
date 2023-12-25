@@ -42,7 +42,7 @@
         
         .item-content {
             display: grid;
-            grid-template-columns: 4fr 5fr;
+            grid-template-columns: 1fr 1fr;
             gap: 5%;
             padding: 40px 0;
 
@@ -95,7 +95,7 @@
 
         }
 
-        .technologies-list, .skills-list {
+        ul {
             padding-left: 1.5em;
             columns: 2;
             column-gap: 5em;
