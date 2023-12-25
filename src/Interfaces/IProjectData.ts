@@ -7,6 +7,11 @@ export default interface IProjectData {
     challenges?     : string
     startDate?      : Date
     endDate?        : Date
+
+    technologies?   : string[]
+    skills?         : string[]
+    features?       : string[]
+
     imgSrc?         : string
     codeSrc?        : string
     detailSrc?      : string
