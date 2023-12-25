@@ -83,6 +83,7 @@ const Employment: React.FC = () => {
             </ScrollFadeInSection>
 
             <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="job-section content-container">
+                <img src="img/Lenox/IMG_1769.jpg" alt="" className="right-img"/>
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
 
                 <p>
@@ -91,6 +92,28 @@ const Employment: React.FC = () => {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum aut odit natus nobis cupiditate esse soluta cum maxime ex iure amet, laudantium, ipsum veniam atque. Cupiditate cumque sed amet rem iure placeat esse reprehenderit animi veniam quis blanditiis asperiores ex totam consequatur repellendus eius inventore, nulla dolore maxime, perferendis aliquam ratione. Eligendi porro dolorem cupiditate! Praesentium magni doloremque, obcaecati voluptatum natus deleniti deserunt dolor dolores est nihil tempora fuga nobis ipsa suscipit, eligendi ratione accusantium expedita facilis earum. Ipsa ducimus quasi amet corporis illum excepturi debitis! Autem unde a accusantium dignissimos porro neque. Ex ullam repellendus mollitia. Minus, recusandae.
                 </p>
+
+                <div className="chapter-section">
+                    <CrossfadeImageCarousel 
+                        className="hbc-carousel"
+                        images={[
+                            "img/Lenox/IMG_2321.JPG",
+                            "img/Lenox/IMG_2322.JPG",
+                            "img/Lenox/IMG_2325.JPG",
+                            "img/Lenox/IMG_2339.JPG",
+                            "img/Lenox/IMG_2341.JPG",
+                            "img/Lenox/IMG_2346.JPG",
+                            "img/Lenox/IMG_2349.JPG",
+                            "img/Lenox/IMG_2350.JPG",
+                        ]}
+                        imgHoldDurationMS={12_000}
+                        imgFadeDurationMS={4_000}
+                    />
+                    <h4 className="chapter-title">Lenox Trip</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis animi vero illo perferendis et, qui at dolor? Ducimus corporis at, dolor dolores praesentium voluptatem quam laboriosam maiores porro quod repellendus eum officiis id molestiae similique repellat minus assumenda omnis est alias eveniet. Pariatur a veniam sed repellat error corrupti excepturi, eaque consequatur delectus, laborum asperiores similique labore quae. Sit accusamus itaque esse nisi eligendi impedit maiores tempore ut est natus velit quo nesciunt fugit inventore ipsum, laboriosam, totam excepturi iure possimus obcaecati quibusdam fuga. Illo porro aut veniam necessitatibus id tempora doloremque dolor unde facere harum, corporis, nam magnam ipsum.
+                    </p>
+                </div>
             </ScrollFadeInSection>
 
         </div>

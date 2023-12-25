@@ -11,19 +11,18 @@
         margin-bottom: 0;
     }
 
-    .ghd-carousel {
-        width: 500px;
-        height: 500px;
-    }
-
-    .hbc-carousel {
+    .crossfade-image-carousel {
         border: 2px solid whitesmoke;
         border-radius: 3%;
-        height: 300px;
-        width: 400px;
-        float: left;
+        width: 450px;
+        aspect-ratio: 5/3;
+        object-fit: cover;
         margin-right: 20px;
         margin-bottom: 10px;
+
+        &.hbc-carousel {
+            float:left;
+        }
     }
 
     .job-section {
@@ -33,7 +32,9 @@
         }
 
         img {
-            height: 300px;
+            width: 450px;
+            aspect-ratio: 5/3;
+            object-fit: cover;
             border: 2px solid whitesmoke;
             border-radius: 3%;
             margin: 20px;
