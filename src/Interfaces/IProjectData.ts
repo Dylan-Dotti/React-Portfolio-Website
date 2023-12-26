@@ -1,19 +1,20 @@
 import React from "react"
 
 export default interface IProjectData {
-    id              : number
-    name            : string
-    description     : string
-    challenges?     : string
-    startDate?      : Date
-    endDate?        : Date
+    id               : number
+    name             : string
+    description      : string
+    shortDescription?: string
+    challenges?      : string
+    startDate?       : Date
+    endDate?         : Date
 
-    technologies?   : string[]
-    skills?         : string[]
-    features?       : string[]
+    technologies?    : string[]
+    skills?          : string[]
+    features?        : string[]
 
-    imgSrc?         : string
-    codeSrc?        : string
-    detailSrc?      : string
-    detailComponent?: () => React.ReactNode
+    imgSrc?          : string
+    codeSrc?         : string
+    detailSrc?       : string
+    detailComponent? : () => React.ReactNode
 }
