@@ -159,8 +159,8 @@ html {
     &::before {
       content: "";
       display: block;
-      height: 80px; // Adjust this value to the height of your header navigation bar
-      margin-top: -80px; // Adjust this value to the height of your header navigation bar
+      height: 135px;
+      margin-top: -135px;
       visibility: hidden;
       pointer-events: none;
     }

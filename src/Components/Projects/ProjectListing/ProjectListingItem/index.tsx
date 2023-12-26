@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './project-listing-item.scss';
 import IProjectData from '../../../../Interfaces/IProjectData';
+import classNames from 'classnames';
 
 interface ProjectListingItemProps {
     project   : IProjectData
@@ -11,8 +12,10 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
     
     const { project } = props;
 
+    const className = classNames('project-listing-item', props.className);
+
     return (
-        <div className="project-listing-item" key={project.id} id={`project-${project.id}`}>
+        <div className={className}>
     
             <div className="left-column">
                 <div className="project-section title-section">

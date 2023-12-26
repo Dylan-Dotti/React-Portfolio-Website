@@ -20,9 +20,9 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
 
                         <div className="list-content">
                             {props.projects.map((project, index) => (
-                                <div className="list-item-wrapper" key={project.id}>
-                                    <ProjectListingItem project={project} className="header-bar-nav-buffer" />
-                                    {index < props.projects!.length - 1 && <HrWithCircle className="project-divider softer" />}
+                                <div className="list-item-wrapper header-bar-nav-buffer" key={project.id} id={`project-${project.id}`}>
+                                    <ProjectListingItem project={project} className="" />
+                                    {index < props.projects!.length - 1 && <HrWithCircle className="project-divider softer"/>}
                                 </div>
                             ))}
                         </div>
