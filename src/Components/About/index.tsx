@@ -5,6 +5,9 @@ import { AppConstantsContext } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faSitemap, faRobot } from '@fortawesome/free-solid-svg-icons';
 import getTechIcons from "../../IconSources/tech-icons";
+import projectData from "../../Data/ProjectData";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 
 const About: React.FC = () => {
@@ -43,11 +46,17 @@ const About: React.FC = () => {
         techIcons.blenderOriginal,
     ];
 
+    const showcaseProjects = [
+        projectData[0],
+        projectData[1],
+        projectData[2],
+    ];
+
     const generateIconDelay = (index: number) => {
         // generate a random delay between 0 and 200ms
         const delay = Math.floor(Math.random() * 750);
         return delay + 250;
-    }
+    };
 
     return (
         <div id="about">
@@ -173,6 +182,45 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="gradient-section gradient-1"></div>
+
+            {/* Project showcase section */}
+            <div className="projects-section">
+                <div className="content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h1 className="section-title"><span className="primary-color-text">Project</span> showcase</h1>
+                    </ScrollFadeInSection>
+
+                    <div className="project-showcase">
+                        {showcaseProjects.map((project, index) => (
+                            <ScrollFadeInSection
+                                key={index}
+                                className="project-card"
+                                durationMS={appConstants.fadeInDurationMS * 0.8}
+                                delayMS={index * 250}
+                                direction={ScrollFadeInDirection.Up}
+                                shiftValue="50px"
+                            >
+                                <div className="card-image">
+                                    <img src={project.imgSrc} alt="" />
+                                    <div className="absolute-cover-panel image-cover">
+                                        <h3 className="card-title">{project.name}</h3>
+                                    </div>
+                                </div>
+                                <div className="card-content">
+                                    <h5 className="card-description">{project.shortDescription ?? project.description}</h5>
+                                    <HashLink to={`/projects#project-${project.id}`} className="btn btn-primary">View Project</HashLink>
+                                </div>
+                            </ScrollFadeInSection>
+                        ))}
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div className="gradient-section gradient-2"></div>
 
         </div>
     );
