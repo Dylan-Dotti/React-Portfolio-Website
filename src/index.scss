@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      scroll-behavior: auto;
+  }
+}
