@@ -61,7 +61,7 @@ const About: React.FC = () => {
     return (
         <div id="about">
 
-            <div className="intro-section">
+            <div className="content-section intro-section">
                 <div className="content-container">
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
                         <div className="profile-picture white-glow-outline-panel" style={{backgroundImage: `url(${profileImg})`}}></div>
@@ -76,60 +76,7 @@ const About: React.FC = () => {
 
             <div className="gradient-section gradient-1"></div>
 
-            <div className="technologies-section">
-
-                <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
-                        <h1 className="section-title">
-                            <span className="primary-color-text">Technologies</span> I use in my projects
-                        </h1>
-                    </ScrollFadeInSection>
-
-                    <div className="tech-grid familiar-techs">
-
-                        {familiarTechIcons.map((icon, index) => (
-                            <ScrollFadeInSection
-                                key={index}
-                                durationMS={appConstants.fadeInDurationMS * 2}
-                                delayMS={generateIconDelay(index)}
-                            >
-                                <img src={icon} alt="" />
-                            </ScrollFadeInSection>
-                        ))}
-                        <ScrollFadeInSection
-                            durationMS={appConstants.fadeInDurationMS * 2}
-                            delayMS={generateIconDelay(familiarTechIcons.length)}
-                        >
-                            <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
-                        </ScrollFadeInSection>
-                    </div>
-                </div>
-
-                <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
-                        <h1 className="section-title">
-                            I <span className="primary-color-text">used</span> to use these, but not as much lately
-                        </h1>
-                    </ScrollFadeInSection>
-
-                    <div className="tech-grid less-familiar-techs">
-                        {lessFamiliarTechIcons.map((icon, index) => (
-                            <ScrollFadeInSection
-                                key={index}
-                                durationMS={appConstants.fadeInDurationMS * 2}
-                                delayMS={generateIconDelay(index)}
-                            >
-                                <img src={icon} alt="" />
-                            </ScrollFadeInSection>
-                        ))}
-                    </div>
-                </div>
-                
-            </div>
-
-            <div className="gradient-section gradient-2"></div>
-
-            <div className="strengths-section">
+            <div className="content-section strengths-section">
                 <div className="content-container">
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
@@ -183,10 +130,65 @@ const About: React.FC = () => {
                 </div>
             </div>
 
+
+            <div className="gradient-section gradient-2"></div>
+
+            <div className="content-section technologies-section">
+
+                <div className="tech-group content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h1 className="section-title">
+                            <span className="primary-color-text">Technologies</span> I use in my projects
+                        </h1>
+                    </ScrollFadeInSection>
+
+                    <div className="tech-grid familiar-techs">
+
+                        {familiarTechIcons.map((icon, index) => (
+                            <ScrollFadeInSection
+                                key={index}
+                                durationMS={appConstants.fadeInDurationMS * 2}
+                                delayMS={generateIconDelay(index)}
+                            >
+                                <img src={icon} alt="" />
+                            </ScrollFadeInSection>
+                        ))}
+                        <ScrollFadeInSection
+                            durationMS={appConstants.fadeInDurationMS * 2}
+                            delayMS={generateIconDelay(familiarTechIcons.length)}
+                        >
+                            <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
+                        </ScrollFadeInSection>
+                    </div>
+                </div>
+
+                <div className="tech-group content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h1 className="section-title">
+                            I <span className="primary-color-text">used</span> to use these, but not as much lately
+                        </h1>
+                    </ScrollFadeInSection>
+
+                    <div className="tech-grid less-familiar-techs">
+                        {lessFamiliarTechIcons.map((icon, index) => (
+                            <ScrollFadeInSection
+                                key={index}
+                                durationMS={appConstants.fadeInDurationMS * 2}
+                                delayMS={generateIconDelay(index)}
+                            >
+                                <img src={icon} alt="" />
+                            </ScrollFadeInSection>
+                        ))}
+                    </div>
+                </div>
+                
+            </div>
+            
+
             <div className="gradient-section gradient-1"></div>
 
             {/* Project showcase section */}
-            <div className="projects-section">
+            <div className="content-section projects-section">
                 <div className="content-container">
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h1 className="section-title"><span className="primary-color-text">Project</span> showcase</h1>

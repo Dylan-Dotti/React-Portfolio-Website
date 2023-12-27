@@ -30,6 +30,10 @@
 
         &.gradient-1 {
             background-image: linear-gradient($main-background, $main-background-dark);
+
+            & + .content-section {
+                background-color: $main-background-dark;
+            }
         }
 
         &.gradient-2 {
@@ -38,7 +42,6 @@
     }
 
     .technologies-section {
-        background-color: $main-background-dark;
         padding: 60px 0;
 
         display: flex;
@@ -92,7 +95,6 @@
     }
 
     .projects-section {
-        background-color: $main-background-dark;
 
         .project-showcase {
             display: grid;
@@ -123,7 +125,7 @@
 
                         width: 100%;
                         object-fit: cover;
-                        aspect-ratio: 4/2;
+                        aspect-ratio: 5/2;
                     }
 
                     .image-cover {
