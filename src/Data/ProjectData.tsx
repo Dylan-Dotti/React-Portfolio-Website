@@ -20,9 +20,31 @@ const ghdAutoTimeEntryData: IProjectData = {
     name: "GHD Auto Time Entry",
     description: "An app I made in collaboration with another engineer to automate time entry at my support desk job. Uses Python to parse excel sheets with time data, then uses simulated keystrokes to enter the time into SAP time management sheets.",
     shortDescription: "An app I made in collaboration with another engineer to automate time entry at my support desk job.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "This project was a collaboration with another engineer at my support desk job. We wanted to come up with a way to automate the process of entering time into SAP time management sheets, as it could be a very tedious and time consuming process.",
+                "We decided to create a Python app that would parse the time data from excel sheets, then use simulated keystrokes to enter the time into SAP. We used the openpyxl library to parse the excel sheets, and PyAutoGUI to simulate keystrokes. We used Tkinter to create a UI to allow the user to perform some configurations.",
+            ]
+        },
+        {
+            title: "My Role",
+            content: [
+                "I was chosen by my manager to lead the project. I came up with an initial design, then split the work between myself and the other engineer. I was responsible for the automated input portion, while my partner worked on the excel parsing. I designed most of the GUI, but we both contributed work to it."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "The app was implemented successfully, and I and several other engineers found great value in using it. Since the release, however, some of the engineers reported issues with the automated input portion. I determined that the issue was likely related to Swisslog's antivirus software, but I was ultimately never able to resolve the issues before leaving the company.",
+            ]
+        },
+    ],
     startDate: new Date(2020, 8, 1),
     technologies: ["Python", "VS Code", "Github", "PyQt5"],
     skills: ["Teamwork", "Communication", "UI/UX", "Data Processing"],
+    features: ["Automated Input"],
     imgSrc: "./img/TimeEntry/time_entry.PNG",
     codeSrc: "https://github.com/Dylan-Dotti/GHD-Auto-Time-Entry",
     detailSrc: "ghd-auto-time-entry",
@@ -33,6 +55,27 @@ const pokemonMonopolyData: IProjectData = {
     name: "Pokémon Monopoly",
     description: "A Pokémon themed version of the classic board game Monopoly. Made with the Unity engine. Coding was done in C#. Utilized 3D models I created with Blender.",
     shortDescription: "A Pokémon themed version of the classic board game Monopoly made with the Unity Engine.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "I used to enjoy playing a Pokémon-themed version of Monopoly when I was a child, and this project is effectively a digital recreation of that game.",
+                "I used the Unity engine and C# for this project. A third-party networking platform, Photon, was used for the multiplayer functionality. Almost all of the game art consists of images I found on Google. Using only those images and some colored polygons, I was able to make a surprisingly faithful recreation of the original board."
+            ]
+        },
+        {
+            title: "Challenges",
+            content: [
+                "The most challenging aspect of this project was easily the multiplayer functionality. I needed to account for every situation where a game client could become out of sync with the others. It definitely required different lines of thinking compared to single player games."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "I've implemented a significant portion of the game so far, but I have yet to finish some of the more complex features. I still hope to finish this game someday, though even if I did, I would not be able to distribute it publicly due to legal concerns."
+            ]
+        }
+    ],
     startDate: new Date(2019, 5, 1),
     technologies: ["C#", "Unity", "Blender", "Visual Studio", "Github", "Photon"],
     skills: ["Game Development", "3D Modeling", "Mathematics", "Networking"],
@@ -46,6 +89,27 @@ const emeraldAutoTrainerData: IProjectData = {
     id: 4,
     name: "Emerald Auto Trainer",
     description: "A bot I made to automate the process of training Pokémon in Pokémon Emerald. Uses Python to parse the game's memory and simulate button presses.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "My goal with this project was to create a system that could automate some of the more repetitive portions of a Pokémon game.",
+                "I chose to use Python for this project, since I was familiar with some Python libraries that had the functionality I needed. I used OpenCV to generate and process game screen images. PyAutoGUI was used to simulate keyboard and mouse input to the game. I created Tkinter GUIs to allow the user to perform some configurations. JSON files were used to store data related to the game.",
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "I was able to create scripts to automate several game tasks, and learned a good amount in the process. However, I ultimately decided that the amount of effort required was not worth it, and have put the project on hold for now.",
+            ]
+        },
+        {
+            title: "Takeaways",
+            content: [
+                "This project was a good exercise in using computer image processing to automate tasks. I learned a lot about the OpenCV library and how to use it to process images. I was also able to practice creating UIs with Tkinter and generating and parsing JSON files."
+            ]
+        }
+    ],
     startDate: new Date(2019, 5, 1),
     technologies: ["Python", "VS Code", "Tkinter", "OpenCV", "JSON"],
     skills: ["UI/UX", "Data Processing"],
@@ -72,6 +136,21 @@ const missingBinFinderData: IProjectData = {
     id: 6,
     name: "Missing Bin Finder",
     description: "A program I made to find missing bins in a list of bins. Uses C# and Windows Forms.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "This app was comissioned by my technical manager while working at my support desk job. He presented me a problem with our autostore systems: they utilized two separate databaes to keep track of bins - one was maintained by the AutoStore system, and the other was managed by Swisslog. If there was ever a bin discrepancy between the two databases, the system would fully stop until it was resolved. This could be a very time-consuming process, as there were thousands of bins in the system.",
+                "I chose C# as the language for this project, since I had experience creating GUIs with Windows Forms, and I wanted the app to be easy to use on Windows machines. To use the app, the user selects two CSV files generated by AutoStore and Swisslog (I was not permitted to access DBs). The app then compares the two files and identifies any discrepancies."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "The app went unused for some time after completion, but one night I received a call from my manager informing me that the time had come to try it out on a real occurrence. To my considerable satisfaction, the app quickly identified the discrepancy, thus saving hours of tedious work."
+            ]
+        }
+    ],
     startDate: new Date(2019, 5, 1),
     technologies: ["C#", "Visual Studio", "Linq", "Windows Forms"],
     skills: ["UI/UX", "Data Processing"],
@@ -84,8 +163,29 @@ const logSaverData: IProjectData = {
     id: 7,
     name: "Log Saver",
     description: "A program I made to save log files from a remote server. Uses C# and Windows Forms.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "I came up with the concept for this app while working at my support desk job. The systems we supported created log files on the server, and we would often need to retrieve them when troubleshooting issues. It could be a somewhat tedious process, so I came up with a way of automating it.",
+                "I chose C# as the language for this project, as I wanted it to be easy to use on Windows machines. It works using a client/server model. The server is a Windows service that runs on the remote machine. The client is a Windows Forms GUI that allows the user to connect to the server and download the log files. I also added functionality for zipping the files on the server and after downloading them."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "Most of the functionality of the app was implemented, but my manager was never able to get approval from customers to install the server on their machines, so the app was never used in production."
+            ]
+        },
+        {
+            title: "Takeaways",
+            content: [
+                "This was my first time setting up a tcp client/server architecture; I learned a lot about it through trial and error. I also needed to utilize multithreading to allow the server to continue running while clients were connected. I also learned how to create apps that run in the background as Windows services."
+            ]
+        }
+    ],
     startDate: new Date(2019, 5, 1),
-    technologies: ["C#", "Visual Studio", "Github", "TCP/IP", "Windows Services"],
+    technologies: ["C#", "Visual Studio", "Github", "TCP/IP", "Windows Services", "Windows Forms", "JSON"],
     skills: ["Multithreading", "Networking", "UI/UX"],
     features: ["Client/Server", "File Transfer"],
     imgSrc: "./img/LogSaver/log_saver.PNG",

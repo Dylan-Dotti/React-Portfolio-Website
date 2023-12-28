@@ -63,16 +63,28 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
             </div>
 
             <div className="right-column">
-                <div className="project-section">
-                    <h3 className="section-header">Overview</h3>
-                    <p>{project.description}</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti est assumenda dolorum eveniet aut sapiente, sint illum iure commodi laudantium corrupti provident voluptatum doloribus quas a vero exercitationem nam veniam. Quaerat, iste porro? Vitae delectus iure, eius voluptatum tempore maiores.</p>
-                </div>
-                <div className="project-section">
-                    <h3 className="section-header">Challenges</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
-                </div>
+                {project.overviewSections && project.overviewSections.length > 0 && project.overviewSections.map((section, index) => (
+                    <div className="project-section" key={index}>
+                        <h3 className="section-header">{section.title}</h3>
+                        {section.content.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                    </div>
+                ))}
+                {(!project.overviewSections || project.overviewSections.length === 0) &&
+                    <>
+                        <div className="project-section">
+                            <h3 className="section-header">Overview</h3>
+                            <p>{project.description}</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti est assumenda dolorum eveniet aut sapiente, sint illum iure commodi laudantium corrupti provident voluptatum doloribus quas a vero exercitationem nam veniam. Quaerat, iste porro? Vitae delectus iure, eius voluptatum tempore maiores.</p>
+                        </div>
+                        <div className="project-section">
+                            <h3 className="section-header">Challenges</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae nesciunt officiis ex quis voluptatum veritatis sint facilis repudiandae corporis in illum molestiae, vel laboriosam rem iure iste odit deserunt!</p>
+                        </div>
+                    </>
+                }
             </div>
         </div>
     );

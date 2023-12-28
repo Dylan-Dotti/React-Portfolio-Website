@@ -2,7 +2,7 @@ import React from "react"
 
 export interface IProjectOverviewSection {
     title: string
-    content: string
+    content: string[]
 }
 
 export default interface IProjectData {
