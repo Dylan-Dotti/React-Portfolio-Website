@@ -192,6 +192,16 @@ const logSaverData: IProjectData = {
     codeSrc: "https://github.com/Dylan-Dotti/Log-Saver",
 };
 
+const portfolioWebsiteData: IProjectData = {
+    id: 8,
+    name: "This Website",
+    description: "The website you are currently viewing. Uses React with Sass and Typescript.",
+    startDate: new Date(2021, 0, 1),
+    technologies: ["React", "Sass", "Typescript", "Github", "VS Code", "NodeJS"],
+    skills: ["UI/UX", "Responsive Design", "Web Development"],
+    codeSrc: "https://github.com/Dylan-Dotti/React-Portfolio-Website"
+}
+
 const projectData: IProjectData[] = [
     deviantProjectData,
     ghdAutoTimeEntryData,
@@ -200,6 +210,7 @@ const projectData: IProjectData[] = [
     pokemonClassifierData,
     missingBinFinderData,
     logSaverData,
+    portfolioWebsiteData,
 ];
 
 export default projectData;
