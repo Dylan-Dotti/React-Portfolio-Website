@@ -6,6 +6,22 @@ const deviantProjectData: IProjectData = {
     name: "Deviant",
     description: "A game made with the Unity engine for my senior capstone project. Coding was done in C#. Utilized 3D models I created with Blender. Awarded as best project in a pool of about 30 student projects.",
     shortDescription: "A game made with the Unity engine for my senior capstone project.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "I Created this game during my final semester at CNU for my capstone project seminar. It's a top-down, semi-randomized, wave-based survival shooter. I sometimes like to think of it as a more complex version of the classic arcade game Asteroids. This was my first attempt at creating a game with a concept that I came up with myself.",
+                "I used the Unity engine and C# to create this game. Some models were created with Blender, but most consist of simple Unity shapes."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "I was able to implement most of the features I had planned within the time constraints I was given. The other students seemed to enjoy my presentations; they always gave two rounds of applause.",
+                "At the end of the semester, I was required to participate in a poster session where I presented my project to anyone who was interested. I and another student tied for best project in a pool of about 30 student projects. I consider that day to be one of the proudest of my life."
+            ]
+        }
+    ],
     startDate: new Date(2020, 5, 1),
     technologies: ["C#", "Unity", "Blender", "Visual Studio", "Github"],
     skills: ["Game Development", "3D Modeling", "Scrum", "Time Management", "Mathematics", "Physics"],
@@ -123,6 +139,27 @@ const pokemonClassifierData: IProjectData = {
     id: 5,
     name: "Pokémon Classifier",
     description: "A machine learning model that classifies Pokémon given an image of the Pokémon. Uses Python and the Keras library.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "This is a small app I created to try my hand at making deep learning image classifiers. The execution is simple - the user provides an image of a Pokémon, and the app will attempt to identify it by name.",
+                "I chose Python as the language for this project, as it is generally the favored language for machine learning. I used the Keras library to create and train the CNN models on a dataset of Pokémon images. A minimal Tkinter GUI is used to select the image and view the results."
+            ]   
+        },
+        {
+            title: "Challenges",
+            content: [
+                "My biggest setback on this project was the lack of sufficient images to train the model on. Most of the Pokémon only had a couple dozen images or less. I eventually narrowed the scope to 5 Pokémon which had many more images than the others. The models could also take a long time to train between edits, which slowed my progress significantly."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "I was able to train a model that had between 50-60% accuracy on my dataset before I decided to move on to other projects. It's likely that I needed a larger dataset to produce better results, as changes to the model architecture and hyperparameters did not appear to have much effect."       
+            ]
+        }
+    ],
     startDate: new Date(2019, 5, 1),
     technologies: ["Python", "VS Code", "Keras", "Tkinter"],
     skills: ["Machine Learning"],
@@ -196,9 +233,31 @@ const portfolioWebsiteData: IProjectData = {
     id: 8,
     name: "This Website",
     description: "The website you are currently viewing. Uses React with Sass and Typescript.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "I decided to create this website following my full-stack development position at Swisslog. I was confident that my skills had progressed to the point that I could create a full website on my own, and I felt it was time to dedicate the effort to creating a website that would showcase my skills and accomplishments.",
+                "The website is coded using React with Typescript and Sass. {HostingPlatform} is used for hosting."
+            ]
+        },
+        {
+            title: "Challenges",
+            content: [
+                "The most difficult part of web development for me is always deciding on a color scheme. I decided to keep things simple for now and have implemented a mostly monochromatic palette. I also find that designing a layout is generally much more difficult than coding it. I will also add that this site required at least as much of my writing ability as it did my coding ability."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "Well, it's working right now isn't it? At least I hope so."
+            ]
+        }
+    ],
     startDate: new Date(2021, 0, 1),
-    technologies: ["React", "Sass", "Typescript", "Github", "VS Code", "NodeJS"],
+    technologies: ["HTML", "React", "Sass", "Typescript", "Github", "VS Code", "NodeJS"],
     skills: ["UI/UX", "Responsive Design", "Web Development"],
+    imgSrc: "./img/PortfolioWebsite/website_home.png",
     codeSrc: "https://github.com/Dylan-Dotti/React-Portfolio-Website"
 }
 
