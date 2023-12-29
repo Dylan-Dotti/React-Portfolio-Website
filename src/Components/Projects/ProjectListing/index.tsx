@@ -3,6 +3,7 @@ import './project-listing.scss';
 import IProjectData from '../../../Interfaces/IProjectData';
 import HrWithCircle from '../../Visual/HrWithCircle';
 import ProjectListingItem from './ProjectListingItem';
+import { HashLink } from 'react-router-hash-link';
 
 interface ProjectListingProps {
     projects: IProjectData[]
@@ -32,9 +33,9 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
                                 {props.projects.map((project, index) => {
                                     return (
                                         <li key={project.id}>
-                                            <a href={`#project-${project.id}`} className="project-link">
+                                            <HashLink to={`#project-${project.id}`} className="project-link" smooth>
                                                 {project.name}
-                                            </a>
+                                            </HashLink>
                                         </li>
                                     );
                                 })}
