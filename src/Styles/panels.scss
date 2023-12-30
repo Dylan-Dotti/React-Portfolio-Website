@@ -6,24 +6,33 @@
     right: 0;
     top: 0;
     bottom: 0;
-  }
+}
   
-  .absolute-cover-panel {
+.absolute-cover-panel {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-  }
+}
 
-  .white-glow-outline-panel {
+.light-background-outline-panel {
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    min-height: 200px;
+    padding: 25px;
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 1);
+    background-color: $main-background-light;
+}
+
+.white-glow-outline-panel {
     border: 2px solid $main-text-white;
     box-shadow: 1px 1px 10px 1px #888888;
     background-color: $main-background-darker;
-  }
+}
 
-  .blue-glow-outline-panel {
+.blue-glow-outline-panel {
     border: 2px solid $primary-color;
     box-shadow: 1px 1px 10px 1px $primary-color;
     background-color: $main-background-darker;
-  }
+}
