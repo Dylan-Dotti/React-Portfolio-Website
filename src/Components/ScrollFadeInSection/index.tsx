@@ -7,7 +7,7 @@ export enum ScrollFadeInDirection {
 }
 
 interface IScrollFadeInSectionProps {
-    children   : React.ReactNode
+    children?  : React.ReactNode
     direction? : ScrollFadeInDirection
     delayMS?   : number
     durationMS?: number
