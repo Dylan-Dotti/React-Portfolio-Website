@@ -42,7 +42,7 @@ ul, ol {
 
 li {
   list-style-type: none;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 img {
@@ -99,6 +99,29 @@ hr.quarter-centered, .custom-hr.quarter-centered {
   display: table;
 }
 
+ul.blue-circle-list {
+  padding-left: 1.5em;
+
+  li {
+    position: relative;
+    padding-left: .25em;
+    color: $faded-text-white;
+    break-inside: avoid;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1em;
+      top: 0.67em;
+      transform: translateY(0);
+      width: 10px;
+      height: 10px;
+      border: 2px solid $primary-color;
+      border-radius: 50%;
+    }
+  }
+}
+
 .soft {
   opacity: 0.75;
 }
@@ -109,7 +132,7 @@ hr.quarter-centered, .custom-hr.quarter-centered {
 
 p {
   color: $faded-text-white;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 html {
