@@ -109,7 +109,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faSitemap} size="3x" />
                             </div>
                             <h2 className="card-title">OOP</h2>
-                            <h5>I have a strong grasp of OOP design principles and an extensive history of utilizing the paradigm in my software.</h5>
+                            <h5>Strong grasp of OOP design principles and a long history of utilizing the paradigm in my software.</h5>
                         </ScrollFadeInSection>
 
                         <ScrollFadeInSection
@@ -123,7 +123,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faRobot} size="3x" />
                             </div>
                             <h2 className="card-title">AI</h2>
-                            <h5><span>I can leverage AI tools and libraries to integrate learning models into an application.</span></h5>
+                            <h5><span>Can leverage AI tools and libraries to integrate machine learning models into applications.</span></h5>
                         </ScrollFadeInSection>
 
                     </div>
@@ -223,6 +223,59 @@ const About: React.FC = () => {
             </div>
 
             <div className="gradient-section gradient-2"></div>
+
+            {/* Employment summary */}
+            <div className="content-section employment-section">
+                <div className="content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h1 className="section-title"><span className="primary-color-text">Employment</span> summary</h1>
+                    </ScrollFadeInSection>
+
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h5 className="overview">
+                            My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company.
+                        </h5>
+                    </ScrollFadeInSection>
+
+                    {/* Summarize swisslog jobs */}
+
+
+                    <div className="employment-history">
+                        <ScrollFadeInSection className="employment-history-item" durationMS={appConstants.fadeInDurationMS} direction={ScrollFadeInDirection.Right} shiftValue="50px">
+                            <div className="upper-row">
+                                <h3 className="job-title">Full-Stack Software Engineer</h3>
+                                <h4 className="timeline">Nov. 2021 - Nov. 2023</h4>
+                                <h4 className="responsibilities-header">Primary Responsibilities</h4>
+                            </div>
+                            <ul className="blue-circle-list">
+                                <li>Participated in frequent scrum meetings, including daily standups, sprint planning/retrospectives, and story planning/revising.</li>
+                                <li>Completed assigned stories in a timely manner. Updated stories with difficulties, considerations, and results.</li>
+                                <li>Used React with Typescript and SASS, and occasionally AngularJS, to implement and maintain front-end web and desktop application UIs. Designed UI pages and components from scratch or ported them from older UI versions.</li>
+                                <li>Used .NET with C# to implement and maintain back-end REST APIs and business logic.</li>
+                                <li>Designed, implemented, and maintained scripts and stored procedures for SQL Server databases.</li>
+                                <li>Troubleshot software-related support issues for my team’s applications.</li>
+                                <li>Handled the software portion of a conveyor expansion for a legacy system with minimal help from within the company. </li>
+                            </ul>
+                        </ScrollFadeInSection>
+                        <ScrollFadeInSection className="employment-history-item" durationMS={appConstants.fadeInDurationMS} direction={ScrollFadeInDirection.Left} shiftValue="50px">
+                            <div className="upper-row">
+                                <h3 className="job-title">Global Helpdesk Support Engineer</h3>
+                                <h4 className="timeline">Dec. 2019 - Nov. 2021</h4>
+                                <h4 className="responsibilities-header">Primary Responsibilities</h4>
+                            </div>
+                            <ul className="blue-circle-list">
+                                <li>Answered calls from customers who experienced issues with or had questions about their warehouse system.</li>
+                                <li>Created support tickets using information gathered from customer calls or emails.</li>
+                                <li>Resolved support tickets within a required timeframe by using prior knowledge of the system and available resources.</li>
+                                <li>Provided periodic phone and email updates to customers about the progress of their support tickets.</li>
+                                <li>Created articles detailing resolution steps for issues so that future instances of those issues could be resolved more easily.</li>
+                                <li>Created utility applications to improve the workflow of the helpdesk.</li>
+                            </ul>
+                        </ScrollFadeInSection>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
     );
