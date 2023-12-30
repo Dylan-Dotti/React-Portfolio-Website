@@ -20,6 +20,7 @@ $muted-cyan: #5B9EA0;
 $light-blue: #89CFF0;
 $cool-gray-1: #9FA8A3;
 $cool-gray-2: #B0BEC5;
+$cool-bluegray: rgb(176, 190, 227);
 $sage-green-1: #9DBA9D;
 $sage-green-2: #8F9779;
 $muted-pink: #D0A9AA;
@@ -47,7 +48,7 @@ $faded-text-white: rgba($main-text-white, 0.85);
 
 $primary-color: map-get($blue-palette-1, 300);
 $secondary-color: map-get($blue-palette-1, 600);
-$accent-color: $cool-gray-2;
+$accent-color: $cool-bluegray;
 
 
 
