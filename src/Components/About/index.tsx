@@ -281,9 +281,44 @@ const About: React.FC = () => {
 
                 </div>
             </div>
+
+            <div className="gradient-section-1"></div>
+
+            {/* Education summary */}
+            <div className="content-section education-section">
+                <div className="content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h1 className="section-title"><span className="primary-color-text">Education</span> overview</h1>
+                    </ScrollFadeInSection>
+
+                    <div className="content">
+                        <div className="left-column">
+                            <img src="img/CNU/cnu_logo_blue_background.png" alt="" className="logo"/>
+                        </div>
+                        <div className="right-column">
+                            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                                <h5 className="overview">
+                                    I received a comprehensive computer science education at <span className="primary-color-text">Christopher Newport University</span>, where I studied fundamental concepts such as data structures, algorithmic analysis, artificial intelligence, and database management.
+                                </h5>
+                            </ScrollFadeInSection>
+                            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                                <h5 className="overview">
+                                    I demonstrated consistent academic excellence during my time at CNU, graduating <span className="primary-color-text">summa cum laude</span> with <span className="primary-color-text">departmental highest honors</span>, and being <span className="primary-color-text">one of two winners</span> of the 2019 capstone fair in the computer science category.
+                                </h5>
+                            </ScrollFadeInSection>
+                            <h5>
+                                I provide summaries of the most beneficial courses I completed on my <Link to="/education">education page</Link>.
+                            </h5>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
+
+            <div className="gradient-section-2"></div>
+
+            {/* Contact section */}
 
         </div>
     );
