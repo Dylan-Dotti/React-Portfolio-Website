@@ -68,8 +68,8 @@ const About: React.FC = () => {
                     </ScrollFadeInSection>
                     <ScrollFadeInSection className="intro-text" durationMS={appConstants.fadeInDurationMS} delayMS={400}>
                         <h1>Hi, I'm <span className="primary-color-text">Dylan</span></h1>
-                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, eveniet.</h4>
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, consequatur?</h4>
+                        <h4>I'm a full-stack developer with a passion for making AI, games, and web applications</h4>
+                        <h4>Take a look around to see how my skill set can benefit your organization and help shape the future of your technology</h4>
                     </ScrollFadeInSection>
                 </div>
             </div>
@@ -95,7 +95,7 @@ const About: React.FC = () => {
                                 <FontAwesomeIcon icon={faLayerGroup} size="3x" />
                             </div>
                             <h2 className="card-title">Full Stack</h2>
-                            <h5>From UIs to APIs to databases, I am capable of working on any and every layer of a software application.</h5>
+                            <h5>From UIs to APIs to databases, I am capable of working on any layer of a software application.</h5>
                         </ScrollFadeInSection>
 
                         <ScrollFadeInSection
@@ -233,11 +233,11 @@ const About: React.FC = () => {
 
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
                         <h5 className="overview">
-                            My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company.
+                            My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company
                         </h5>
                     </ScrollFadeInSection>
 
-                    {/* Summarize swisslog jobs */}
+                    {/* Summarize swisslog jobs? */}
 
 
                     <div className="employment-history">
@@ -254,7 +254,7 @@ const About: React.FC = () => {
                                 <li>Used .NET with C# to implement and maintain back-end REST APIs and business logic.</li>
                                 <li>Designed, implemented, and maintained scripts and stored procedures for SQL Server databases.</li>
                                 <li>Troubleshot software-related support issues for my team’s applications.</li>
-                                <li>Handled the software portion of a conveyor expansion for a legacy system with minimal help from within the company. </li>
+                                <li>Handled the software portion of a conveyor expansion for a legacy system with minimal assistance from within the company. </li>
                             </ul>
                         </ScrollFadeInSection>
                         <ScrollFadeInSection className="employment-history-item" durationMS={appConstants.fadeInDurationMS} direction={ScrollFadeInDirection.Left} shiftValue="50px">
@@ -273,6 +273,14 @@ const About: React.FC = () => {
                             </ul>
                         </ScrollFadeInSection>
 
+                        <h5 className="text-center">
+                            A more detailed summary of my employment history can be found on my <Link to="/employment">employment page</Link>
+                        </h5>
+                    </div>
+
+
+                </div>
+            </div>
                     </div>
                 </div>
             </div>
