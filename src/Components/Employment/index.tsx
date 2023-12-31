@@ -4,6 +4,7 @@ import { AppConstantsContext } from "../../App";
 import ScrollFadeInSection from "../ScrollFadeInSection";
 import CrossfadeImageCarousel from "../CrossfadeImageCarousel";
 import HrWithCircle from "../Visual/HrWithCircle";
+import { HashLink } from "react-router-hash-link";
 
 const Employment: React.FC = () => {
     const appConstants = React.useContext(AppConstantsContext);
@@ -26,7 +27,10 @@ const Employment: React.FC = () => {
                 <div className="chapter-section">
                     <h4 className="chapter-title">Job Summary</h4>
                     <p>
-                        The helpdesk role involved a few main tasks. If a customer had an issue or question related to their warehouse, they would email or call in to the helpdesk. If I received a call, I would need to gather information from the customer about their issue. Using that information, I would create a support ticket for tracking and providing updates. Helpdesk engineers were assigned to tickets based on their availability and proficiency with a specific site. Resolving a customer issue required some combination of prior site knowledge, researching previous tickets and existing documentation, and collaboration with other engineers. If the issue could not be resolved within a required timeframe, I would need to escalate the issue to a more experienced resource, which generally was an integration or software engineer that worked on the project. While they worked to resolve the issue, I would take notes of the process and continue providing updates to the customer. After an escalated issue was resolved, I would create an article detailing the resolution process, in order to prevent future escalations for the same issue. Any remaining downtime was spent learning about existing sites through documentation and training sessions.
+                        The helpdesk role involved a few main tasks. If a customer had an issue or question related to their warehouse, they would email or call in to the helpdesk. If I received a call, I would need to gather information from the customer about their issue. Using that information, I would create a support ticket for the purposes of tracking and providing updates.
+                    </p>
+                    <p>
+                        Helpdesk engineers were assigned to tickets based on their availability and proficiency with a specific site. Resolving a customer issue required some combination of prior site knowledge, researching previous tickets and existing documentation, and collaboration with other engineers. If the issue could not be resolved within a required timeframe, I would need to escalate the issue to a more experienced resource, which generally was an integration or software engineer that worked on the project. After an escalated issue was resolved, I would create an article detailing the resolution process, in order to prevent future escalations for the same issue.
                     </p>
                 </div>
 
@@ -48,21 +52,30 @@ const Employment: React.FC = () => {
                     />
                     <h4 className="chapter-title">HBC Project</h4>
                     <p>
-                        After my onboarding and initial training, I was selected to travel to support a relatively new warehouse project commissioned by Hudson's Bay Company (HBC). The site was utilizing Swisslog's CarryPick system, which works by managing a fleet of mobile robots that moved around a grid of product racks using AR tags on the floor to keep track of their position. When a product was requested by the system, a robot would physically pick up a rack with the desired product, then bring it to a manned workstation for picking.
+                        After my onboarding and initial training, I was selected to travel to support a relatively new warehouse project commissioned by Hudson's Bay Company (HBC) for two weeks. The site was utilizing Swisslog's CarryPick system, which works by managing a fleet of mobile robots that move around a grid of product racks using AR tags on the floor to keep track of their position. When a product is requested by the system, a robot will physically pick up a rack with the desired product, then bring it to a manned workstation for picking.
+                    </p>
+                    <p>
+                        By reviewing the existing documentation and observing the field service engineers when issues occurred, I was able to learn the basics of the system rather quickly, and soon I was troubleshooting issues brought to me by the floor manager on a daily basis.
                     </p>
                 </div>
 
                 <div className="chapter-section">
                     <h4 className="chapter-title">Forte Group</h4>
                     <p>
-                        About a year into the helpdesk job, I was asked by my manager to start handling support tickets for sites running Forte software. Forte was a smaller warehouse automation company that was previously acquired by Swisslog. Normally, GHD engineers would only pass these tickets along to the individuals assigned to Forte support, but I was tasked with learning the Forte systems and providing basic support for the sites.
+                        About a year into the helpdesk job, I was asked by my manager to start handling support tickets for sites running Forte software. Forte was a smaller warehouse automation company that was previously acquired by Swisslog. Normally, GHD engineers would only pass these tickets along to the individuals assigned to Forte support, but I was tasked with learning the Forte systems and providing basic support for the sites. I was told I was rather successful in this endeavor, compared to the previous attempts at integrating the helpdesk, and I was soon able to handle basic and recurring issues for Forte sites using their existing documentation.
                     </p>
                 </div>
 
                 <div className="chapter-section">
                     <h4 className="chapter-title">Time Entry App</h4>
                     <p>
-                        In the later half of 2021, I was given the opportunity to work on an interesting software project with another of the helpdesk engineers. He had been working on a way of parsing excel sheets containing support ticket time data, which could be generated by our ticketing system. He was attempting to automate at least some part of the time entry process, which could be quite tedious. When he presented this project to our manager, I was recognized as the best candidate to work with the other engineer and manage the creation of something useful.
+                        In the later half of 2021, I was given the opportunity to work on a software project with another of the helpdesk engineers. He had been working on a way of parsing excel sheets containing support ticket time data, which could be generated by our ticketing system. He was attempting to automate part of the time entry process, which could be rather tedious. When he presented this project to our manager, I was recognized as the best candidate to work with the other engineer and manage the creation of something useful.
+                    </p>
+                    <p>
+                        I created a Github repository for us and created a diagram to plan out the high-level architecture of the application. I elected for Python as the language for the project, since it had some libraries I was familiar with that I knew would be useful, and the other engineer had experience using it. In hindsight, I think C# may have been the better choice, as the Python project requires a good amount of setup on the user's end.
+                    </p>
+                    <p>
+                        After a few months, we were able to produce an app capable of automating a large portion of the time entry process. I rather enjoyed working on this project and getting to play senior developer for a bit. More details about this project can be found <HashLink to="/projects#project-2">on my projects page</HashLink>.
                     </p>
                 </div>
 
