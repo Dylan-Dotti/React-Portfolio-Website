@@ -1,0 +1,44 @@
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(30px, 3%, 3%);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-column, .right-column {
+        background-color: rgba(grey, 0.05);
+        border-radius: 10px;
+        padding: 2em;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: fit-content;
+            flex: 1;
+
+            .contact-method {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: fit-content;
+
+                &:last-of-type {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
