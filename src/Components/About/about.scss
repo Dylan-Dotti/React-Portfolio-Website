@@ -3,10 +3,42 @@
 
 #about {
     flex: 1;
-    padding: 80px 0;
+    //padding: 80px 0;
+    
 
     .content-section {
-        padding: 100px 0;
+        padding: 150px 0;
+    }
+
+    .gradient-section {
+        height: 50px;
+
+        &.gradient-1 {
+            background-image: linear-gradient($main-background, $main-background-dark);
+
+            & + .content-section {
+                background-color: $main-background-dark;
+            }
+        }
+
+        &.gradient-2 {
+            background-image: linear-gradient($main-background-dark, $main-background);
+        }
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .profile-picture {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+        background-size: cover;
+        background-position: 50% 30%;
     }
 
     .intro-section {
@@ -27,22 +59,6 @@
             h1 {
                 font-size: 3.5rem;
             }
-        }
-    }
-
-    .gradient-section {
-        height: 200px;
-
-        &.gradient-1 {
-            background-image: linear-gradient($main-background, $main-background-dark);
-
-            & + .content-section {
-                background-color: $main-background-dark;
-            }
-        }
-
-        &.gradient-2 {
-            background-image: linear-gradient($main-background-dark, $main-background);
         }
     }
 
@@ -209,18 +225,22 @@
 
     }
 
-    .section-title {
-        text-align: center;
-        margin-bottom: 40px;
+    .ai-tools-section {
+
+        img {
+            border: 2px solid whitesmoke;
+            border-radius: 20px;
+        }
     }
 
-    .profile-picture {
-        margin-top: 20px;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        
-        background-size: cover;
-        background-position: 50% 30%;
+    .contact-section {
+
+        .contact-form-wrapper {
+            @extend .light-background-outline-panel;
+            width: 80%;
+            margin: 0 auto;
+        }
     }
+
+    
 }

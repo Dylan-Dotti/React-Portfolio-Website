@@ -8,6 +8,7 @@ import getTechIcons from "../../IconSources/tech-icons";
 import projectData from "../../Data/ProjectData";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import ContactForm from "../ContactForm";
 
 
 const About: React.FC = () => {
@@ -232,9 +233,9 @@ const About: React.FC = () => {
                     </ScrollFadeInSection>
 
                     <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
-                        <h5 className="overview">
+                        <h3 className="overview">
                             My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company
-                        </h5>
+                        </h3>
                     </ScrollFadeInSection>
 
                     {/* Summarize swisslog jobs? */}
@@ -273,16 +274,16 @@ const About: React.FC = () => {
                             </ul>
                         </ScrollFadeInSection>
 
-                        <h5 className="text-center">
+                        <h4 className="text-center">
                             A more detailed summary of my employment history can be found on my <Link to="/employment">employment page</Link>
-                        </h5>
+                        </h4>
                     </div>
 
 
                 </div>
             </div>
 
-            <div className="gradient-section-1"></div>
+            <div className="gradient-section gradient-1"></div>
 
             {/* Education summary */}
             <div className="content-section education-section">
@@ -316,9 +317,45 @@ const About: React.FC = () => {
                 </div>
             </div>
 
-            <div className="gradient-section-2"></div>
+            <div className="gradient-section gradient-2"></div>
+
+            <div className="content-section ai-tools-section">
+                <div className="content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h3 className="section-title">
+                            I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
+                        </h3>
+                    </ScrollFadeInSection>
+
+                    <div className="two-even-column-grid">
+                        <div className="left-column">
+                            <img src="img/AITools/chatGPT_1.jpg" alt="" />
+                        </div>
+                        <div className="right-column">
+                            <img src="img/AITools/copilot.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="gradient-section gradient-1"></div>
 
             {/* Contact section */}
+
+            <div className="content-section contact-section">
+                <div className="content-container">
+                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                        <h3 className="section-title">
+                            If you have <span className="primary-color-text">questions</span>, <span className="primary-color-text">feedback</span>, or would like to <span className="primary-color-text">discuss a development role</span>, I can be contacted via any of these methods
+                        </h3>
+
+                        <div className="contact-form-wrapper light-to-dark-gradient-panel">
+                            <ContactForm />
+                        </div>
+                    </ScrollFadeInSection>
+
+                </div>
+            </div>
 
         </div>
     );
