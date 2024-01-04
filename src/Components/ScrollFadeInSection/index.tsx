@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './scroll-fade-in-section.scss';
 import classNames from 'classnames';
+import AppConfig from '../../Config/config';
 
 export enum ScrollFadeInDirection {
     Up, Down, Left, Right
@@ -22,7 +23,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     const { 
         children,
         direction = ScrollFadeInDirection.Up,
-        durationMS = 0,
+        durationMS = AppConfig.defaultFadeInMS,
         delayMS = 0,
         shiftValue = '0px',
         onClick,

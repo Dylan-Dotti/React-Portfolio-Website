@@ -1,22 +1,20 @@
 import * as React from "react";
 import "./employment.scss";
-import { AppConstantsContext } from "../../App";
 import ScrollFadeInSection from "../ScrollFadeInSection";
 import CrossfadeImageCarousel from "../CrossfadeImageCarousel";
 import HrWithCircle from "../Visual/HrWithCircle";
 import { HashLink } from "react-router-hash-link";
 
 const Employment: React.FC = () => {
-    const appConstants = React.useContext(AppConstantsContext);
 
     return (
         <div id="employment">
-            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="title-section content-container">
+            <ScrollFadeInSection className="title-section content-container">
                 <h1 className="text-center page-header">Employment</h1>
                 <HrWithCircle widthClass="half-centered" />
             </ScrollFadeInSection>
                 
-            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="job-section ghd-section content-container">
+            <ScrollFadeInSection className="job-section ghd-section content-container">
                 <img src="img/Swisslog/cranes.PNG" alt="" className="right-img"/>
                 <h2 className="job-title">Global Helpdesk Support Engineer</h2>
 
@@ -91,11 +89,11 @@ const Employment: React.FC = () => {
 
             </ScrollFadeInSection>
 
-            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="content-container job-divider">
+            <ScrollFadeInSection className="content-container job-divider">
                 <HrWithCircle className="softer" />
             </ScrollFadeInSection>
 
-            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} className="job-section content-container">
+            <ScrollFadeInSection className="job-section content-container">
                 <img src="img/Lenox/IMG_1769.jpg" alt="" className="right-img"/>
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
 

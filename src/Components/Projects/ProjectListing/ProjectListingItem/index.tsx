@@ -28,9 +28,11 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
                                 View Code
                             </a>
                         )}
-                        <button className="btn btn-secondary" onClick={props.onViewDemoClick}>
-                            View Demo
-                        </button>
+                        {project.demoSrc && (
+                            <button className="btn btn-secondary" onClick={props.onViewDemoClick}>
+                                View Demo
+                            </button>
+                        )}
                     </div>
                 </div>
                 {project.technologies &&

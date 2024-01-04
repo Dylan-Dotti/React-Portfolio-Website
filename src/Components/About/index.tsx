@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./about.scss";
 import ScrollFadeInSection, { ScrollFadeInDirection } from "../ScrollFadeInSection";
-import { AppConstantsContext } from "../../App";
+import AppConfig from "../../Config/config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faSitemap, faRobot } from '@fortawesome/free-solid-svg-icons';
 import getTechIcons from "../../IconSources/tech-icons";
@@ -12,8 +12,6 @@ import ContactForm from "../ContactForm";
 
 
 const About: React.FC = () => {
-
-    const appConstants = React.useContext(AppConstantsContext);
     const profileImg = "./img/Profile/IMG_0061_1.jpg";
     const techIcons = getTechIcons();
 
@@ -64,10 +62,10 @@ const About: React.FC = () => {
 
             <div className="content-section intro-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS}>
+                    <ScrollFadeInSection>
                         <div className="profile-picture white-glow-outline-panel" style={{backgroundImage: `url(${profileImg})`}}></div>
                     </ScrollFadeInSection>
-                    <ScrollFadeInSection className="intro-text" durationMS={appConstants.fadeInDurationMS} delayMS={400}>
+                    <ScrollFadeInSection className="intro-text" delayMS={400}>
                         <h1>Hi, I'm <span className="primary-color-text">Dylan</span></h1>
                         <h4>I'm a full-stack developer with a passion for making AI, games, and web applications</h4>
                         <h4>Take a look around to see how my skill set can benefit your organization and help shape the future of your technology</h4>
@@ -79,7 +77,7 @@ const About: React.FC = () => {
 
             <div className="content-section strengths-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
                     </ScrollFadeInSection>
                     
@@ -87,7 +85,7 @@ const About: React.FC = () => {
 
                         <ScrollFadeInSection
                             className="strength-card"
-                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={400}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
@@ -101,7 +99,7 @@ const About: React.FC = () => {
 
                         <ScrollFadeInSection
                             className="strength-card"
-                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={650}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
@@ -115,7 +113,7 @@ const About: React.FC = () => {
 
                         <ScrollFadeInSection
                             className="strength-card"
-                            durationMS={appConstants.fadeInDurationMS * 0.8}
+                            durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={900}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
@@ -137,7 +135,7 @@ const About: React.FC = () => {
             <div className="content-section technologies-section">
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title">
                             <span className="primary-color-text">Technologies</span> I use in my projects
                         </h1>
@@ -148,14 +146,14 @@ const About: React.FC = () => {
                         {familiarTechIcons.map((icon, index) => (
                             <ScrollFadeInSection
                                 key={index}
-                                durationMS={appConstants.fadeInDurationMS * 2}
+                                durationMS={AppConfig.defaultFadeInMS * 2}
                                 delayMS={generateIconDelay(index)}
                             >
                                 <img src={icon} alt="" />
                             </ScrollFadeInSection>
                         ))}
                         <ScrollFadeInSection
-                            durationMS={appConstants.fadeInDurationMS * 2}
+                            durationMS={AppConfig.defaultFadeInMS * 2}
                             delayMS={generateIconDelay(familiarTechIcons.length)}
                         >
                             <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
@@ -164,7 +162,7 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title">
                             I <span className="primary-color-text">used</span> to use these, but not as much lately
                         </h1>
@@ -174,7 +172,7 @@ const About: React.FC = () => {
                         {lessFamiliarTechIcons.map((icon, index) => (
                             <ScrollFadeInSection
                                 key={index}
-                                durationMS={appConstants.fadeInDurationMS * 2}
+                                durationMS={AppConfig.defaultFadeInMS * 2}
                                 delayMS={generateIconDelay(index)}
                             >
                                 <img src={icon} alt="" />
@@ -191,7 +189,7 @@ const About: React.FC = () => {
             {/* Project showcase section */}
             <div className="content-section projects-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title"><span className="primary-color-text">Project</span> showcase</h1>
                     </ScrollFadeInSection>
 
@@ -200,7 +198,7 @@ const About: React.FC = () => {
                             <ScrollFadeInSection
                                 key={index}
                                 className="project-card"
-                                durationMS={appConstants.fadeInDurationMS * 0.8}
+                                durationMS={AppConfig.defaultFadeInMS * 0.8}
                                 delayMS={index * 250}
                                 direction={ScrollFadeInDirection.Up}
                                 shiftValue="50px"
@@ -228,11 +226,11 @@ const About: React.FC = () => {
             {/* Employment summary */}
             <div className="content-section employment-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title"><span className="primary-color-text">Employment</span> summary</h1>
                     </ScrollFadeInSection>
 
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h3 className="overview">
                             My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company
                         </h3>
@@ -242,7 +240,7 @@ const About: React.FC = () => {
 
 
                     <div className="employment-history">
-                        <ScrollFadeInSection className="employment-history-item" durationMS={appConstants.fadeInDurationMS} direction={ScrollFadeInDirection.Right} shiftValue="50px">
+                        <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Right} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Full-Stack Software Engineer</h3>
                                 <h4 className="timeline">Nov. 2021 - Nov. 2023</h4>
@@ -258,7 +256,7 @@ const About: React.FC = () => {
                                 <li>Handled the software portion of a conveyor expansion for a legacy system with minimal assistance from within the company. </li>
                             </ul>
                         </ScrollFadeInSection>
-                        <ScrollFadeInSection className="employment-history-item" durationMS={appConstants.fadeInDurationMS} direction={ScrollFadeInDirection.Left} shiftValue="50px">
+                        <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Left} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Global Helpdesk Support Engineer</h3>
                                 <h4 className="timeline">Dec. 2019 - Nov. 2021</h4>
@@ -288,7 +286,7 @@ const About: React.FC = () => {
             {/* Education summary */}
             <div className="content-section education-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h1 className="section-title"><span className="primary-color-text">Education</span> overview</h1>
                     </ScrollFadeInSection>
 
@@ -297,12 +295,12 @@ const About: React.FC = () => {
                             <img src="img/CNU/cnu_logo_blue_background.png" alt="" className="logo"/>
                         </div>
                         <div className="right-column">
-                            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                            <ScrollFadeInSection delayMS={150}>
                                 <h5 className="overview">
                                     I received a comprehensive computer science education at <span className="primary-color-text">Christopher Newport University</span>, where I studied fundamental concepts such as data structures, algorithmic analysis, artificial intelligence, and database management.
                                 </h5>
                             </ScrollFadeInSection>
-                            <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                            <ScrollFadeInSection delayMS={150}>
                                 <h5 className="overview">
                                     I demonstrated consistent academic excellence during my time at CNU, graduating <span className="primary-color-text">summa cum laude</span> with <span className="primary-color-text">departmental highest honors</span>, and being <span className="primary-color-text">one of two winners</span> of the 2019 capstone fair in the computer science category.
                                 </h5>
@@ -321,7 +319,7 @@ const About: React.FC = () => {
 
             <div className="content-section ai-tools-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h3 className="section-title">
                             I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
                         </h3>
@@ -344,7 +342,7 @@ const About: React.FC = () => {
 
             <div className="content-section contact-section">
                 <div className="content-container">
-                    <ScrollFadeInSection durationMS={appConstants.fadeInDurationMS} delayMS={150}>
+                    <ScrollFadeInSection delayMS={150}>
                         <h3 className="section-title">
                             If you have <span className="primary-color-text">questions</span>, <span className="primary-color-text">feedback</span>, or would like to <span className="primary-color-text">discuss a development role</span>, I can be contacted via any of these methods
                         </h3>

@@ -20,34 +20,28 @@ import ProjectOverview from "./Components/Projects/ProjectOverview";
 library.add(fas);
 library.add(fab);
 
-export const AppConstantsContext = React.createContext({
-  fadeInDurationMS: 0,
-});
-
 export default function App() {
   return (
     <div id="App">
-      <AppConstantsContext.Provider value={{ fadeInDurationMS: 1200 }}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<About />}></Route>
-              <Route path="/education" element={<Education />}></Route>
-              <Route path="/employment" element={<Employment />}></Route>
-              <Route path="/projects" element={<Projects />}>
-                <Route index element={<ProjectOverview />}></Route>
-                {projectData.map((project) => (
-                  <Route
-                    key={project.id}
-                    path={project.detailSrc}
-                    element={project.detailComponent?.() ?? <div>No project component found</div>}
-                  ></Route>
-                ))}
-              </Route>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<About />}></Route>
+            <Route path="/education" element={<Education />}></Route>
+            <Route path="/employment" element={<Employment />}></Route>
+            <Route path="/projects" element={<Projects />}>
+              <Route index element={<ProjectOverview />}></Route>
+              {projectData.map((project) => (
+                <Route
+                  key={project.id}
+                  path={project.detailSrc}
+                  element={project.detailComponent?.() ?? <div>No project component found</div>}
+                ></Route>
+              ))}
             </Route>
-          </Routes>
-        </BrowserRouter>
-      </AppConstantsContext.Provider>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
