@@ -48,3 +48,29 @@
         margin-bottom: 40px;
     }
 }
+
+.project-demo-modal {
+
+    .modal-content {
+    }
+    
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .project-demo-player {
+        $player-ar: 1.77778/1;
+        background-color: rgba(white, 0.05);
+
+        // there's some weird issue where the video isn't quite as tall as the container unless I add this
+        display: flex;
+        
+        > * {
+            //flex: 1;
+            padding: 20px;
+        }
+    }
+
+}

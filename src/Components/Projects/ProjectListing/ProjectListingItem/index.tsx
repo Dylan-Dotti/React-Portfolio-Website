@@ -4,8 +4,9 @@ import IProjectData from '../../../../Interfaces/IProjectData';
 import classNames from 'classnames';
 
 interface ProjectListingItemProps {
-    project   : IProjectData
-    className?: string
+    project         : IProjectData
+    className?      : string
+    onViewDemoClick?: () => void
 }
 
 const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
@@ -27,7 +28,9 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
                                 View Code
                             </a>
                         )}
-                        <a href="#" className="btn btn-secondary">View Media</a>
+                        <button className="btn btn-secondary" onClick={props.onViewDemoClick}>
+                            View Demo
+                        </button>
                     </div>
                 </div>
                 {project.technologies &&
