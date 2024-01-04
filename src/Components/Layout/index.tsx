@@ -21,6 +21,7 @@ const Layout: React.FC = () => {
         };
     }, []);
 
+    // Needs to be here for now to be nested in the router component
     React.useEffect(() => {
         if (!window.location.hash || window.location.hash === "") {
             window.scrollTo(0, 0);
