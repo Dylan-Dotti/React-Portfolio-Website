@@ -75,7 +75,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
             break;
     }
 
-    const className = classNames('scroll-fade-in-section', { 'is-visible': isVisible }, props.className);
+    const className = classNames('scroll-fade-in-section', { 'hidden': !isVisible }, props.className);
 
     return (
         <div className={className} ref={domRef} style={style} onClick={onClick}>
