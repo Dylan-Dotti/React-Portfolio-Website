@@ -235,8 +235,20 @@ const logSaverData: IProjectData = {
     demoSrc: "https://youtu.be/MPBOJQdiRlk",
 };
 
-const portfolioWebsiteData: IProjectData = {
+const fileEncryptorData: IProjectData = {
     id: 8,
+    name: "File Encryptor",
+    description: "A small utility application I made to encrypt files. Uses C# and Windows Forms.",
+    technologies: ["C#", "Visual Studio", "Github", "Windows Forms"],
+    skills: ["UI/UX", "Cryptography"],
+    features: ["File Encryption"],
+    imgSrc: "./img/FileEncryptor/file_encryptor.png",
+    codeSrc: "https://github.com/Dylan-Dotti/File-Encryptor/tree/main/FileEncryptor/FileEncryptor",
+    demoSrc: "https://youtu.be/BYaNSRBgr2g",
+}
+
+const portfolioWebsiteData: IProjectData = {
+    id: 9,
     name: "This Website",
     description: "The website you are currently viewing. Uses React with Sass and Typescript.",
     overviewSections: [
@@ -275,6 +287,7 @@ const projectData: IProjectData[] = [
     pokemonClassifierData,
     missingBinFinderData,
     logSaverData,
+    fileEncryptorData,
     portfolioWebsiteData,
 ];
 
