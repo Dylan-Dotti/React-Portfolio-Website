@@ -27,6 +27,7 @@ const deviantProjectData: IProjectData = {
     skills: ["Game Development", "3D Modeling", "Scrum", "Time Management", "Mathematics", "Physics"],
     imgSrc: "./img/Deviant/deviant_action.PNG",
     codeSrc: "https://github.com/Dylan-Dotti/Deviant",
+    demoSrc: "https://youtu.be/lgC5nulletU",
     detailSrc: "deviant",
     detailComponent: () => <DeviantProjectDetail />
 };
@@ -34,8 +35,8 @@ const deviantProjectData: IProjectData = {
 const ghdAutoTimeEntryData: IProjectData = {
     id: 2,
     name: "GHD Auto Time Entry",
-    description: "An app I made in collaboration with another engineer to automate time entry at my support desk job. Uses Python to parse excel sheets with time data, then uses simulated keystrokes to enter the time into SAP time management sheets.",
-    shortDescription: "An app I made in collaboration with another engineer to automate time entry at my support desk job.",
+    description: "An app made in collaboration with another engineer to automate time entry at my support desk job. Uses Python to parse excel sheets with time data, then uses simulated keystrokes to enter the time into SAP time management sheets.",
+    shortDescription: "An app made in collaboration with another engineer to automate time entry at my support desk job.",
     overviewSections: [
         {
             title: "Overview",
@@ -98,6 +99,7 @@ const pokemonMonopolyData: IProjectData = {
     features: ["Online Multiplayer"],
     imgSrc: "./img/PokemonMonopoly/pokemon_monopoly.png",
     codeSrc: "https://github.com/Dylan-Dotti/Pokemon-Monopoly/",
+    demoSrc: "https://youtu.be/aVW4bOH_2ao",
     detailSrc: "pokemon-monopoly",
 };
 
@@ -132,6 +134,7 @@ const emeraldAutoTrainerData: IProjectData = {
     features: ["Image Recognition", "Automated Input"],
     imgSrc: "./img/Emerald/emerald_title.png",
     codeSrc: "https://github.com/Dylan-Dotti/Emerald-Auto-Trainer",
+    demoSrc: "https://youtu.be/RJ_XmVJHHD0",
     detailSrc: "emerald-auto-trainer",
 };
 
@@ -166,6 +169,7 @@ const pokemonClassifierData: IProjectData = {
     features: ["Image Classification"],
     imgSrc: "./img/PokemonClassifier/charmander_classify.png",
     codeSrc: "https://github.com/Dylan-Dotti/Pokemon-Classifier",
+    demoSrc: "https://youtu.be/ssrNn6CEObk",
     detailSrc: "pokemon-classifier",
 };
 
@@ -193,6 +197,7 @@ const missingBinFinderData: IProjectData = {
     skills: ["UI/UX", "Data Processing"],
     imgSrc: "./img/MissingBinFinder/missing_bin_finder.PNG",
     codeSrc: "https://github.com/Dylan-Dotti/GHD-AutoStore-Utilities",
+    demoSrc: "https://youtu.be/D6imD_8cvnw",
     detailSrc: "missing-bin-finder",
 };
 
@@ -227,6 +232,7 @@ const logSaverData: IProjectData = {
     features: ["Client/Server", "File Transfer"],
     imgSrc: "./img/LogSaver/log_saver.PNG",
     codeSrc: "https://github.com/Dylan-Dotti/Log-Saver",
+    demoSrc: "https://youtu.be/MPBOJQdiRlk",
 };
 
 const portfolioWebsiteData: IProjectData = {

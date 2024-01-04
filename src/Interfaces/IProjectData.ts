@@ -21,6 +21,7 @@ export default interface IProjectData {
 
     imgSrc?          : string
     codeSrc?         : string
+    demoSrc?         : string
     detailSrc?       : string
     detailComponent? : () => React.ReactNode
 }
