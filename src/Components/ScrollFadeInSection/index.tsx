@@ -15,6 +15,7 @@ interface IScrollFadeInSectionProps {
     shiftValue?      : string
     className?       : string
     rootMarginBottom?: string
+    easingFunction?  : 'linear' | 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'step-start' | 'step-end'
     onClick?         : () => void
 }
 
@@ -28,6 +29,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
         delayMS = 0,
         shiftValue = '0px',
         rootMarginBottom = "-15%",
+        easingFunction = 'linear',
         onClick,
     } = props;
 
@@ -55,7 +57,14 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     }, [delayMS, rootMarginBottom]);
 
     const style: React.CSSProperties = {
-        transition: `all ${durationMS}ms ease-out`,
+        transition: `
+            opacity ${durationMS}ms ${easingFunction},
+            top ${durationMS}ms ${easingFunction},
+            bottom ${durationMS}ms ${easingFunction},
+            left ${durationMS}ms ${easingFunction},
+            right ${durationMS}ms ${easingFunction},
+            filter ${durationMS / 3}ms ${easingFunction}
+        ` as string,
     };
 
     switch (direction) {
