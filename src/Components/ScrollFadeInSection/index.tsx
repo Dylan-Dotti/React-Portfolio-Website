@@ -8,13 +8,14 @@ export enum ScrollFadeInDirection {
 }
 
 interface IScrollFadeInSectionProps {
-    children?  : React.ReactNode
-    direction? : ScrollFadeInDirection
-    delayMS?   : number
-    durationMS?: number
-    shiftValue?: string
-    className? : string
-    onClick?   : () => void
+    children?        : React.ReactNode
+    direction?       : ScrollFadeInDirection
+    delayMS?         : number
+    durationMS?      : number
+    shiftValue?      : string
+    className?       : string
+    rootMarginBottom?: string
+    onClick?         : () => void
 }
 
 // A wrapper component that fades in its children when they are scrolled into view.
@@ -26,6 +27,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
         durationMS = AppConfig.defaultFadeInMS,
         delayMS = 0,
         shiftValue = '0px',
+        rootMarginBottom = "-15%",
         onClick,
     } = props;
 
@@ -41,6 +43,8 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
                     observer.unobserve(entry.target);
                 }
             });
+        }, {
+            rootMargin: `0px 0px ${rootMarginBottom} 0px`,
         });
 
         const domRefCurrent = domRef.current;
@@ -48,7 +52,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
 
         return () => observer.unobserve(domRefCurrent!);
         
-    }, [delayMS]);
+    }, [delayMS, rootMarginBottom]);
 
     const style: React.CSSProperties = {
         transition: `all ${durationMS}ms ease-out`,

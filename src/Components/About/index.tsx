@@ -77,7 +77,7 @@ const About: React.FC = () => {
 
             <div className="content-section strengths-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
                     </ScrollFadeInSection>
                     
@@ -86,7 +86,7 @@ const About: React.FC = () => {
                         <ScrollFadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
-                            delayMS={400}
+                            delayMS={300}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
                         >
@@ -100,7 +100,7 @@ const About: React.FC = () => {
                         <ScrollFadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
-                            delayMS={650}
+                            delayMS={450}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
                         >
@@ -114,7 +114,7 @@ const About: React.FC = () => {
                         <ScrollFadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
-                            delayMS={900}
+                            delayMS={600}
                             direction={ScrollFadeInDirection.Right}
                             shiftValue="50px"
                         >
