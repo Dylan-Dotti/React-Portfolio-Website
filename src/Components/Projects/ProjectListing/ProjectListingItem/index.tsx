@@ -6,7 +6,6 @@ import classNames from 'classnames';
 interface ProjectListingItemProps {
     project         : IProjectData
     className?      : string
-    onViewDemoClick?: () => void
 }
 
 const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
@@ -29,9 +28,9 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
                             </a>
                         )}
                         {project.demoSrc && (
-                            <button className="btn btn-secondary" onClick={props.onViewDemoClick}>
+                            <a href={project.demoSrc} target="_blank" rel="noreferrer" className="btn btn-secondary">
                                 View Demo
-                            </button>
+                            </a>
                         )}
                     </div>
                 </div>
