@@ -62,7 +62,7 @@ const ghdAutoTimeEntryData: IProjectData = {
     technologies: ["Python", "VS Code", "Github", "PyQt5"],
     skills: ["Teamwork", "Communication", "UI/UX", "Data Processing"],
     features: ["Automated Input"],
-    imgSrc: "./img/TimeEntry/time_entry.PNG",
+    imgSrc: "./img/TimeEntry/time_entry.png",
     codeSrc: "https://github.com/Dylan-Dotti/GHD-Auto-Time-Entry",
     detailSrc: "ghd-auto-time-entry",
 };
@@ -230,7 +230,7 @@ const logSaverData: IProjectData = {
     technologies: ["C#", "Visual Studio", "Github", "TCP/IP", "Windows Services", "Windows Forms", "JSON"],
     skills: ["Multithreading", "Networking", "UI/UX"],
     features: ["Client/Server", "File Transfer"],
-    imgSrc: "./img/LogSaver/log_saver.PNG",
+    imgSrc: "./img/LogSaver/log_saver.png",
     codeSrc: "https://github.com/Dylan-Dotti/Log-Saver",
     demoSrc: "https://youtu.be/MPBOJQdiRlk",
 };

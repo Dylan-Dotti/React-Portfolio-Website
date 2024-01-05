@@ -108,14 +108,14 @@ const Employment: React.FC = () => {
                     <CrossfadeImageCarousel 
                         className="hbc-carousel"
                         images={[
-                            "img/Lenox/IMG_2321.JPG",
-                            "img/Lenox/IMG_2322.JPG",
-                            "img/Lenox/IMG_2325.JPG",
-                            "img/Lenox/IMG_2339.JPG",
-                            "img/Lenox/IMG_2341.JPG",
-                            "img/Lenox/IMG_2346.JPG",
-                            "img/Lenox/IMG_2349.JPG",
-                            "img/Lenox/IMG_2350.JPG",
+                            "img/Lenox/IMG_2321.jpg",
+                            "img/Lenox/IMG_2322.jpg",
+                            "img/Lenox/IMG_2325.jpg",
+                            "img/Lenox/IMG_2339.jpg",
+                            "img/Lenox/IMG_2341.jpg",
+                            "img/Lenox/IMG_2346.jpg",
+                            "img/Lenox/IMG_2349.jpg",
+                            "img/Lenox/IMG_2350.jpg",
                         ]}
                         imgHoldDurationMS={12_000}
                         imgFadeDurationMS={4_000}

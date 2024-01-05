@@ -16,7 +16,7 @@ const Education: React.FC = () => {
                     <h1 className="text-center title">Education</h1>
                     <HrWithCircle widthClass="half-centered" />
 
-                    <img src="./Img/CNU/cnu_campus_1_cropped.jpg" alt="" className="main-image" />
+                    <img src="./img/CNU/cnu_campus_1_cropped.jpg" alt="" className="main-image" />
                 </ScrollFadeInSection> 
                 <ScrollFadeInSection direction={ScrollFadeInDirection.Up} className="overview-section content-container">
                     <p>
