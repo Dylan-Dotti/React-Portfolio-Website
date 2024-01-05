@@ -29,7 +29,7 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
         delayMS = 0,
         shiftValue = '0px',
         rootMarginBottom = "-15%",
-        easingFunction = 'linear',
+        easingFunction = 'ease-out',
         onClick,
     } = props;
 

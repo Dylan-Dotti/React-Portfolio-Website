@@ -52,9 +52,8 @@ const About: React.FC = () => {
     ];
 
     const generateIconDelay = (index: number) => {
-        // generate a random delay between 0 and 200ms
-        const delay = Math.floor(Math.random() * 750);
-        return delay + 250;
+        const delay = Math.floor(Math.random() * 500);
+        return delay + 100;
     };
 
     return (
@@ -146,14 +145,12 @@ const About: React.FC = () => {
                         {familiarTechIcons.map((icon, index) => (
                             <ScrollFadeInSection
                                 key={index}
-                                durationMS={AppConfig.defaultFadeInMS * 2}
                                 delayMS={generateIconDelay(index)}
                             >
                                 <img src={icon} alt="" />
                             </ScrollFadeInSection>
                         ))}
                         <ScrollFadeInSection
-                            durationMS={AppConfig.defaultFadeInMS * 2}
                             delayMS={generateIconDelay(familiarTechIcons.length)}
                         >
                             <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
@@ -272,9 +269,12 @@ const About: React.FC = () => {
                             </ul>
                         </ScrollFadeInSection>
 
-                        <h4 className="text-center">
-                            A more detailed summary of my employment history can be found on my <Link to="/employment">employment page</Link>
-                        </h4>
+                        
+                        <ScrollFadeInSection>
+                            <h4 className="text-center">
+                                A more detailed summary of my employment history can be found on my <Link to="/employment">employment page</Link>
+                            </h4>
+                        </ScrollFadeInSection>
                     </div>
 
 
@@ -286,28 +286,32 @@ const About: React.FC = () => {
             {/* Education summary */}
             <div className="content-section education-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Education</span> overview</h1>
                     </ScrollFadeInSection>
 
                     <div className="content">
                         <div className="left-column">
-                            <img src="img/CNU/cnu_logo_blue_background.png" alt="" className="logo"/>
+                            <ScrollFadeInSection direction={ScrollFadeInDirection.Right} shiftValue="30px">
+                                <img src="img/CNU/cnu_logo_blue_background.png" alt="" className="logo"/>
+                            </ScrollFadeInSection>
                         </div>
                         <div className="right-column">
-                            <ScrollFadeInSection delayMS={150}>
+                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
                                 <h5 className="overview">
                                     I received a comprehensive computer science education at <span className="primary-color-text">Christopher Newport University</span>, where I studied fundamental concepts such as data structures, algorithmic analysis, artificial intelligence, and database management.
                                 </h5>
                             </ScrollFadeInSection>
-                            <ScrollFadeInSection delayMS={150}>
+                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
                                 <h5 className="overview">
                                     I demonstrated consistent academic excellence during my time at CNU, graduating <span className="primary-color-text">summa cum laude</span> with <span className="primary-color-text">departmental highest honors</span>, and being <span className="primary-color-text">one of two winners</span> of the 2019 capstone fair in the computer science category.
                                 </h5>
                             </ScrollFadeInSection>
-                            <h5>
-                                I provide summaries of the most beneficial courses I completed on my <Link to="/education">education page</Link>.
-                            </h5>
+                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
+                                <h5>
+                                    I provide summaries of the most beneficial courses I completed on my <Link to="/education">education page</Link>.
+                                </h5>
+                            </ScrollFadeInSection>
                         </div>
                     </div>
 
@@ -326,12 +330,22 @@ const About: React.FC = () => {
                     </ScrollFadeInSection>
 
                     <div className="two-even-column-grid">
-                        <div className="left-column">
+                        <ScrollFadeInSection
+                            className="left-column"
+                            direction={ScrollFadeInDirection.Right}
+                            shiftValue="50px"
+                            delayMS={300}
+                        >
                             <img src="img/AITools/chatGPT_1.jpg" alt="" />
-                        </div>
-                        <div className="right-column">
+                        </ScrollFadeInSection>
+                        <ScrollFadeInSection
+                            className="right-column"
+                            direction={ScrollFadeInDirection.Left}
+                            shiftValue="50px"
+                            delayMS={300}
+                        >
                             <img src="img/AITools/copilot.png" alt="" />
-                        </div>
+                        </ScrollFadeInSection>
                     </div>
                 </div>
             </div>
@@ -342,11 +356,13 @@ const About: React.FC = () => {
 
             <div className="content-section contact-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h3 className="section-title">
                             If you have <span className="primary-color-text">questions</span>, <span className="primary-color-text">feedback</span>, or would like to <span className="primary-color-text">discuss a development role</span>, I can be contacted via any of these methods
                         </h3>
+                    </ScrollFadeInSection>
 
+                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} delayMS={300} shiftValue="50px">
                         <div className="contact-form-wrapper light-to-dark-gradient-panel">
                             <ContactForm />
                         </div>
