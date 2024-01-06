@@ -134,7 +134,7 @@ const About: React.FC = () => {
             <div className="content-section technologies-section">
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title">
                             <span className="primary-color-text">Technologies</span> I use in my projects
                         </h1>
@@ -159,7 +159,7 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title">
                             I <span className="primary-color-text">used</span> to use these, but not as much lately
                         </h1>
@@ -186,7 +186,7 @@ const About: React.FC = () => {
             {/* Project showcase section */}
             <div className="content-section projects-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Project</span> showcase</h1>
                     </ScrollFadeInSection>
 
@@ -223,7 +223,7 @@ const About: React.FC = () => {
             {/* Employment summary */}
             <div className="content-section employment-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Employment</span> summary</h1>
                     </ScrollFadeInSection>
 
@@ -285,7 +285,7 @@ const About: React.FC = () => {
 
             <div className="content-section ai-tools-section">
                 <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
+                    <ScrollFadeInSection>
                         <h3 className="section-title">
                             I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
                         </h3>
@@ -361,7 +361,7 @@ const About: React.FC = () => {
                         </h3>
                     </ScrollFadeInSection>
 
-                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} delayMS={300} shiftValue="50px">
+                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} delayMS={150} shiftValue="50px">
                         <div className="contact-form-wrapper light-to-dark-gradient-panel">
                             <ContactForm />
                         </div>
