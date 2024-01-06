@@ -4,8 +4,7 @@ import IProjectData from "../Interfaces/IProjectData";
 const deviantProjectData: IProjectData = {
     id: 1,
     name: "Deviant",
-    description: "A game made with the Unity engine for my senior capstone project. Coding was done in C#. Utilized 3D models I created with Blender. Awarded as best project in a pool of about 30 student projects.",
-    shortDescription: "A game made with the Unity engine for my senior capstone project.",
+    description: "A game made with the Unity engine for my senior capstone project.",
     overviewSections: [
         {
             title: "Overview",
@@ -35,8 +34,7 @@ const deviantProjectData: IProjectData = {
 const ghdAutoTimeEntryData: IProjectData = {
     id: 2,
     name: "GHD Auto Time Entry",
-    description: "An app made in collaboration with another engineer to automate time entry at my support desk job. Uses Python to parse excel sheets with time data, then uses simulated keystrokes to enter the time into SAP time management sheets.",
-    shortDescription: "An app made in collaboration with another engineer to automate time entry at my support desk job.",
+    description: "An app made in collaboration with another engineer to automate time entry at my support desk job.",
     overviewSections: [
         {
             title: "Overview",
@@ -70,8 +68,7 @@ const ghdAutoTimeEntryData: IProjectData = {
 const pokemonMonopolyData: IProjectData = {
     id: 3,
     name: "Pokémon Monopoly",
-    description: "A Pokémon themed version of the classic board game Monopoly. Made with the Unity engine. Coding was done in C#. Utilized 3D models I created with Blender.",
-    shortDescription: "A Pokémon themed version of the classic board game Monopoly made with the Unity Engine.",
+    description: "A Pokémon themed version of the classic board game Monopoly made with the Unity Engine.",
     overviewSections: [
         {
             title: "Overview",

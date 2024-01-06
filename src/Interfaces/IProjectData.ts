@@ -9,7 +9,6 @@ export default interface IProjectData {
     id               : number
     name             : string
     description      : string
-    shortDescription?: string
     startDate?       : Date
     endDate?         : Date
 
