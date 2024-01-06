@@ -5,6 +5,7 @@ import classNames from 'classnames';
 interface HorizontalExpanderProps {
     isExpanded: boolean
     className?: string
+    children? : React.ReactNode
 }
 
 // expands horizontally to reveal content

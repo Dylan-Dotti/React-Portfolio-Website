@@ -9,7 +9,7 @@ const useScrollFadeInEffect = (durationMS = 0, direction = ScrollFadeInDirection
 
     const [isVisible, setVisible] = React.useState(false);
 
-    const observerCallback = React.useCallback((node) => {
+    const observerCallback = React.useCallback((node: any) => {
         if (node !== null) {
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
