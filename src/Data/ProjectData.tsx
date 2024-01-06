@@ -10,7 +10,7 @@ const deviantProjectData: IProjectData = {
         {
             title: "Overview",
             content: [
-                "I Created this game during my final semester at CNU for my capstone project seminar. It's a top-down, semi-randomized, wave-based survival shooter. I sometimes like to think of it as a more complex version of the classic arcade game Asteroids. This was my first attempt at creating a game with a concept that I came up with myself.",
+                "I created this game during my final semester at CNU for my capstone project seminar. It's a top-down, semi-randomized, wave-based survival shooter. I sometimes like to think of it as a more complex version of the classic arcade game Asteroids. This was my first attempt at creating a game with a concept that I came up with myself.",
                 "I used the Unity engine and C# to create this game. Some models were created with Blender, but most consist of simple Unity shapes."
             ]
         },
@@ -209,20 +209,20 @@ const logSaverData: IProjectData = {
         {
             title: "Overview",
             content: [
-                "I came up with the concept for this app while working at my support desk job. The systems we supported created log files on the server, and we would often need to retrieve them when troubleshooting issues. It could be a somewhat tedious process, so I came up with a way of automating it.",
-                "I chose C# as the language for this project, as I wanted it to be easy to use on Windows machines. It works using a client/server model. The server is a Windows service that runs on the remote machine. The client is a Windows Forms GUI that allows the user to connect to the server and download the log files. I also added functionality for zipping the files on the server and after downloading them."
+                "I came up with the concept for this app while working at my support desk job. The systems we supported created log files on the customers' servers, and we would often need to retrieve them when troubleshooting issues. It could be a somewhat tedious process, so I came up with a way of automating it.",
+                "I chose C# as the language for this project. It works using a client/server architecture. The server is a Windows service that runs on the remote customer servers. The client is a Windows Forms GUI that allows the user to connect to the server and download the log files. I also added functionality for zipping the files on the server and after downloading them."
             ]
         },
         {
             title: "Results",
             content: [
-                "Most of the functionality of the app was implemented, but my manager was never able to get approval from customers to install the server on their machines, so the app was never used in production."
+                "Most of the functionality of the app was implemented, but my manager was never able to get approval from customers to install the project on their servers, so the app was never used in production."
             ]
         },
         {
             title: "Takeaways",
             content: [
-                "This was my first time setting up a tcp client/server architecture; I learned a lot about it through trial and error. I also needed to utilize multithreading to allow the server to continue running while clients were connected. I also learned how to create apps that run in the background as Windows services."
+                "This was my first time setting up a tcp client/server architecture; I learned a lot about it through trial and error. I needed to utilize multithreading to allow the server to continue running while clients were connected. I also learned how to create apps that run in the background as Windows services."
             ]
         }
     ],
@@ -239,6 +239,21 @@ const fileEncryptorData: IProjectData = {
     id: 8,
     name: "File Encryptor",
     description: "A small utility application I made to encrypt files. Uses C# and Windows Forms.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "The main reason I created this app was to have a way of protecting sensitive files on my computer. From what I've gathered, the Windows zip file encryption is not available on the Home version, so I decided to create my own solution. Additionally, I knew that some sensitive data strings such as passwords are often encrypted before being stored, so I figured it would be a good idea to learn some cryptography.",
+                "After some research, I discovered that the .NET framework has a built-in cryptography library. I used this library to allow users to encrypt/decrypt the bytes of files, or even to recursively encrypt entire folders, using the AES algorithm. I was even able to add the ability to parameterize the encryption with a password. I also created a small GUI with Windows Forms to make the app easier to use.",
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "The app appears to work as intended. . I'm still a little wary about using it to encrypt files that I really care about, but to date I have yet to encounter any issues."
+            ]
+        }
+    ],
     technologies: ["C#", "Visual Studio", "Github", "Windows Forms"],
     skills: ["UI/UX", "Cryptography"],
     features: ["File Encryption"],
@@ -256,7 +271,7 @@ const portfolioWebsiteData: IProjectData = {
             title: "Overview",
             content: [
                 "I decided to create this website following my full-stack development position at Swisslog. I was confident that my skills had progressed to the point that I could create a full website on my own, and I felt it was time to dedicate the effort to creating a website that would showcase my skills and accomplishments.",
-                "The website is coded using React with Typescript and Sass. {HostingPlatform} is used for hosting."
+                "The website is coded using React with Typescript and Sass. Google Firebase is used for hosting. I used Youtube as a free video hosting solution for the project demos."
             ]
         },
         {
