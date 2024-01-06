@@ -283,6 +283,37 @@ const About: React.FC = () => {
 
             <div className="gradient-section gradient-1"></div>
 
+            <div className="content-section ai-tools-section">
+                <div className="content-container">
+                    <ScrollFadeInSection delayMS={150}>
+                        <h3 className="section-title">
+                            I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
+                        </h3>
+                    </ScrollFadeInSection>
+
+                    <div className="two-even-column-grid">
+                        <ScrollFadeInSection
+                            className="left-column"
+                            direction={ScrollFadeInDirection.Right}
+                            shiftValue="50px"
+                            delayMS={300}
+                        >
+                            <img src="img/AITools/chatGPT_1.jpg" alt="" />
+                        </ScrollFadeInSection>
+                        <ScrollFadeInSection
+                            className="right-column"
+                            direction={ScrollFadeInDirection.Left}
+                            shiftValue="50px"
+                            delayMS={300}
+                        >
+                            <img src="img/AITools/copilot.png" alt="" />
+                        </ScrollFadeInSection>
+                    </div>
+                </div>
+            </div>
+
+            <div className="gradient-section gradient-2"></div>
+
             {/* Education summary */}
             <div className="content-section education-section">
                 <div className="content-container">
@@ -315,38 +346,6 @@ const About: React.FC = () => {
                         </div>
                     </div>
 
-
-                </div>
-            </div>
-
-            <div className="gradient-section gradient-2"></div>
-
-            <div className="content-section ai-tools-section">
-                <div className="content-container">
-                    <ScrollFadeInSection delayMS={150}>
-                        <h3 className="section-title">
-                            I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
-                        </h3>
-                    </ScrollFadeInSection>
-
-                    <div className="two-even-column-grid">
-                        <ScrollFadeInSection
-                            className="left-column"
-                            direction={ScrollFadeInDirection.Right}
-                            shiftValue="50px"
-                            delayMS={300}
-                        >
-                            <img src="img/AITools/chatGPT_1.jpg" alt="" />
-                        </ScrollFadeInSection>
-                        <ScrollFadeInSection
-                            className="right-column"
-                            direction={ScrollFadeInDirection.Left}
-                            shiftValue="50px"
-                            delayMS={300}
-                        >
-                            <img src="img/AITools/copilot.png" alt="" />
-                        </ScrollFadeInSection>
-                    </div>
                 </div>
             </div>
 
