@@ -4,6 +4,7 @@ import IProjectData from '../../../Interfaces/IProjectData';
 import HrWithCircle from '../../Visual/HrWithCircle';
 import ProjectListingItem from './ProjectListingItem';
 import { HashLink } from 'react-router-hash-link';
+import ScrollFadeInSection from '../../ScrollFadeInSection';
 
 interface ProjectListingProps {
     projects: IProjectData[]
@@ -14,7 +15,7 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
     return (
         <div className="project-listing">
 
-            <div className="content-container">
+            <ScrollFadeInSection className="content-container">
                 {(!props.projects || props.projects.length === 0) && <p>No projects to display.</p>}
                 {props.projects && props.projects.length > 0 && 
                     <div className="content-layout">
@@ -46,7 +47,7 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
 
                     </div>
                 }
-            </div>
+            </ScrollFadeInSection>
 
         </div>
     );
