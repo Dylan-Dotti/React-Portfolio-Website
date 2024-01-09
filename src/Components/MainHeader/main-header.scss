@@ -1,3 +1,4 @@
+@use '../../Styles/screen-sizes' as *;
 @import '../../Styles/colors.scss';
 
 .main-header {
@@ -100,7 +101,7 @@
 }
 
 
-@media(min-width: 768px) {
+@media(min-width: $tablet) {
     .main-header {
 
         .header-bar {
@@ -120,7 +121,7 @@
     }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: $laptop) {
     .main-header {
 
         .header-bar {
@@ -136,7 +137,7 @@
     }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: $laptop-l) {
     .main-header {
 
         .header-bar {
@@ -159,7 +160,7 @@
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: $desktop) {
     .main-header {
 
         .header-bar {
