@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './main-header.scss';
 import eventBus from '../../Events/EventBus';
 import ContactModalEvents from '../../Events/ContactModalEvents';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faCode, faEnvelope, faGraduationCap, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 const MainHeader: React.FC = () => {
 
@@ -19,20 +21,35 @@ const MainHeader: React.FC = () => {
                     <nav>
                         <ul className="nav-list">
                             <li className={location.pathname === '/' ? 'active' : ''}>
-                                <Link to="/">Home</Link>
+                                <Link to="/">
+                                    <span className="header-link-text">Home</span>
+                                    <FontAwesomeIcon icon={faHouse} fixedWidth className="header-link-icon" />
+                                </Link>
                             </li>
                             <li className={location.pathname.startsWith('/projects') ? 'active' : ''}>
-                                <Link to="/projects">Projects</Link>
+                                <Link to="/projects">
+                                    <span className="header-link-text">Projects</span>
+                                    <FontAwesomeIcon icon={faCode} fixedWidth className="header-link-icon" />
+                                </Link>
                             </li>
                             <li className={location.pathname.startsWith('/employment') ? 'active' : ''}>
-                                <Link to="/employment">Employment</Link>
+                                <Link to="/employment">
+                                    <span className="header-link-text">Employment</span>
+                                    <FontAwesomeIcon icon={faBriefcase} fixedWidth className="header-link-icon" />
+                                </Link>
                             </li>
                             <li className={location.pathname.startsWith('/education') ? 'active' : ''}>
-                                <Link to="/education">Education</Link>
+                                <Link to="/education">
+                                    <span className="header-link-text">Education</span>
+                                    <FontAwesomeIcon icon={faGraduationCap} fixedWidth className="header-link-icon" />
+                                </Link>
                             </li>
                         </ul>
                         <button className="btn btn-primary contact-button" onClick={() => eventBus.emit(ContactModalEvents.showModal)}>
-                            <h5>Contact</h5>
+                            <h5>
+                                <span className="header-link-text">Contact</span>
+                                <FontAwesomeIcon icon={faEnvelope} fixedWidth className="header-link-icon" />
+                            </h5>
                         </button>
                     </nav>
                 </div>
