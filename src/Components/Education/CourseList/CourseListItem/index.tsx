@@ -25,8 +25,10 @@ const CourseListItem: React.FC<ICourseListItemProps> = (props) => {
                 )}
                 {course.overview && (
                     <div className="course-overview">
-                        {course.overview.split('\n').map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
+                        {course.overview.map((paragraph, index) => (
+                            <p key={index}>
+                                {paragraph}
+                            </p>
                         ))}
                     </div>
                 )}
