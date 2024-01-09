@@ -1,4 +1,4 @@
-@import "../../Styles/colors.scss";
+@use "../../Styles/colors" as *;
 
 .custom-tag {
     background-color: map-get($blue-palette-1, 200);

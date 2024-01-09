@@ -1,5 +1,5 @@
 
-@import "./colors.scss";
+@use "colors" as *;
 
 .modal-backdrop.show {
     opacity: 0.75;

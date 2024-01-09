@@ -1,4 +1,4 @@
-@import '../src/Styles/colors.scss';
+@use '../src/Styles/colors' as *;
 
 body {
   background-color: $main-background;

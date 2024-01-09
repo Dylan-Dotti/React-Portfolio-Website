@@ -1,4 +1,4 @@
-@import "../../Styles/colors.scss";
+@use "../../Styles/colors" as *;
 
 #projects {
     padding: 80px 0;
