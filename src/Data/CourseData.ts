@@ -14,8 +14,8 @@ const dataStructuresData: ICourseData = {
 
 const softwareDesignDevelopmentData: ICourseData = {
     id: 2,
-    name: "Software Design and Development",
-    overview: `This vaguely-named course covered a variety of topics. There was a strong focus on group projects and open-source software. Group projects were assigned on a weekly or biweekly basis. We made use of Ubuntu Linux virtual machines for several of the projects.`,
+    name: "Open-Source Software",
+    overview: `This course had a strong focus on open-source software and group projects. Projects were assigned on a weekly or biweekly basis. We made use of Ubuntu Linux virtual machines for most of the coursework.`,
     skills: [
         "Java",
         "Python",
@@ -30,7 +30,7 @@ const softwareDesignDevelopmentData: ICourseData = {
 const operatingSystemsData: ICourseData = {
     id: 3,
     name: "Operating Systems",
-    overview: `This course covered many of the basic functions of operating systems, such as processes, threads, scheduling, memory management, and file systems. Projects consisted of implementing various basic operating system functions in C++.`,
+    overview: `This course covered many of the basic functions of operating systems, such as processes, threads, scheduling, memory management, paging, and file systems. Projects consisted of implementing various basic operating system functions in C++.`,
     skills: [
         "C++",
         "Linux (Ubuntu)",
@@ -42,8 +42,7 @@ const operatingSystemsData: ICourseData = {
 const algorithmsData: ICourseData = {
     id: 4,
     name: "Algorithms",
-    overview: `This course covered many of the most common algorithmic paradigms, such as divide and conquer, dynamic programming, and greedy algorithms. It also covered how to analyze the time and space complexity of algorithms and represent them with big O notation.
-               One of the most interesting algorithms I learned about was Huffman encoding, which is used to compress data.`,
+    overview: `The Algorithms course covered a variety of algorithmic techniques including divide and conquer, dynamic programming, and greedy methods. The curriculum covered the evaluation of algorithm time and space complexity and how to represent them with Big O notation. Overall, this course taught me new ways of approaching solutions to complex programming problems.`,
     skills: [
         "Java",
         "Big O Notation",
@@ -54,8 +53,8 @@ const algorithmsData: ICourseData = {
 const oopData: ICourseData = {
     id: 5,
     name: "Object Oriented Programming & Design",
-    overview: `This course covered a majority of the most common design patterns, such as the factory, observer, command, and composite patterns. Each pattern had an associated project which required me to implement the project using Java.
-               Java streams were also covered in this course. I learned how to use streams to efficiently perform operations on collections of data, which translated well to using LINQ in C#. Java multithreading was also briefly covered.`, 
+    overview: `This course covered popular design patterns, such as factory, observer, command, and strategy. Each module included a project where I applied these patterns using Java.
+               The course also covered Java streams, teaching me efficient data operation techniques that translated well to LINQ in C#. A brief introduction to Java multi-threading provided a foundation in concurrent programming. This course greatly improved my approach to software design and problem-solving in programming.`, 
     skills: [
         "Java",
         "Unit Testing",
@@ -68,8 +67,8 @@ const oopData: ICourseData = {
 const dbManagementSystemsData: ICourseData = {
     id: 6,
     name: "Database Management Systems",
-    overview: `This course covered most of the basic SQL syntax as well as relational database design considerations. Projects included creating diagrams for a provided data description and writing scripts to produce specified results and to efficiently create tables and populate them with data.
-               One of my biggest takeaways from this course was the concept of normalization, or preventing data duplication. I learned that many-to-many table relationships should always be represented with an intermediary table with foreign keys from both source tables.`,
+    overview: `This course explored basic SQL syntax and relational database design. I worked on projects that involved creating diagrams to represent data structures and writing scripts to generate specific outcomes, including efficiently setting up and populating tables with data.
+               A key takeaway for me was understanding the concept of normalization, which is about preventing unnecessary duplication of data. I learned the importance of using intermediary tables with foreign keys from both source tables to handle many-to-many relationships. This knowledge has been fundamental in helping me create more organized and efficient databases.`,
     skills: [
         "SQL",
         "PostgreSQL",
@@ -88,8 +87,8 @@ const dbManagementSystemsData: ICourseData = {
 const appliedAIData: ICourseData = {
     id: 7,
     name: "Applied Artificial Intelligence",
-    overview: `This course covered several machine learning algorithms, such as graph searches, minimax, reinforcement learning, and neural networks.
-               The course closely followed the CS188 AI course given at UC Berkeley. Projects consisted of implementing various AI algorithms with Python in Pacman-themed environments.`,
+    overview: `This course significantly enriched my academic journey, introducing me to fundamental machine learning algorithms like graph searches, minimax, reinforcement learning, and neural networks. It mirrored the CS188 AI course from UC Berkeley, containing a blend of theoretical understanding and practical application.
+               The highlight of the course was the series of projects that involved using Python to implement various AI algorithms in Pacman-themed environments. This hands-on approach made complex concepts more accessible and engaging, greatly enhancing my grasp of AI strategies and their applications.`,
     skills: [
         "Python",
         "Machine Learning",
@@ -107,8 +106,8 @@ const appliedAIData: ICourseData = {
 const introToRoboticsData: ICourseData = {
     id: 8,
     name: "Introduction to Robotics",
-    overview: `This was one of the most interesting courses I took at CNU. It covered the basics of robotics, including kinematics, path planning, and controls.
-               I was required to complete a group project which consisted of using ROS (Robot Operating System) to program a robot with vision capabilities to interact with the environment in some way. My group decided to make the robot perform distinct movements based on the color of the object it saw. The project required significant collaboration, and many hours spent in the computer lab.`,
+    overview: `This course was a highlight of my degree, covering fundamental aspects of robotics such as kinematics, path planning, and controls. It was a deep dive into how robots perceive and interact with the world, offering a blend of theoretical and practical learning.
+    A significant part of the course was the group project, which revolved around using ROS (Robot Operating System) to program a robot with vision capabilities to interact with the world in some way. My group decided to make the robot respond to different colored objects with distinct movements. This project demanded extensive teamwork and many hours in the computer lab. It was a hands-on experience that emphasized the importance of collaboration in solving complex problems and left me with a deeper understanding of robotics applications.`,
     skills: [
         "Python",
         "ROS (Robot Operating System)",
@@ -136,7 +135,7 @@ const capstoneProjectData: ICourseData = {
 const discreteMathematicsData: ICourseData = {
     id: 10,
     name: "Discrete Mathematics",
-    overview: "Sometimes termed \"math for computer science\", this course covered several mathematical topics that are relevant to software development, including proofs, set theory, graph theory, combinatorics, probability theory, boolean algebra, and big O notation.",
+    overview: "This course covered several mathematical topics that are relevant to software development, including proofs, set theory, graph theory, combinatorics, probability theory, boolean algebra, and big O notation.",
     skills: [
         "Proofs",
         "Set Theory",
