@@ -4,6 +4,7 @@ import IProjectData from "../Interfaces/IProjectData";
 const deviantProjectData: IProjectData = {
     id: 1,
     name: "Deviant",
+    hashName: "deviant",
     description: "A game made with the Unity engine for my senior capstone project.",
     overviewSections: [
         {
@@ -34,6 +35,7 @@ const deviantProjectData: IProjectData = {
 const ghdAutoTimeEntryData: IProjectData = {
     id: 2,
     name: "GHD Auto Time Entry",
+    hashName: "ghd-auto-time-entry",
     description: "An app made in collaboration with another engineer to automate time entry at my support desk job.",
     overviewSections: [
         {
@@ -68,6 +70,7 @@ const ghdAutoTimeEntryData: IProjectData = {
 const pokemonMonopolyData: IProjectData = {
     id: 3,
     name: "Pokémon Monopoly",
+    hashName: "pokemon-monopoly",
     description: "A Pokémon themed version of the classic board game Monopoly made with the Unity Engine.",
     overviewSections: [
         {
@@ -103,6 +106,7 @@ const pokemonMonopolyData: IProjectData = {
 const emeraldAutoTrainerData: IProjectData = {
     id: 4,
     name: "Emerald Auto Trainer",
+    hashName: "emerald-auto-trainer",
     description: "A bot I made to automate the process of training Pokémon in Pokémon Emerald. Uses Python to parse the game's memory and simulate button presses.",
     overviewSections: [
         {
@@ -138,6 +142,7 @@ const emeraldAutoTrainerData: IProjectData = {
 const pokemonClassifierData: IProjectData = {
     id: 5,
     name: "Pokémon Classifier",
+    hashName: "pokemon-classifier",
     description: "A machine learning model that classifies Pokémon given an image of the Pokémon. Uses Python and the Keras library.",
     overviewSections: [
         {
@@ -173,6 +178,7 @@ const pokemonClassifierData: IProjectData = {
 const missingBinFinderData: IProjectData = {
     id: 6,
     name: "Missing Bin Finder",
+    hashName: "missing-bin-finder",
     description: "A program I made to find missing bins in a list of bins. Uses C# and Windows Forms.",
     overviewSections: [
         {
@@ -201,6 +207,7 @@ const missingBinFinderData: IProjectData = {
 const logSaverData: IProjectData = {
     id: 7,
     name: "Log Saver",
+    hashName: "log-saver",
     description: "A program I made to save log files from a remote server. Uses C# and Windows Forms.",
     overviewSections: [
         {
@@ -235,6 +242,7 @@ const logSaverData: IProjectData = {
 const fileEncryptorData: IProjectData = {
     id: 8,
     name: "File Encryptor",
+    hashName: "file-encryptor",
     description: "A small utility application I made to encrypt files. Uses C# and Windows Forms.",
     overviewSections: [
         {
@@ -262,6 +270,7 @@ const fileEncryptorData: IProjectData = {
 const portfolioWebsiteData: IProjectData = {
     id: 9,
     name: "This Website",
+    hashName: "portfolio-website",
     description: "The website you are currently viewing. Uses React with Sass and Typescript.",
     overviewSections: [
         {

@@ -22,7 +22,7 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
 
                         <div className="list-content">
                             {props.projects.map((project, index) => (
-                                <div className="list-item-wrapper header-bar-nav-buffer" key={project.id} id={`project-${project.id}`}>
+                                <div className="list-item-wrapper header-bar-nav-buffer" key={project.id} id={project.hashName}>
                                     <ProjectListingItem
                                         project={project}
                                     />
@@ -36,7 +36,7 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
                                 {props.projects.map((project, index) => {
                                     return (
                                         <li key={project.id}>
-                                            <HashLink to={`#project-${project.id}`} className="project-link" smooth>
+                                            <HashLink to={`#${project.hashName}`} className="project-link" smooth>
                                                 {project.name}
                                             </HashLink>
                                         </li>

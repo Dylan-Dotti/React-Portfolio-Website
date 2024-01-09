@@ -8,6 +8,7 @@ export interface IProjectOverviewSection {
 export default interface IProjectData {
     id               : number
     name             : string
+    hashName         : string
     description      : string
     startDate?       : Date
     endDate?         : Date
