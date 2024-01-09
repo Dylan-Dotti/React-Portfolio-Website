@@ -8,7 +8,10 @@
     
     .page-header {
         color: $primary-color;
-        margin-bottom: 0;
+    }
+
+    .content-container {
+        width: 55%;
     }
 
     .crossfade-image-carousel {
