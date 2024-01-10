@@ -171,3 +171,15 @@
         }
     }
 }
+
+@media(min-width: $four-k) {
+    .main-header {
+
+        .header-bar {
+
+            .header-bar-contents {
+                width: 65%;
+            }
+        }
+    }
+}

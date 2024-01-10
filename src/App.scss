@@ -1,4 +1,5 @@
 @use '../src/Styles/colors' as *;
+@use '../src/styles/screen-sizes' as *;
 
 body {
   background-color: $main-background;
@@ -89,7 +90,8 @@ hr.quarter-centered, .custom-hr.quarter-centered {
 }
 
 .content-container {
-  width: 65%;
+  //width: 65%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -146,11 +148,6 @@ html {
   width: 20px; /* Set the width of the scrollbar */
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 /* The track */
 ::-webkit-scrollbar-track {
   background: $main-background-light; /* Set the color of the scrollbar track */
@@ -161,6 +158,10 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #888; /* Set the color of the scrollbar handle */
   //border-left: 1px solid grey;
+
+  &:hover {
+    background: #555;
+  }
 }
 
 #App {
@@ -187,5 +188,29 @@ html {
       visibility: hidden;
       pointer-events: none;
     }
+  }
+}
+
+
+// Media Queries
+
+@media(min-width: $laptop-l) {
+  
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media(min-width: $desktop) {
+
+  .content-container {
+    width: 65%;
+  }
+}
+
+@media(min-width: $four-k) {
+
+  .content-container {
+    width: 50%;
   }
 }
