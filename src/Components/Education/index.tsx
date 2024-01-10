@@ -20,7 +20,7 @@ const Education: React.FC = () => {
                 </ScrollFadeInSection> 
                 <ScrollFadeInSection direction={ScrollFadeInDirection.Up} className="overview-section content-container">
                     <p>
-                        I obtained a Bachelor's degree in Computer Science at Christopher Newport University in May of 2019. This period was a transformative experience where my fascination with technology blossomed into a deep-rooted passion. The rigorous curriculum and collaborative projects cultivated my passion for the field, and set the stage for a career where continuous learning and innovation are at the core. My time at CNU was instrumental in shaping my approach to the dynamic field of computer science, preparing me for the challenges that lay ahead in the tech industry.
+                        I obtained a Bachelor's degree in Computer Science at Christopher Newport University in May of 2019. The rigorous curriculum and collaborative projects strengthened my passion for the field, and set the stage for a career where continuous learning and innovation are at the core. My time at CNU was instrumental in shaping my approach to the dynamic field of computer science, preparing me for the challenges that lay ahead in the tech industry.
                     </p>
                 </ScrollFadeInSection>
             </div>

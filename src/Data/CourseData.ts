@@ -18,7 +18,8 @@ const softwareDesignDevelopmentData: ICourseData = {
     id: 2,
     name: "Open-Source Software",
     overview: [
-        "This course had a strong focus on open-source software and group projects. Projects were assigned on a weekly or biweekly basis. We made use of Ubuntu Linux virtual machines for most of the coursework.",
+        "This course had a strong focus on open-source software and frequent group projects. We made use of Ubuntu Linux virtual machines for most of the coursework.",
+        "One highlight of this course involved installing the Firefox browser from source code on an Ubuntu virtual machine and attempting to make a visible change, which took several hours of trial and error the first time. Additionally, the final group project involved contributing to an open-source project, for which my group chose to implement a percentile marker feature for Matplotlib, a popular Python plotting library."
     ],
     skills: [
         "Java",
@@ -35,7 +36,7 @@ const operatingSystemsData: ICourseData = {
     id: 3,
     name: "Operating Systems",
     overview: [
-        "This course covered many of the basic functions of operating systems, such as processes, threads, scheduling, memory management, paging, and file systems. Projects consisted of implementing various basic operating system functions in C++.",
+        "This course covered many of the basic functions of operating systems, such as processes, threads, scheduling, memory management, paging, and file systems. Projects consisted of implementing operating system functionality in C++.",
     ],
     skills: [
         "C++",
@@ -49,7 +50,8 @@ const algorithmsData: ICourseData = {
     id: 4,
     name: "Algorithms",
     overview: [
-        "The Algorithms course covered a variety of algorithmic techniques including divide and conquer, dynamic programming, and greedy methods. The curriculum covered the evaluation of algorithm time and space complexity and how to represent them with Big O notation. Overall, this course taught me new ways of approaching solutions to complex programming problems.",
+        "The Algorithms course covered a variety of algorithmic techniques including divide and conquer, dynamic programming, and greedy methods. it also covered the evaluation of algorithm time and space complexity and how to represent them with Big O notation",
+        "One of the more interesting algorithms I learned in this course was Huffman Encoding, a lossless data compression algorithm that uses a binary tree to encode data. I implemented this algorithm in Java for a project that involved compressing the text of several books."
     ],
     skills: [
         "Java",
@@ -60,10 +62,10 @@ const algorithmsData: ICourseData = {
 
 const oopData: ICourseData = {
     id: 5,
-    name: "Object Oriented Programming & Design",
+    name: "Object-Oriented Programming",
     overview: [
-        "This course covered popular design patterns, such as factory, observer, command, and strategy. Each module included a project where I applied these patterns using Java.",
-        "The course also covered Java streams, teaching me efficient data operation techniques that translated well to LINQ in C#. A brief introduction to Java multi-threading provided a foundation in concurrent programming. This course greatly improved my approach to software design and problem-solving in programming.",
+        "This course covered popular OOP design patterns, such as factory, observer, command, and strategy. Each module included a project where I applied these patterns using Java.",
+        "The course also covered Java streams, teaching me efficient data operation techniques that translated well to LINQ in C#. A brief introduction to Java multithreading provided a foundation in concurrent programming. This course greatly improved my approach to software design and problem-solving in programming.",
     ],
     skills: [
         "Java",
@@ -137,8 +139,8 @@ const capstoneProjectData: ICourseData = {
     id: 9,
     name: "Capstone Project",
     overview: [
-        "This was less of a course and more of a semester-long, supervised project. For my project, I chose to make a game with C# and the Unity engine, as I had been working with the engine for several years and felt that was the best way to showcase my development abilities.",
-        "I was required to provide weekly updates, including a weekly standup meeting with the professor and the rest of the class. I was also required to create a display for CNU's annual Capstone Fair.",
+        "This was less of a course and more of a semester-long, supervised project. For my project, I chose to make a game with C# and the Unity Engine, as I had been working with it for several years and felt that was the best way to showcase my development abilities. I was required to provide frequent updates, including a weekly standup meeting with the professor and the rest of the class. I was also required to create a display for CNU's annual Capstone Fair.",
+        "The project was a resounding success, and was one of two winning projects at the Capstone Fair in the Computer Science category.",
     ],
     skills: [
         "C#",
@@ -147,6 +149,12 @@ const capstoneProjectData: ICourseData = {
         "Game Development",
         "Standups",
         "Time Management",
+    ],
+    links: [
+        {
+            name: "Project demo",
+            url: "https://youtu.be/lgC5nulletU"
+        }
     ]
 };
 
