@@ -161,7 +161,7 @@ const About: React.FC = () => {
                 <div className="tech-group content-container">
                     <ScrollFadeInSection>
                         <h1 className="section-title">
-                            I <span className="primary-color-text">used</span> to use these, but not as much lately
+                            I used to use these, but not as much lately
                         </h1>
                     </ScrollFadeInSection>
 
@@ -291,7 +291,7 @@ const About: React.FC = () => {
                         </h3>
                     </ScrollFadeInSection>
 
-                    <div className="two-even-column-grid">
+                    <div className="ai-tools-layout">
                         <ScrollFadeInSection
                             className="left-column"
                             direction={ScrollFadeInDirection.Right}
