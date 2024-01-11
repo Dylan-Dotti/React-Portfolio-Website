@@ -13,31 +13,60 @@
 
     .crossfade-image-carousel {
         border: 2px solid whitesmoke;
-        border-radius: 3%;
+        border-radius: 20px;
         width: 450px;
+        max-width: 100%;
         aspect-ratio: 5/3;
         object-fit: cover;
-        margin-right: 20px;
-        margin-bottom: 10px;
+        margin: 20px auto;
+    }
 
-        &.hbc-carousel {
-            float:left;
+    .img-wrapper {
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        width: 450px;
+        max-width: 100%;
+        display: flex;
+        aspect-ratio: 5/3;
+        justify-content: center;
+        margin: 20px auto;
+        
+        img {
+            object-fit: cover;
+            flex: 1;
+            border-radius: inherit;
         }
     }
+
 
     .job-section {
 
         .job-title {
             color: $secondary-color;
+            text-align: center;
         }
 
-        img {
-            width: 450px;
-            aspect-ratio: 5/3;
-            object-fit: cover;
-            border: 2px solid whitesmoke;
-            border-radius: 3%;
-            margin: 20px;
+    }
+
+    .chapter-section {
+
+        .chapter-title {
+            color: $secondary-color;
+            text-align: center;
+        }
+    }
+
+    .job-divider {
+        margin-bottom: 1rem;
+    }
+
+
+    // Media Queries
+
+    @media(min-width: $tablet) {
+
+        .img-wrapper {
+            margin: 10px 0 10px 20px;
 
             &.left-img {
                 float: left;
@@ -47,44 +76,48 @@
                 float: right;
             }
         }
-    }
 
-    .chapter-section {
-
-        .chapter-title {
-            color: $secondary-color;
+        .crossfade-image-carousel {
+            margin: 10px 0 10px 20px;
+            
+            &.hbc-carousel, &.lenox-carousel {
+                float: right;
+            }
         }
+
+        .job-section {
+
+            .job-title {
+                text-align: left;
+            }
+        }
+
+        .chapter-section {
+
+            .chapter-title {
+                text-align: left;
+            }
+        }
+
+
     }
-
-    .job-divider {
-        margin-bottom: 1rem;
-    }
-}
-
-// Media Queries
-
-@media(min-width: $laptop-l) {
-    #employment {
+    
+    @media(min-width: $laptop-l) {
 
         .content-container {
             width: 75%;
         }
     }
-
-}
-
-@media(min-width: $desktop) {
-    #employment {
+    
+    @media(min-width: $desktop) {
 
         .content-container {
             width: 55%;
         }
     }
-}
-
-@media(min-width: $four-k) {
-    #employment {
-
+    
+    @media(min-width: $four-k) {
+        
         .content-container {
             width: 40%;
         }

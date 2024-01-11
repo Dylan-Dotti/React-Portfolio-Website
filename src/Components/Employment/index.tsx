@@ -16,7 +16,7 @@ const Employment: React.FC = () => {
                 
             <ScrollFadeInSection className="job-section ghd-section content-container">
                 <h2 className="job-title">Global Helpdesk Support Engineer</h2>
-                <img src="img/Swisslog/cranes.PNG" alt="" className="right-img"/>
+                <div className="img-wrapper right-img"><img src="img/Swisslog/cranes.PNG" alt=""/></div>
 
                 <p>
                     Following my graduation from CNU, my former university advisor presented me with an opportunity for a helpdesk support engineer position at Swisslog, a global intralogistics company. Although the position did not involve any software development, the pay and benefits were enticing, and the prospect of being involved with software that interacted with the physical world was an interesting one. I decided that this position would be a good way to learn the industry and that I had the potential to move to a development role within the company at a later time, so I accepted the offer.
@@ -33,6 +33,7 @@ const Employment: React.FC = () => {
                 </div>
 
                 <div className="chapter-section">
+                    <h4 className="chapter-title">HBC Project</h4>
                     <CrossfadeImageCarousel 
                         className="hbc-carousel"
                         images={[
@@ -48,7 +49,6 @@ const Employment: React.FC = () => {
                         imgHoldDurationMS={12_000}
                         imgFadeDurationMS={4_000}
                     />
-                    <h4 className="chapter-title">HBC Project</h4>
                     <p>
                         After my onboarding and initial training, I was selected to travel to support a relatively new warehouse project commissioned by Hudson's Bay Company (HBC) for two weeks. The site was utilizing Swisslog's CarryPick system, which works by managing a fleet of mobile robots that move around a grid of product racks using AR tags on the floor to keep track of their position. When a product is requested by the system, a robot will physically pick up a rack with the desired product, then bring it to a manned workstation for picking.
                     </p>
@@ -94,8 +94,8 @@ const Employment: React.FC = () => {
             </ScrollFadeInSection>
 
             <ScrollFadeInSection className="job-section content-container">
-                <img src="img/Lenox/IMG_1769.jpg" alt="" className="right-img"/>
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
+                <div className="img-wrapper right-img"><img src="img/Lenox/IMG_1769.jpg" alt=""/></div>
 
                 <p>
                     In this role, I worked as part of a team of 5 engineers - two developers (myself and a senior), two integration/QA engineers, and a manager. The team was responsible for the development and maintenance of a light-goods conveyor automation system called <strong className="primary-color-text">Automation Director</strong>. The software portion of the system consisted of a front-end web application made with React, a back-end API made with .NET Web API and C#, an SQL Server database, and a set of business logic services called agents.
@@ -164,8 +164,9 @@ const Employment: React.FC = () => {
                 </div>
 
                 <div className="chapter-section">
+                    <h4 className="chapter-title">Lenox Trip</h4>
                     <CrossfadeImageCarousel 
-                        className="hbc-carousel"
+                        className="lenox-carousel"
                         images={[
                             "img/Lenox/IMG_2321.jpg",
                             "img/Lenox/IMG_2322.jpg",
@@ -179,7 +180,6 @@ const Employment: React.FC = () => {
                         imgHoldDurationMS={12_000}
                         imgFadeDurationMS={4_000}
                     />
-                    <h4 className="chapter-title">Lenox Trip</h4>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis animi vero illo perferendis et, qui at dolor? Ducimus corporis at, dolor dolores praesentium voluptatem quam laboriosam maiores porro quod repellendus eum officiis id molestiae similique repellat minus assumenda omnis est alias eveniet. Pariatur a veniam sed repellat error corrupti excepturi, eaque consequatur delectus, laborum asperiores similique labore quae. Sit accusamus itaque esse nisi eligendi impedit maiores tempore ut est natus velit quo nesciunt fugit inventore ipsum, laboriosam, totam excepturi iure possimus obcaecati quibusdam fuga. Illo porro aut veniam necessitatibus id tempora doloremque dolor unde facere harum, corporis, nam magnam ipsum.
                     </p>
