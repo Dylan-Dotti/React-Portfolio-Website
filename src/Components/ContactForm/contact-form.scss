@@ -8,20 +8,26 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        .send-button {
+            display: flex;
+            gap: 0.4rem;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .left-column, .right-column {
         background-color: rgba(grey, 0.05);
         border-radius: 10px;
-        padding: 2em;
+        padding: .5em;
     }
-
+    
     .right-column {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 40px;
-
     }
 
     .contact-methods {
@@ -37,6 +43,18 @@
             gap: 10px;
             width: fit-content;
 
+            .contact-icon {
+                display: none;
+            }
+
+            .contact-link-text {
+                display: none;
+            }
+
+            &.location {
+                display: none;
+            }
+
             &:last-of-type {
                 margin-top: auto;
             }
@@ -45,7 +63,36 @@
 
     // Media Queries
 
+    @media(min-width: $mobile-l) {
+
+        .left-column, .right-column {
+            padding: 2em;
+        }
+
+        .contact-methods {
+
+            .contact-method {
+
+                .contact-icon {
+                    display: var(--fa-display, inline-block);
+                }
+
+                .contact-link-icon {
+                    display: none;
+                }
+
+                .contact-link-text {
+                    display: inline-block;
+                }
+
+                &.location {
+                    display: flex;
+                }
+            }
+        }
+    }
+
     @media(min-width: $laptop) {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 3fr 2fr;
     }
 }

@@ -342,4 +342,14 @@
     
     }
 
+    @media(min-width: $laptop-l) {
+        
+        .contact-section {
+                
+                .contact-form-wrapper {
+                    width: 80%;
+                }
+        }
+    }
+
 }
