@@ -77,8 +77,8 @@
 
         .tech-grid {
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
             margin: 0 auto;
-            width: 80%;
             justify-items: center;
             align-items: center;
             row-gap: 20px;
@@ -199,6 +199,7 @@
                 .timeline {
                     color: $accent-color;
                     text-align: right;
+                    text-wrap: balance;
                 }
 
                 .responsibilities-header {
@@ -264,7 +265,7 @@
         .technologies-section {
     
             .tech-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
@@ -274,8 +275,7 @@
         .technologies-section {
     
             .tech-grid {
-                
-                grid-template-columns: repeat(3, 1fr);
+                width: 80%;
             }
         }
     

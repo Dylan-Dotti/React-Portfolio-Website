@@ -240,7 +240,7 @@ const About: React.FC = () => {
                         <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Right} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Full-Stack Software Engineer</h3>
-                                <h4 className="timeline">Nov. 2021 - Nov. 2023</h4>
+                                <h4 className="timeline">Nov '21 - Nov '23</h4>
                                 <h4 className="responsibilities-header">Primary Responsibilities</h4>
                             </div>
                             <ul className="blue-circle-list">
@@ -256,7 +256,7 @@ const About: React.FC = () => {
                         <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Left} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Global Helpdesk Support Engineer</h3>
-                                <h4 className="timeline">Dec. 2019 - Nov. 2021</h4>
+                                <h4 className="timeline">Dec '19 - Nov '21</h4>
                                 <h4 className="responsibilities-header">Primary Responsibilities</h4>
                             </div>
                             <ul className="blue-circle-list">
