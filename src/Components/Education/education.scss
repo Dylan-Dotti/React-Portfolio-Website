@@ -1,4 +1,5 @@
 @use "../../Styles/colors" as *;
+@use "../../Styles/screen-sizes" as *;
 
 #education {
     padding: 80px 0;
@@ -27,15 +28,13 @@
 
         .awards-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3%;
+            gap: 2.5%;
         }
 
         .award {
             border: 2px solid whitesmoke;
             border-radius: 20px;
             padding: 25px;
-            min-height: 300px;
             box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 1);
             background-color: $main-background-light;
 
@@ -52,6 +51,10 @@
                 margin-bottom: 15px;
                 color: $accent-color;
             }
+
+            .award-description {
+                text-align: center;
+            }
         }
     }
 
@@ -61,6 +64,26 @@
 
             .title {
                 color: $primary-color;
+            }
+        }
+    }
+
+
+    // Media Queries
+
+    @media(min-width: $laptop) {
+
+        .awards-section {
+
+            .awards-grid {
+                grid-template-columns: repeat(3, 1fr);
+
+                .award {
+                    
+                    .award-description {
+                        text-align: left;
+                    }
+                }
             }
         }
     }
