@@ -1,10 +1,12 @@
 @use "../../../../Styles/colors" as *;
+@use "../../../../Styles/screen-sizes" as *;
 
 .project-listing-item {
         
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4%;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 4%;
+    gap: 2.5%;
 
     p {
         margin-bottom: 0.7rem;
@@ -29,7 +31,6 @@
     }
 
     .main-image {
-        width: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
         border: 1px solid whitesmoke;
@@ -76,4 +77,10 @@
         }
     }
 
+    // Media Queries
+
+    @media (min-width: $laptop) {
+        grid-template-columns: 1fr 1fr;
+        gap: 4%;
+    }
 }

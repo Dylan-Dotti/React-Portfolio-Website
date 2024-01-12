@@ -2,6 +2,7 @@
 @use "../../../Styles/screen-sizes" as *;
 
 .project-listing {
+    margin: 0 auto;
 
     .content-container {
         padding: 40px 0;
@@ -31,6 +32,7 @@
         li {
             list-style-type: decimal;
             list-style-position: inside;
+            font-size: 1rem;
             
             a {
                 margin-left: .5rem;
@@ -47,31 +49,29 @@
         margin-top: 40px;
         margin-bottom: 40px;
     }
-}
 
+    // Media Queries
 
-// Media Queries
-
-@media(min-width: $laptop-l) {
-    .project-listing {
-        .content-container {
-            width: 85%;
-        }
-    }
-}
-
-@media(min-width: $desktop) {
-    .project-listing {
+    // @media(min-width: 850px) {
+    //     max-width: 75%;
+    // }
+    
+    // @media(min-width: $laptop-l) {
+    //     .content-container {
+    //         width: 85%;
+    //     }
+    // }
+    
+    @media(min-width: $desktop) {
         .content-container {
             width: 75%;
         }
     }
-}
-
-@media(min-width: $four-k) {
-    .project-listing {
+    
+    @media(min-width: $four-k) {
         .content-container {
             width: 50%;
         }
     }
 }
+
