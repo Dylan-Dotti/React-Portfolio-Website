@@ -5,6 +5,7 @@ import CourseList from './CourseList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HrWithCircle from '../Visual/HrWithCircle';
 import awardData from '../../Data/AcademicAwardsData';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Education: React.FC = () => {
 
@@ -15,8 +16,13 @@ const Education: React.FC = () => {
                 <ScrollFadeInSection className="title-section content-container">
                     <h1 className="text-center title">Education</h1>
                     <HrWithCircle widthClass="half-centered" />
-
-                    <img src="./img/CNU/cnu_campus_1_cropped.jpg" alt="" className="main-image" />
+                    
+                    <LazyLoadImage
+                        src="./img/CNU/cnu_campus_1_cropped.jpg"
+                        alt=""
+                        effect="blur"
+                        className="main-image"
+                    />
                 </ScrollFadeInSection> 
                 <ScrollFadeInSection direction={ScrollFadeInDirection.Up} className="overview-section content-container">
                     <p>

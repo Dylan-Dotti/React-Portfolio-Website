@@ -9,6 +9,7 @@ import projectData from "../../Data/ProjectData";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import ContactForm from "../ContactForm";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const About: React.FC = () => {
@@ -62,7 +63,12 @@ const About: React.FC = () => {
             <div className="content-section intro-section">
                 <div className="content-container">
                     <ScrollFadeInSection>
-                        <div className="profile-picture white-glow-outline-panel" style={{backgroundImage: `url(${profileImg})`}}></div>
+                        <LazyLoadImage
+                            className="profile-picture white-glow-outline-panel"
+                            src={profileImg}
+                            alt=""
+                            effect="blur"
+                        />
                     </ScrollFadeInSection>
                     <ScrollFadeInSection className="intro-text" delayMS={400}>
                         <h1>Hi, I'm <span className="primary-color-text">Dylan</span></h1>
@@ -233,9 +239,6 @@ const About: React.FC = () => {
                         </h3>
                     </ScrollFadeInSection>
 
-                    {/* Summarize swisslog jobs? */}
-
-
                     <div className="employment-history">
                         <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Right} shiftValue="50px">
                             <div className="upper-row">
@@ -324,7 +327,12 @@ const About: React.FC = () => {
                     <div className="content">
                         <div className="left-column">
                             <ScrollFadeInSection direction={ScrollFadeInDirection.Right} shiftValue="30px">
-                                <img src="img/CNU/cnu_logo_blue_background.png" alt="" className="logo"/>
+                                <LazyLoadImage
+                                    src="img/CNU/cnu_logo_blue_background.png"
+                                    alt=""
+                                    effect="blur"
+                                    className="logo"
+                                />
                             </ScrollFadeInSection>
                         </div>
                         <div className="right-column">
@@ -361,7 +369,7 @@ const About: React.FC = () => {
                         </h3>
                     </ScrollFadeInSection>
 
-                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} delayMS={150} shiftValue="50px">
+                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} shiftValue="50px">
                         <div className="contact-form-wrapper light-to-dark-gradient-panel">
                             <ContactForm />
                         </div>
