@@ -34,36 +34,44 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
                         )}
                     </div>
                 </div>
-                {project.technologies &&
-                    <div className="project-section technologies-section">
-                        <h3 className="section-header">Technologies Used</h3>
-                        <ul>
-                            {project.technologies.map((tech, index) => (
-                                <li key={index}>{tech}</li>
-                            ))}
-                        </ul>
-                    </div>
-                }
-                {project.skills &&
-                    <div className="project-section skills-section">
-                        <h3 className="section-header">Relevant Skills</h3>
-                        <ul>
-                            {project.skills.map((skill, index) => (
-                                <li key={index}>{skill}</li>
-                            ))}
-                        </ul>
-                    </div>
-                }
-                {project.features && 
-                    <div className="project-section features-section">
-                        <h3 className="section-header">Notable Features</h3>
-                        <ul>
-                            {project.features.map((skill, index) => (
-                                <li key={index}>{skill}</li>
-                            ))}
-                        </ul>
-                    </div>
-                }
+                <div className="list-group-wrapper">
+                    {project.technologies &&
+                        <div className="project-section technologies-section">
+                            <h3 className="section-header">Technologies Used</h3>
+                            <div className="list-wrapper">
+                                <ul className="blue-circle-list">
+                                    {project.technologies.map((tech, index) => (
+                                        <li key={index}>{tech}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                    {project.skills &&
+                        <div className="project-section skills-section">
+                            <h3 className="section-header">Relevant Skills</h3>
+                            <div className="list-wrapper">
+                                <ul className="blue-circle-list">
+                                    {project.skills.map((skill, index) => (
+                                        <li key={index}>{skill}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                    {project.features &&
+                        <div className="project-section features-section">
+                            <h3 className="section-header">Notable Features</h3>
+                            <div className="list-wrapper">
+                                <ul className="blue-circle-list">
+                                    {project.features.map((skill, index) => (
+                                        <li key={index}>{skill}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                </div>
             </div>
 
             <div className="right-column">
