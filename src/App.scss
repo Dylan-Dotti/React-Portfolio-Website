@@ -166,7 +166,8 @@ html {
 
 #App {
   min-height: 100dvh;
-
+  overflow-x: clip;
+  
   .primary-color-text {
     color: $primary-color;
   }
@@ -195,7 +196,7 @@ html {
 // Media Queries
 
 @media(min-width: $laptop-l) {
-  
+
   .content-container {
     width: 80%;
   }
