@@ -98,11 +98,10 @@
     
     
     }
-}
 
+    // Media Queries
 
-@media(min-width: $tablet) {
-    .main-header {
+    @media(min-width: $tablet) {
 
         .header-bar {
 
@@ -119,10 +118,8 @@
 
         }
     }
-}
-
-@media(min-width: $laptop) {
-    .main-header {
+    
+    @media(min-width: $laptop) {
 
         .header-bar {
 
@@ -135,10 +132,8 @@
             }
         }
     }
-}
-
-@media(min-width: $laptop-l) {
-    .main-header {
+    
+    @media(min-width: $laptop-l) {
 
         .header-bar {
 
@@ -158,10 +153,8 @@
             }
         }
     }
-}
-
-@media(min-width: $desktop) {
-    .main-header {
+    
+    @media(min-width: $desktop) {
 
         .header-bar {
 
@@ -170,11 +163,9 @@
             }
         }
     }
-}
-
-@media(min-width: $four-k) {
-    .main-header {
-
+    
+    @media(min-width: $four-k) {
+        
         .header-bar {
 
             .header-bar-contents {
@@ -183,3 +174,4 @@
         }
     }
 }
+
