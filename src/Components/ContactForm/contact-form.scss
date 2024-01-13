@@ -27,14 +27,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
     }
 
     .contact-methods {
         display: flex;
-        flex-direction: column;
-        gap: 40px;
-        width: fit-content;
+        justify-content: space-around;
+        width: 100%;
         flex: 1;
 
         .contact-method {
@@ -70,6 +68,10 @@
         }
 
         .contact-methods {
+            flex-direction: column;
+            gap: 30px;
+            justify-content: flex-start;
+            width: fit-content;
 
             .contact-method {
 
