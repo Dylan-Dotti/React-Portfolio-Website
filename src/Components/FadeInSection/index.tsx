@@ -1,15 +1,15 @@
 import * as React from 'react';
-import './scroll-fade-in-section.scss';
+import './fade-in-section.scss';
 import classNames from 'classnames';
 import AppConfig from '../../Config/config';
 
-export enum ScrollFadeInDirection {
+export enum FadeInDirection {
     Up, Down, Left, Right
 }
 
-interface IScrollFadeInSectionProps {
+interface FadeInSectionProps {
     children?        : React.ReactNode
-    direction?       : ScrollFadeInDirection
+    direction?       : FadeInDirection
     delayMS?         : number
     durationMS?      : number
     shiftValue?      : string
@@ -20,11 +20,11 @@ interface IScrollFadeInSectionProps {
 }
 
 // A wrapper component that fades in its children when they are scrolled into view.
-const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
+const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
 
     const { 
         children,
-        direction = ScrollFadeInDirection.Up,
+        direction = FadeInDirection.Up,
         durationMS = AppConfig.defaultFadeInMS,
         delayMS = 0,
         shiftValue = '0px',
@@ -68,23 +68,23 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     };
 
     switch (direction) {
-        case ScrollFadeInDirection.Up:
+        case FadeInDirection.Up:
             style.top = isVisible ? '0' : shiftValue;
             break;
-        case ScrollFadeInDirection.Down:
+        case FadeInDirection.Down:
             style.bottom = isVisible ? '0' : shiftValue;
             break;
-        case ScrollFadeInDirection.Left:
+        case FadeInDirection.Left:
             style.left = isVisible ? '0' : shiftValue;
             break;
-        case ScrollFadeInDirection.Right:
+        case FadeInDirection.Right:
             style.right = isVisible ? '0' : shiftValue;
             break;
         default:
             break;
     }
 
-    const className = classNames('scroll-fade-in-section', { 'hidden': !isVisible }, props.className);
+    const className = classNames('fade-in-section', { 'hidden': !isVisible }, props.className);
 
     return (
         <div className={className} ref={domRef} style={style} onClick={onClick}>
@@ -93,4 +93,4 @@ const ScrollFadeInSection: React.FC<IScrollFadeInSectionProps> = (props) => {
     );
 }
 
-export default ScrollFadeInSection;
+export default FadeInSection;

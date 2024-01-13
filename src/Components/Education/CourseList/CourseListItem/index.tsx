@@ -2,7 +2,7 @@ import * as React from "react";
 import "./course-list-item.scss";
 import ICourseData from "../../../../Interfaces/ICourseData";
 import Tag from "../../../Tag";
-import ScrollFadeInSection from "../../../ScrollFadeInSection";
+import FadeInSection from "../../../FadeInSection";
 
 interface ICourseListItemProps {
     course: ICourseData
@@ -14,7 +14,7 @@ const CourseListItem: React.FC<ICourseListItemProps> = (props) => {
 
     return (
         <div className="course-list-item">
-            <ScrollFadeInSection durationMS={1000}>
+            <FadeInSection durationMS={1000}>
                 <h3 className="course-name">{course.name}</h3>
                 {course.skills && (
                     <div className="skills-list">
@@ -43,7 +43,7 @@ const CourseListItem: React.FC<ICourseListItemProps> = (props) => {
                         ))}
                     </div>
                 )}
-            </ScrollFadeInSection>
+            </FadeInSection>
             
         </div>
     );

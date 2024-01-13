@@ -1,18 +1,18 @@
 import React from "react";
 import "./projects.scss";
 import { Outlet } from "react-router-dom";
-import ScrollFadeInSection from "../ScrollFadeInSection";
+import FadeInSection from "../FadeInSection";
 import HrWithCircle from "../Visual/HrWithCircle";
 
 const Projects: React.FC = () => {
     return (
         <div id="projects">
-            <ScrollFadeInSection>
+            <FadeInSection>
                 <div className="content-container">
                     <h1 className="title">Projects</h1>
                     <HrWithCircle widthClass="half-centered" />
                 </div>
-            </ScrollFadeInSection>
+            </FadeInSection>
             <Outlet />
         </div>
     );

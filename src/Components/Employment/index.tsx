@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./employment.scss";
-import ScrollFadeInSection from "../ScrollFadeInSection";
+import FadeInSection from "../FadeInSection";
 import CrossfadeImageCarousel from "../CrossfadeImageCarousel";
 import HrWithCircle from "../Visual/HrWithCircle";
 import { HashLink } from "react-router-hash-link";
@@ -9,12 +9,12 @@ const Employment: React.FC = () => {
 
     return (
         <div id="employment">
-            <ScrollFadeInSection className="title-section content-container">
+            <FadeInSection className="title-section content-container">
                 <h1 className="text-center page-header">Employment</h1>
                 <HrWithCircle widthClass="half-centered" />
-            </ScrollFadeInSection>
+            </FadeInSection>
                 
-            <ScrollFadeInSection className="job-section ghd-section content-container">
+            <FadeInSection className="job-section ghd-section content-container">
                 <h2 className="job-title">Global Helpdesk Support Engineer</h2>
                 <div className="img-wrapper right-img"><img src="img/Swisslog/cranes.PNG" alt=""/></div>
 
@@ -87,13 +87,13 @@ const Employment: React.FC = () => {
                     </p>
                 </div>
 
-            </ScrollFadeInSection>
+            </FadeInSection>
 
-            <ScrollFadeInSection className="content-container job-divider">
+            <FadeInSection className="content-container job-divider">
                 <HrWithCircle className="softer" />
-            </ScrollFadeInSection>
+            </FadeInSection>
 
-            <ScrollFadeInSection className="job-section content-container">
+            <FadeInSection className="job-section content-container">
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
                 <div className="img-wrapper right-img"><img src="img/Lenox/IMG_1769.jpg" alt=""/></div>
 
@@ -191,7 +191,7 @@ const Employment: React.FC = () => {
                         This position was an excellent opportunity for me to learn and grow as a developer. I learned a lot about the software implementation, testing, and deployment processes, and I was provided plenty of opportunities to cultivate my web development skills. I was also able to learn more about the warehouse automation industry, which I found to be quite interesting. I am grateful to have been given the opportunity to work with such a great team, and I am proud of the work we were able to accomplish together.
                     </p>
                 </div>
-            </ScrollFadeInSection>
+            </FadeInSection>
 
         </div>
     );

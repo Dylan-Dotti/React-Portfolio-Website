@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./about.scss";
-import ScrollFadeInSection, { ScrollFadeInDirection } from "../ScrollFadeInSection";
+import FadeInSection, { FadeInDirection } from "../FadeInSection";
 import AppConfig from "../../Config/config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faSitemap, faRobot } from '@fortawesome/free-solid-svg-icons';
@@ -62,19 +62,19 @@ const About: React.FC = () => {
 
             <div className="content-section intro-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <LazyLoadImage
                             className="profile-picture white-glow-outline-panel"
                             src={profileImg}
                             alt=""
                             effect="blur"
                         />
-                    </ScrollFadeInSection>
-                    <ScrollFadeInSection className="intro-text" delayMS={400}>
+                    </FadeInSection>
+                    <FadeInSection className="intro-text" delayMS={400}>
                         <h1>Hi, I'm <span className="primary-color-text">Dylan</span></h1>
                         <h4>I'm a full-stack developer with a passion for making AI, games, and web applications</h4>
                         <h4>Take a look around to see how my skill set can benefit your organization and help shape the future of your technology</h4>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
                 </div>
             </div>
 
@@ -82,17 +82,17 @@ const About: React.FC = () => {
 
             <div className="content-section strengths-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title">My <span className="primary-color-text">strengths</span> as a developer</h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
                     
                     <div className="cards-grid">
 
-                        <ScrollFadeInSection
+                        <FadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={300}
-                            direction={ScrollFadeInDirection.Right}
+                            direction={FadeInDirection.Right}
                             shiftValue="50px"
                         >
                             <div className="card-icon">
@@ -100,13 +100,13 @@ const About: React.FC = () => {
                             </div>
                             <h2 className="card-title">Full Stack</h2>
                             <h5>From UIs to APIs to databases, I am capable of working on any layer of a software application.</h5>
-                        </ScrollFadeInSection>
+                        </FadeInSection>
 
-                        <ScrollFadeInSection
+                        <FadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={450}
-                            direction={ScrollFadeInDirection.Right}
+                            direction={FadeInDirection.Right}
                             shiftValue="50px"
                         >
                             <div className="card-icon">
@@ -114,13 +114,13 @@ const About: React.FC = () => {
                             </div>
                             <h2 className="card-title">OOP</h2>
                             <h5>Strong grasp of OOP design principles and a long history of utilizing the paradigm in my software.</h5>
-                        </ScrollFadeInSection>
+                        </FadeInSection>
 
-                        <ScrollFadeInSection
+                        <FadeInSection
                             className="strength-card"
                             durationMS={AppConfig.defaultFadeInMS * 0.8}
                             delayMS={600}
-                            direction={ScrollFadeInDirection.Right}
+                            direction={FadeInDirection.Right}
                             shiftValue="50px"
                         >
                             <div className="card-icon">
@@ -128,7 +128,7 @@ const About: React.FC = () => {
                             </div>
                             <h2 className="card-title">AI</h2>
                             <h5><span>Can leverage AI tools and libraries to integrate machine learning models into applications.</span></h5>
-                        </ScrollFadeInSection>
+                        </FadeInSection>
 
                     </div>
                 </div>
@@ -140,46 +140,46 @@ const About: React.FC = () => {
             <div className="content-section technologies-section">
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title">
                             <span className="primary-color-text">Technologies</span> I use in my projects
                         </h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="tech-grid familiar-techs">
 
                         {familiarTechIcons.map((icon, index) => (
-                            <ScrollFadeInSection
+                            <FadeInSection
                                 key={index}
                                 delayMS={generateIconDelay(index)}
                             >
                                 <img src={icon} alt="" />
-                            </ScrollFadeInSection>
+                            </FadeInSection>
                         ))}
-                        <ScrollFadeInSection
+                        <FadeInSection
                             delayMS={generateIconDelay(familiarTechIcons.length)}
                         >
                             <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
-                        </ScrollFadeInSection>
+                        </FadeInSection>
                     </div>
                 </div>
 
                 <div className="tech-group content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title">
                             I used to use these, but not as much lately
                         </h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="tech-grid less-familiar-techs">
                         {lessFamiliarTechIcons.map((icon, index) => (
-                            <ScrollFadeInSection
+                            <FadeInSection
                                 key={index}
                                 durationMS={AppConfig.defaultFadeInMS * 2}
                                 delayMS={generateIconDelay(index)}
                             >
                                 <img src={icon} alt="" />
-                            </ScrollFadeInSection>
+                            </FadeInSection>
                         ))}
                     </div>
                 </div>
@@ -192,18 +192,18 @@ const About: React.FC = () => {
             {/* Project showcase section */}
             <div className="content-section projects-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Project</span> showcase</h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="project-showcase">
                         {showcaseProjects.map((project, index) => (
-                            <ScrollFadeInSection
+                            <FadeInSection
                                 key={index}
                                 className="project-card"
                                 durationMS={AppConfig.defaultFadeInMS * 0.8}
                                 delayMS={index * 250}
-                                direction={ScrollFadeInDirection.Up}
+                                direction={FadeInDirection.Up}
                                 shiftValue="50px"
                             >
                                 <div className="card-image">
@@ -216,7 +216,7 @@ const About: React.FC = () => {
                                     <h5 className="card-description">{project.description}</h5>
                                     <HashLink to={`/projects#project-${project.id}`} className="btn btn-primary">View Project</HashLink>
                                 </div>
-                            </ScrollFadeInSection>
+                            </FadeInSection>
                         ))}
                     </div>
                 </div>
@@ -229,18 +229,18 @@ const About: React.FC = () => {
             {/* Employment summary */}
             <div className="content-section employment-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Employment</span> summary</h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
-                    <ScrollFadeInSection delayMS={150}>
+                    <FadeInSection delayMS={150}>
                         <h3 className="overview">
                             My years following graduation from university were spent working for <span className="primary-color-text">Swisslog</span>, a global intralogistics company
                         </h3>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="employment-history">
-                        <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Right} shiftValue="50px">
+                        <FadeInSection className="employment-history-item" direction={FadeInDirection.Right} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Full-Stack Software Engineer</h3>
                                 <h4 className="timeline">Nov '21 - Nov '23</h4>
@@ -255,8 +255,8 @@ const About: React.FC = () => {
                                 <li>Troubleshot software-related support issues for my team’s applications.</li>
                                 <li>Handled the software portion of a conveyor expansion for a legacy system with minimal assistance from within the company. </li>
                             </ul>
-                        </ScrollFadeInSection>
-                        <ScrollFadeInSection className="employment-history-item" direction={ScrollFadeInDirection.Left} shiftValue="50px">
+                        </FadeInSection>
+                        <FadeInSection className="employment-history-item" direction={FadeInDirection.Left} shiftValue="50px">
                             <div className="upper-row">
                                 <h3 className="job-title">Global Helpdesk Support Engineer</h3>
                                 <h4 className="timeline">Dec '19 - Nov '21</h4>
@@ -270,14 +270,14 @@ const About: React.FC = () => {
                                 <li>Created articles detailing resolution steps for issues so that future instances of those issues could be resolved more easily.</li>
                                 <li>Created utility applications to improve the workflow of the helpdesk.</li>
                             </ul>
-                        </ScrollFadeInSection>
+                        </FadeInSection>
 
                         
-                        <ScrollFadeInSection>
+                        <FadeInSection>
                             <h4 className="text-center">
                                 A more detailed summary of my employment history can be found on my <Link to="/employment">employment page</Link>
                             </h4>
-                        </ScrollFadeInSection>
+                        </FadeInSection>
                     </div>
 
 
@@ -288,29 +288,29 @@ const About: React.FC = () => {
 
             <div className="content-section ai-tools-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h3 className="section-title">
                             I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
                         </h3>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="ai-tools-layout">
-                        <ScrollFadeInSection
+                        <FadeInSection
                             className="left-column"
-                            direction={ScrollFadeInDirection.Right}
+                            direction={FadeInDirection.Right}
                             shiftValue="50px"
                             delayMS={300}
                         >
                             <img src="img/AITools/chatGPT_1.jpg" alt="" />
-                        </ScrollFadeInSection>
-                        <ScrollFadeInSection
+                        </FadeInSection>
+                        <FadeInSection
                             className="right-column"
-                            direction={ScrollFadeInDirection.Left}
+                            direction={FadeInDirection.Left}
                             shiftValue="50px"
                             delayMS={300}
                         >
                             <img src="img/AITools/copilot.png" alt="" />
-                        </ScrollFadeInSection>
+                        </FadeInSection>
                     </div>
                 </div>
             </div>
@@ -320,37 +320,37 @@ const About: React.FC = () => {
             {/* Education summary */}
             <div className="content-section education-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Education</span> overview</h1>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                     <div className="content">
                         <div className="left-column">
-                            <ScrollFadeInSection direction={ScrollFadeInDirection.Right} shiftValue="30px">
+                            <FadeInSection direction={FadeInDirection.Right} shiftValue="30px">
                                 <LazyLoadImage
                                     src="img/CNU/cnu_logo_blue_background.png"
                                     alt=""
                                     effect="blur"
                                     className="logo"
                                 />
-                            </ScrollFadeInSection>
+                            </FadeInSection>
                         </div>
                         <div className="right-column">
-                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
+                            <FadeInSection direction={FadeInDirection.Left} shiftValue="30px">
                                 <h5 className="overview">
                                     I received a comprehensive computer science education at <span className="primary-color-text">Christopher Newport University</span>, where I studied fundamental concepts such as data structures, algorithmic analysis, artificial intelligence, and database management.
                                 </h5>
-                            </ScrollFadeInSection>
-                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
+                            </FadeInSection>
+                            <FadeInSection direction={FadeInDirection.Left} shiftValue="30px">
                                 <h5 className="overview">
                                     I demonstrated consistent academic excellence during my time at CNU, graduating <span className="primary-color-text">summa cum laude</span> with <span className="primary-color-text">departmental highest honors</span>, and being <span className="primary-color-text">one of two winners</span> of the 2019 capstone fair in the computer science category.
                                 </h5>
-                            </ScrollFadeInSection>
-                            <ScrollFadeInSection direction={ScrollFadeInDirection.Left} shiftValue="30px">
+                            </FadeInSection>
+                            <FadeInSection direction={FadeInDirection.Left} shiftValue="30px">
                                 <h5>
                                     I provide summaries of the most beneficial courses I completed on my <Link to="/education">education page</Link>.
                                 </h5>
-                            </ScrollFadeInSection>
+                            </FadeInSection>
                         </div>
                     </div>
 
@@ -363,17 +363,17 @@ const About: React.FC = () => {
 
             <div className="content-section contact-section">
                 <div className="content-container">
-                    <ScrollFadeInSection>
+                    <FadeInSection>
                         <h3 className="section-title">
                             If you have <span className="primary-color-text">questions</span>, <span className="primary-color-text">feedback</span>, or would like to <span className="primary-color-text">discuss a development role</span>, I can be contacted via any of these methods
                         </h3>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
-                    <ScrollFadeInSection direction={ScrollFadeInDirection.Up} shiftValue="50px">
+                    <FadeInSection direction={FadeInDirection.Up} shiftValue="50px">
                         <div className="contact-form-wrapper light-to-dark-gradient-panel">
                             <ContactForm />
                         </div>
-                    </ScrollFadeInSection>
+                    </FadeInSection>
 
                 </div>
             </div>

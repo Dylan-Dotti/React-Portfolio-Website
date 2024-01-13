@@ -2,7 +2,7 @@ import * as React from 'react';
 import ProjectGridItem from './ProjectGridItem';
 import IProjectData from '../../../Interfaces/IProjectData';
 import './project-grid.scss';
-import ScrollFadeInSection, { ScrollFadeInDirection } from '../../ScrollFadeInSection';
+import FadeInSection, { FadeInDirection } from '../../FadeInSection';
 
 interface IProjectGridProps {
     projects: IProjectData[]
@@ -17,13 +17,13 @@ const ProjectGrid: React.FC<IProjectGridProps> = (props) => {
             {(!projects || projects.length === 0) && <p>No projects to display.</p>}
             {projects && projects.length > 0 && projects.map((project, index) => {
                 return (
-                    <ScrollFadeInSection
+                    <FadeInSection
                         key={project.id}
-                        direction={index % 2 === 0 ? ScrollFadeInDirection.Right : ScrollFadeInDirection.Left}
+                        direction={index % 2 === 0 ? FadeInDirection.Right : FadeInDirection.Left}
                         shiftValue='30px'
                     >
                         <ProjectGridItem project={project} />
-                    </ScrollFadeInSection>
+                    </FadeInSection>
                 ); 
             })}
         </div>
