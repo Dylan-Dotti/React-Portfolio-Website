@@ -4,7 +4,21 @@
 .main-header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+
+    // buffer to prevent flickering gap while scrolling
+    &:before {
+        content: "";
+        display: block;
+        height: 4px;
+        background: $main-background-darker;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+    }
 
     img {
         width: 100%;
