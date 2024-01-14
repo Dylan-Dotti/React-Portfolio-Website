@@ -1,0 +1,59 @@
+@use "../../../../Styles/colors" as *;
+@use "../../../../Styles/screen-sizes" as *;
+
+.project-navigation-dropdown {
+    position: fixed;
+    top: 100px;
+    left: 10%;
+    right: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .75);
+    opacity: .95;
+    
+    .navigation-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: lighten($main-background, 5%);
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .navigation-collapse {
+        background-color: lighten($main-background, 10%);
+        padding: 10px 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        ol {
+            margin: 0 auto;
+            max-width: fit-content;
+        }
+
+        li {
+            list-style-type: decimal;
+            list-style-position: inside;
+            font-size: 1rem;
+            max-width: fit-content;
+    
+            a {
+                margin-left: .5rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    // Media Queries
+    
+    @media(min-width: $mobile-l) {
+        left: 20%;
+        right: 20%;
+    }
+
+    @media(min-width: $tablet) {
+        display: none;
+    }
+}
