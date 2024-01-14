@@ -214,7 +214,7 @@ const About: React.FC = () => {
                                 </div>
                                 <div className="card-content">
                                     <h5 className="card-description">{project.description}</h5>
-                                    <HashLink to={`/projects#project-${project.id}`} className="btn btn-primary">View Project</HashLink>
+                                    <HashLink to={`/projects#${project.hashName}`} className="btn btn-primary">View Project</HashLink>
                                 </div>
                             </FadeInSection>
                         ))}
