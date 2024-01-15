@@ -5,6 +5,7 @@ import HrWithCircle from '../../Visual/HrWithCircle';
 import ProjectListingItem from './ProjectListingItem';
 import { HashLink } from 'react-router-hash-link';
 import FadeInSection from '../../FadeInSection';
+import ProjectNavigationDropdown from './ProjectNavigationDropdown';
 
 interface ProjectListingProps {
     projects: IProjectData[]
@@ -31,23 +32,25 @@ const ProjectListing: React.FC<ProjectListingProps> = (props) => {
                             ))}
                         </div>
 
-                        {props.projects && props.projects.length > 0 && 
-                            <ol className="project-navigation">
-                                {props.projects.map((project, index) => {
-                                    return (
-                                        <li key={project.id}>
-                                            <HashLink to={`#${project.hashName}`} className="project-link" smooth>
-                                                {project.name}
-                                            </HashLink>
-                                        </li>
-                                    );
-                                })}
-                            </ol>
-                        }
+                        
+                        <ol className="project-navigation">
+                            {props.projects.map((project, index) => {
+                                return (
+                                    <li key={project.id}>
+                                        <HashLink to={`#${project.hashName}`} className="project-link" smooth>
+                                            {project.name}
+                                        </HashLink>
+                                    </li>
+                                );
+                            })}
+                        </ol>
+
 
                     </div>
                 }
             </FadeInSection>
+            
+            <ProjectNavigationDropdown projects={props.projects} />
 
         </div>
     );

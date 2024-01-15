@@ -87,10 +87,6 @@
 
     @media(min-width: $mobile-l) {
 
-        .section-header {
-            text-align: left;
-        }
-
         .list-wrapper {
             justify-content: flex-start;
         
@@ -98,6 +94,12 @@
 
         ul {
             columns: 2;
+            flex: 1;
+            max-width: 100%;
+
+            li {
+                max-width: 100%;
+            }
 
         }
     }
@@ -105,16 +107,8 @@
     @media(min-width: $tablet) {
         
         .left-column {
-            display: grid;
-            grid-template-columns: 1fr auto;
-        }
-
-        .project-name {
-            text-align: left;
-        }
-
-        ul {
-            columns: 1;
+            //display: grid;
+            //grid-template-columns: 1fr auto;
         }
     }
 
@@ -122,6 +116,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4%;
+
+        .project-name {
+            text-align: left;
+        }
+
+        .section-header {
+            text-align: left;
+        }
 
         .left-column {
             display: flex;

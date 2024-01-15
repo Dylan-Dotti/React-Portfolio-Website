@@ -9,16 +9,13 @@
     }
     
     .content-layout {
-        position: relative;
         display: grid;
-        //grid-template-columns: auto max-content;
         align-items: start;
         gap: clamp(20px, 3%, 3%);
     }
 
     .project-navigation {
         @include background-tint(0.04);
-        //display: flex;
         display: none;
         flex-direction: column;
         gap: .5rem;
@@ -55,22 +52,22 @@
 
     @media(min-width: $tablet) {
 
-        .content-container {
-            //width: 75%;
-        }
-    }
-    
-    @media(min-width: $laptop-l) {
-        .content-container {
-            width: 85%;
-        }
-
         .content-layout {
             grid-template-columns: auto max-content;
         }
 
         .project-navigation {
             display: flex;
+        }
+
+        .project-navigation-toggle {
+            display: none;
+        }
+    }
+    
+    @media(min-width: $laptop-l) {
+        .content-container {
+            width: 85%;
         }
     }
     

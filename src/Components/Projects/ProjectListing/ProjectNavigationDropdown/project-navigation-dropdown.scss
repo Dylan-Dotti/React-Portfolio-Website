@@ -3,12 +3,15 @@
 
 .project-navigation-dropdown {
     position: fixed;
-    top: 100px;
+    top: 100px !important;
     left: 10%;
     right: 10%;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .75);
     opacity: .95;
+    
+    .dropdown-contents {
+        box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .75);
+    }
     
     .navigation-toggle {
         display: flex;
@@ -23,11 +26,11 @@
 
     .navigation-collapse {
         background-color: lighten($main-background, 10%);
-        padding: 10px 20px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-
+        
         ol {
+            padding: 10px 20px;
             margin: 0 auto;
             max-width: fit-content;
         }
@@ -42,6 +45,13 @@
                 margin-left: .5rem;
                 text-decoration: none;
             }
+        }
+    }
+
+    &:has(.navigation-collapse:not(.collapsing):not(.show)) {
+        .navigation-toggle {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
     }
 
