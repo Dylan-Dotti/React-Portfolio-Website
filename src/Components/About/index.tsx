@@ -252,7 +252,7 @@ const About: React.FC = () => {
                                 <li>Used React with Typescript and SASS, and occasionally AngularJS, to implement and maintain front-end web and desktop application UIs. Designed UI pages and components from scratch or ported them from older UI versions.</li>
                                 <li>Used .NET with C# to implement and maintain back-end REST APIs and business logic.</li>
                                 <li>Designed, implemented, and maintained scripts and stored procedures for SQL Server databases.</li>
-                                <li>Troubleshot software-related support issues for my team’s applications.</li>
+                                <li>Resolved software-related support issues for my team’s applications.</li>
                                 <li>Handled the software portion of a conveyor expansion for a legacy system with minimal assistance from within the company. </li>
                             </ul>
                         </FadeInSection>
