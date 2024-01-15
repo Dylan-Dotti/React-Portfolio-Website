@@ -2,6 +2,7 @@ import * as React from 'react';
 import './project-listing-item.scss';
 import IProjectData from '../../../../Interfaces/IProjectData';
 import classNames from 'classnames';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface ProjectListingItemProps {
     project         : IProjectData
@@ -20,7 +21,12 @@ const ProjectListingItem: React.FC<ProjectListingItemProps> = (props) => {
             <div className="left-column">
                 <div className="project-section title-section">
                     <h2 className="project-name">{project.name}</h2>
-                    <img src={project.imgSrc} alt="" className="main-image"/>
+                    <LazyLoadImage
+                        src={project.imgSrc}
+                        alt=""
+                        effect="blur"
+                        className="main-image"
+                    />
                     <div className="button-links">
                         {project.codeSrc && (
                             <a href={project.codeSrc} target="_blank" rel="noreferrer" className="btn btn-primary view-code-button">

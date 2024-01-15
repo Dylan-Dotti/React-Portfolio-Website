@@ -32,9 +32,11 @@
         margin: 20px auto;
         
         img {
+            width: 450px;
             object-fit: cover;
             flex: 1;
-            border-radius: inherit;
+            border-radius: 20px;
+            height: 100%;
         }
     }
 

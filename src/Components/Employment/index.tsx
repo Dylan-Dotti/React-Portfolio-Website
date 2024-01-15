@@ -4,6 +4,7 @@ import FadeInSection from "../FadeInSection";
 import CrossfadeImageCarousel from "../CrossfadeImageCarousel";
 import HrWithCircle from "../Visual/HrWithCircle";
 import { HashLink } from "react-router-hash-link";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Employment: React.FC = () => {
 
@@ -16,7 +17,13 @@ const Employment: React.FC = () => {
                 
             <FadeInSection className="job-section ghd-section content-container">
                 <h2 className="job-title">Global Helpdesk Support Engineer</h2>
-                <div className="img-wrapper right-img"><img src="img/Swisslog/cranes.PNG" alt=""/></div>
+                <div className="img-wrapper right-img">
+                    <LazyLoadImage
+                        src="img/Swisslog/cranes.PNG"
+                        alt=""
+                        effect="blur"
+                    />
+                </div>
 
                 <p>
                     Following my graduation from CNU, my former university advisor presented me with an opportunity for a helpdesk support engineer position at Swisslog, a global intralogistics company. Although the position did not involve any software development, the pay and benefits were enticing, and the prospect of being involved with software that interacted with the physical world was an interesting one. I decided that this position would be a good way to learn the industry and that I had the potential to move to a development role within the company at a later time, so I accepted the offer.
@@ -73,7 +80,7 @@ const Employment: React.FC = () => {
                         I created a Github repository for us and created a diagram to plan out the high-level architecture of the application. I elected for Python as the language for the project, since it had some libraries I was familiar with that I knew would be useful, and the other engineer had experience using it. In hindsight, I think C# may have been the better choice, as the Python project requires a good amount of setup on the user's end.
                     </p>
                     <p>
-                        After a few months, we were able to produce an app capable of automating a large portion of the time entry process. I rather enjoyed working on this project and getting to play senior developer for a bit. More details about this project can be found <HashLink to="/projects#project-2">on my projects page</HashLink>.
+                        After a few months, we were able to produce an app capable of automating a large portion of the time entry process. I rather enjoyed working on this project and getting to play senior developer for a bit. More details about this project can be found <HashLink to="/projects#ghd-auto-time-entry">on my projects page</HashLink>.
                     </p>
                 </div>
 
@@ -95,7 +102,13 @@ const Employment: React.FC = () => {
 
             <FadeInSection className="job-section content-container">
                 <h2 className="job-title">Full-Stack Software Engineer</h2>
-                <div className="img-wrapper right-img"><img src="img/Lenox/IMG_1769.jpg" alt=""/></div>
+                <div className="img-wrapper right-img">
+                    <LazyLoadImage
+                        src="img/Lenox/IMG_1769.jpg"
+                        alt=""
+                        effect="blur"
+                    />
+                </div>
 
                 <p>
                     In this role, I worked as part of a team of 5 engineers - two developers (myself and a senior), two integration/QA engineers, and a manager. The team was responsible for the development and maintenance of a light-goods conveyor automation system called <strong className="primary-color-text">Automation Director</strong>. The software portion of the system consisted of a front-end web application made with React, a back-end API made with .NET Web API and C#, an SQL Server database, and a set of business logic services called agents.
@@ -168,14 +181,14 @@ const Employment: React.FC = () => {
                     <CrossfadeImageCarousel 
                         className="lenox-carousel"
                         images={[
-                            "img/Lenox/IMG_2321.jpg",
-                            "img/Lenox/IMG_2322.jpg",
-                            "img/Lenox/IMG_2325.jpg",
+                            "img/Lenox/IMG_2350.jpg",
+                            //"img/Lenox/IMG_2321.jpg",
+                            //"img/Lenox/IMG_2322.jpg",
+                            //"img/Lenox/IMG_2325.jpg",
                             "img/Lenox/IMG_2339.jpg",
                             "img/Lenox/IMG_2341.jpg",
                             "img/Lenox/IMG_2346.jpg",
                             "img/Lenox/IMG_2349.jpg",
-                            "img/Lenox/IMG_2350.jpg",
                         ]}
                         imgHoldDurationMS={12_000}
                         imgFadeDurationMS={4_000}
