@@ -6,7 +6,7 @@ const awardData: IAwardData[] = [
     {
         id: 1,
         name: "Newport News Shipbuilding Scholarship",
-        description: "Awarded by the Newport News shipyard to a few students each year.",
+        description: "Awarded by the Newport News shipyard to a few high-performing students each year.",
         icon: faAward,
     },
     {
