@@ -296,6 +296,7 @@ const portfolioWebsiteData: IProjectData = {
     startDate: new Date(2021, 0, 1),
     technologies: ["HTML", "React", "Sass", "Typescript", "Github", "VS Code", "NodeJS"],
     skills: ["UI/UX", "Responsive Design", "Web Development"],
+    features: ["Responsive"],
     imgSrc: "./img/PortfolioWebsite/website_home.png",
     codeSrc: "https://github.com/Dylan-Dotti/React-Portfolio-Website"
 }
