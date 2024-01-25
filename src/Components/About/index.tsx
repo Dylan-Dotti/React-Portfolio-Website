@@ -77,8 +77,7 @@ const About: React.FC = () => {
                     </FadeInSection>
                 </div>
             </div>
-
-            <div className="gradient-section gradient-1"></div>
+            
 
             <div className="content-section strengths-section">
                 <div className="content-container">
@@ -135,59 +134,55 @@ const About: React.FC = () => {
             </div>
 
 
-            <div className="gradient-section gradient-2"></div>
-
             <div className="content-section technologies-section">
+                <div className="content-container">
 
-                <div className="tech-group content-container">
-                    <FadeInSection>
-                        <h1 className="section-title">
-                            <span className="primary-color-text">Technologies</span> I use in my projects
-                        </h1>
-                    </FadeInSection>
-
-                    <div className="tech-grid familiar-techs">
-
-                        {familiarTechIcons.map((icon, index) => (
-                            <FadeInSection
-                                key={index}
-                                delayMS={generateIconDelay(index)}
-                            >
-                                <img src={icon} alt="" />
-                            </FadeInSection>
-                        ))}
-                        <FadeInSection
-                            delayMS={generateIconDelay(familiarTechIcons.length)}
-                        >
-                            <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
+                    <div className="tech-group">
+                        <FadeInSection>
+                            <h1 className="section-title">
+                                <span className="primary-color-text">Technologies</span> I use in my projects
+                            </h1>
                         </FadeInSection>
-                    </div>
-                </div>
-
-                <div className="tech-group content-container">
-                    <FadeInSection>
-                        <h1 className="section-title">
-                            I used to use these, but not as much lately
-                        </h1>
-                    </FadeInSection>
-
-                    <div className="tech-grid less-familiar-techs">
-                        {lessFamiliarTechIcons.map((icon, index) => (
+                        <div className="tech-grid familiar-techs">
+                            {familiarTechIcons.map((icon, index) => (
+                                <FadeInSection
+                                    key={index}
+                                    delayMS={generateIconDelay(index)}
+                                >
+                                    <img src={icon} alt="" />
+                                </FadeInSection>
+                            ))}
                             <FadeInSection
-                                key={index}
-                                durationMS={AppConfig.defaultFadeInMS * 2}
-                                delayMS={generateIconDelay(index)}
+                                delayMS={generateIconDelay(familiarTechIcons.length)}
                             >
-                                <img src={icon} alt="" />
+                                <img src={techIcons.unityOriginalWordmark} style={{backgroundColor: "whitesmoke"}} alt="" />
                             </FadeInSection>
-                        ))}
+                        </div>
                     </div>
+                    
+                    <div className="tech-group">
+                        <FadeInSection>
+                            <h1 className="section-title">
+                                I used to use these, but not as much lately
+                            </h1>
+                        </FadeInSection>
+                        <div className="tech-grid less-familiar-techs">
+                            {lessFamiliarTechIcons.map((icon, index) => (
+                                <FadeInSection
+                                    key={index}
+                                    durationMS={AppConfig.defaultFadeInMS * 2}
+                                    delayMS={generateIconDelay(index)}
+                                >
+                                    <img src={icon} alt="" />
+                                </FadeInSection>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
-            
 
-            <div className="gradient-section gradient-1"></div>
 
             {/* Project showcase section */}
             <div className="content-section projects-section">
@@ -221,10 +216,7 @@ const About: React.FC = () => {
                     </div>
                 </div>
 
-
             </div>
-
-            <div className="gradient-section gradient-2"></div>
 
             {/* Employment summary */}
             <div className="content-section employment-section">
@@ -271,7 +263,6 @@ const About: React.FC = () => {
                                 <li>Created utility applications to improve the workflow of the helpdesk.</li>
                             </ul>
                         </FadeInSection>
-
                         
                         <FadeInSection>
                             <h4 className="text-center">
@@ -280,11 +271,9 @@ const About: React.FC = () => {
                         </FadeInSection>
                     </div>
 
-
                 </div>
             </div>
 
-            <div className="gradient-section gradient-1"></div>
 
             <div className="content-section ai-tools-section">
                 <div className="content-container">
@@ -315,7 +304,6 @@ const About: React.FC = () => {
                 </div>
             </div>
 
-            <div className="gradient-section gradient-2"></div>
 
             {/* Education summary */}
             <div className="content-section education-section">
@@ -357,10 +345,7 @@ const About: React.FC = () => {
                 </div>
             </div>
 
-            <div className="gradient-section gradient-1"></div>
-
             {/* Contact section */}
-
             <div className="content-section contact-section">
                 <div className="content-container">
                     <FadeInSection>

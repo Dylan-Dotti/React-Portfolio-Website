@@ -7,22 +7,30 @@
     flex: 1;
 
     .content-section {
-        padding: 40px 0;
-    }
 
-    .gradient-section {
-        height: 50px;
+        .content-container {
+            padding: 40px 0;
+        }
 
-        &.gradient-1 {
-            background-image: linear-gradient($main-background, $main-background-dark);
+        &:not(:last-child)::after {
+            content: "";
+            display: block;
+            height: 50px;
+        }
 
-            & + .content-section {
-                background-color: $main-background-dark;
+        &:nth-child(odd) {
+        
+            &::after {
+                background-image: linear-gradient($main-background, $main-background-dark);
             }
         }
 
-        &.gradient-2 {
-            background-image: linear-gradient($main-background-dark, $main-background);
+        &:nth-child(even) {
+            background-color: $main-background-dark;
+
+            &::after {
+                background-image: linear-gradient($main-background-dark, $main-background);
+            }
         }
     }
 
@@ -48,7 +56,7 @@
             justify-content: center;
             align-items: center;
             gap: 40px;
-            padding: 20px 0;
+            padding: 60px 0;
         }
 
         .intro-text {
@@ -69,9 +77,11 @@
 
     .technologies-section {
 
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
         
         img {
             width: 100px;
@@ -316,7 +326,10 @@
         }
     
         .content-section {
-            padding: 150px 0;
+
+            .content-container {
+                padding: 150px 0;
+            }
         }
 
         .intro-section {
