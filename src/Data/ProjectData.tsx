@@ -1,11 +1,10 @@
-import DeviantProjectDetail from "../Components/Projects/ProjectDetail/DeviantProjectDetail";
 import IProjectData from "../Interfaces/IProjectData";
 
 const deviantProjectData: IProjectData = {
     id: 1,
     name: "Deviant",
     hashName: "deviant",
-    description: "A game made with the Unity engine for my senior capstone project.",
+    description: "A game made with the Unity engine for my senior capstone project. Winner of the CNU Capstone Fair.",
     overviewSections: [
         {
             title: "Overview",
@@ -29,7 +28,6 @@ const deviantProjectData: IProjectData = {
     codeSrc: "https://github.com/Dylan-Dotti/Deviant",
     demoSrc: "https://youtu.be/lgC5nulletU",
     detailSrc: "deviant",
-    detailComponent: () => <DeviantProjectDetail />
 };
 
 const ghdAutoTimeEntryData: IProjectData = {
