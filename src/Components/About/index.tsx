@@ -345,6 +345,35 @@ const About: React.FC = () => {
                 </div>
             </div>
 
+            {/* Current focus section */}
+            <div className="content-section current-focus-section">
+                <div className="content-container">
+                    <FadeInSection>
+                        <h1 className="section-title">
+                            My <span className="primary-color-text">current focus</span>
+                        </h1>
+                    </FadeInSection>
+                    <FadeInSection direction={FadeInDirection.Up} shiftValue="30px" className="logo-wrapper">
+                        <LazyLoadImage
+                            src="img/Azure/azure_fundamentals_badge.png"
+                            alt=""
+                            effect="blur"
+                            className="logo"
+                        />
+                    </FadeInSection>
+                    <FadeInSection direction={FadeInDirection.Up} shiftValue="30px">
+                        <h5 className="text-center">
+                            I'm currently studying for Microsoft's <span className="primary-color-text">AZ-900 Azure Fundamentals</span> certification exam. I plan to pass the exam before the end of March.
+                        </h5>
+                    </FadeInSection>
+                    <FadeInSection direction={FadeInDirection.Up} shiftValue="30px">
+                        <h5 className="text-center">
+                            Obtaining this certification will demonstrate my knowledge of the fundamentals of cloud computing and the Azure platform, and will complement my existing skills and experience with the .NET ecosystem.
+                        </h5>
+                    </FadeInSection>
+                </div>
+            </div>
+
             {/* Contact section */}
             <div className="content-section contact-section">
                 <div className="content-container">

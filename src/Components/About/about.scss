@@ -258,6 +258,25 @@
         }
     }
 
+    .current-focus-section {
+
+        h5 {
+            text-wrap: balance;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 250px;
+            max-width: 250px;
+            height: 250px;
+        }
+    }
+
     .contact-section {
 
         .contact-form-wrapper {
