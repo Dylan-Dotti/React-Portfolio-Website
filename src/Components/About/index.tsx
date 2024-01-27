@@ -276,7 +276,7 @@ const About: React.FC = () => {
 
             {/* Education summary */}
             <div className="content-section education-section">
-                <div className="content-container">
+                <div className="content-container clearfix">
                     <FadeInSection>
                         <h1 className="section-title"><span className="primary-color-text">Education</span> overview</h1>
                     </FadeInSection>
