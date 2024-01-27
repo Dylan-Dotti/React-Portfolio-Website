@@ -274,37 +274,6 @@ const About: React.FC = () => {
                 </div>
             </div>
 
-
-            <div className="content-section ai-tools-section">
-                <div className="content-container">
-                    <FadeInSection>
-                        <h3 className="section-title">
-                            I utilize modern AI tools like <span className="primary-color-text">ChatGPT</span> and <span className="primary-color-text">Copilot</span> to boost my productivity
-                        </h3>
-                    </FadeInSection>
-
-                    <div className="ai-tools-layout">
-                        <FadeInSection
-                            className="left-column"
-                            direction={FadeInDirection.Right}
-                            shiftValue="50px"
-                            delayMS={300}
-                        >
-                            <img src="img/AITools/chatGPT_1.jpg" alt="" />
-                        </FadeInSection>
-                        <FadeInSection
-                            className="right-column"
-                            direction={FadeInDirection.Left}
-                            shiftValue="50px"
-                            delayMS={300}
-                        >
-                            <img src="img/AITools/copilot.png" alt="" />
-                        </FadeInSection>
-                    </div>
-                </div>
-            </div>
-
-
             {/* Education summary */}
             <div className="content-section education-section">
                 <div className="content-container">
