@@ -77,12 +77,12 @@ const Employment: React.FC = () => {
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            By reviewing the existing documentation and observing the field service engineers when issues occurred, I was able to learn the basics of the system rather quickly, and soon I was troubleshooting issues brought to me by the floor manager on a daily basis.
+                            By reviewing the existing documentation and observing the field service engineers when issues occurred, I was able to learn the basics of the system rather quickly, and soon I was troubleshooting issues brought to me by the floor manager on a daily basis. At one point, I was left to watch over the entire system for a couple hours while the managers and FSEs were occupied elsewhere. One interesting issue involved a two-sided rack that I identified as having all of its products on the wrong sides. I wanted to see if I was right, and no one else seemed to want to fix it at the time, so I spent over an hour manually moving the products to the correct side of the rack (while getting some strange looks from the pickers). I was able to confirm that I was correct, and the issue was resolved.
                         </p>
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            (Section still in progress...)
+                            My time at the HBC site was a great learning experience for me. The workflow of the system made a lot of sense to me, and I loved being able to interact with and learn about how the robots worked. My managers all thought that I did quite well, and after returning from the trip, I was generally among the first engineers to be assigned new issues for the site.
                         </p>
                     </FadeInEmploymentSection>
                 </div>
@@ -155,7 +155,7 @@ const Employment: React.FC = () => {
 
                 <FadeInEmploymentSection>
                     <p>
-                        In this role, I worked as part of a team of 5 engineers - two developers (myself and a senior), two integration/QA engineers, and a manager. The team was responsible for the development and maintenance of a light-goods conveyor automation system called <strong className="primary-color-text">Automation Director</strong>. The software portion of the system consisted of a front-end web application made with React, a back-end API made with .NET Web API and C#, an SQL Server database, and a set of business logic services called agents.
+                        In this role, I worked as part of a team of 5 engineers - two developers (myself and a senior), two integration/QA engineers, and a manager. The team was responsible for the development and maintenance of a light-goods conveyor automation system called Automation Director. The software portion of the system consisted of a front-end web application made with React, a back-end API made with .NET Web API and C#, an SQL Server database, and a set of business logic services called agents.
                     </p>
                 </FadeInEmploymentSection>
                 <FadeInEmploymentSection>
@@ -203,7 +203,7 @@ const Employment: React.FC = () => {
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            Unlike the Directory Tool, this project was used in production by our customers to test their systems, so I had to be more mindful of my changes. The code was also more challenging to understand, as it integrated with the Automation Director system in a lower-level way.
+                            Unlike the Directory Tool, this project was used in production by our customers to test their systems, so I had to be more mindful of my changes. The code was also more challenging to understand, as it integrated with the Automation Director system in a low-level way.
                         </p>
                     </FadeInEmploymentSection>
                 </div>
@@ -215,13 +215,35 @@ const Employment: React.FC = () => {
 
                     <FadeInEmploymentSection>
                         <p>
-                            Around a year into the role, my senior developer decided that I was ready to start assisting with the development of the new version of the Automation Director UI.
+                            Around a year into the role, my senior developer decided that I was ready to start assisting with the development of the new version of the Automation Director UI. This was a recreation of the older Angular.js UI, and as previously mentioned, consisted of a React front-end, a .NET WebAPI back-end, and an SQL Server database. Notably, it also included a 3D visualization of the conveyor system that was made using Three.js.
                         </p>
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            (Section still in progress...)
+                            As this UI was to be used in production by many customers, I had to be very careful with my changes. My senior developer would review each of my contributions before they were merged into the main branch, and I learned a lot from his feedback.
                         </p>
+                    </FadeInEmploymentSection>
+                    <FadeInEmploymentSection>
+                        <p className="pre-list">
+                            Some of my more notable contributions to this project included:
+                        </p>
+                        <ul className="blue-circle-list">
+                            <li>
+                                Creating a set of database scripts and API endpoints for providing summaries and statistics related to system alarms. This allowed us to create a new alarm statistics screen in the UI.
+                            </li>
+                            <li>
+                                Porting a TCP messages screen from the older version of the UI. I needed to create a rather complex algorithm that parsed the XML messages in order to highlight text that matched a search query. For this algorithm, I utilized the OOP command pattern to allow me to undo certain operations that were performed on the text.
+                            </li>
+                            <li>
+                                Creating a complex form for configuring alarm email notifications. This allowed specified users to receive emails when certain system alarms were triggered.
+                            </li>
+                            <li>
+                                Creating login and logout forms that interacted with the API's authentication endpoints.
+                            </li>
+                            <li>
+                                Porting a form from the old UI for configuring conveyor lane tags. This allowed authorized users to assign certain functionalities to specific sections of the conveyor system.
+                            </li>
+                        </ul>
                     </FadeInEmploymentSection>
                 </div>
 
@@ -280,12 +302,17 @@ const Employment: React.FC = () => {
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            (Section still in progress...)
+                            As the new Automation Director UI was nearing completion, our team began attempts to sell the upgrade to our customers. Among the first customers to agree to the upgrade was Lenox, a company known for selling tableware, giftware, and collectible products. As this was the first time that the new UI would be installed, my manager wanted our group to be present for the installation in order to observe it in production and to provide support for any potential issues.
                         </p>
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis animi vero illo perferendis et, qui at dolor? Ducimus corporis at, dolor dolores praesentium voluptatem quam laboriosam maiores porro quod repellendus eum officiis id molestiae similique repellat minus assumenda omnis est alias eveniet. Pariatur a veniam sed repellat error corrupti excepturi, eaque consequatur delectus, laborum asperiores similique labore quae. Sit accusamus itaque esse nisi eligendi impedit maiores tempore ut est natus velit quo nesciunt fugit inventore ipsum, laboriosam, totam excepturi iure possimus obcaecati quibusdam fuga. Illo porro aut veniam necessitatibus id tempora doloremque dolor unde facere harum, corporis, nam magnam ipsum.
+                            This was an excellent opportunity for me to learn more about the Automation Director system and to see the workflow in action. Compared to my HBC trip while working at the helpdesk, however, this trip was a much more relaxed one. The installation went rather smoothly, and there were few issues that required our attention. Most of my time was spent observing the system, the operators, and the interactions with the customer, and making minor adjustments to the UI.
+                        </p>
+                    </FadeInEmploymentSection>
+                    <FadeInEmploymentSection>
+                        <p>
+                            More importantly, this was my first time meeting the rest of my team in person. I had been working with them for almost two years at this point, but I had only ever met them over video calls. It was a good team-building experience, with highlights such as dinners, a trip to the Gettysburg Civil War Museum, and shopping in a Spencer's store at the local mall.
                         </p>
                     </FadeInEmploymentSection>
                 </div>
@@ -296,7 +323,12 @@ const Employment: React.FC = () => {
                     </FadeInEmploymentSection>
                     <FadeInEmploymentSection>
                         <p>
-                            This position was an excellent opportunity for me to learn and grow as a developer. I learned a lot about the software development processes, and I was provided plenty of opportunities to cultivate my web development skills. I was also able to learn more about the warehouse automation industry, which I found rather interesting. I am grateful to have been given the opportunity to work on this team, considering my limited professional experience.
+                            Unfortunately, a few months after the Lenox trip, I was informed that my position was being eliminated. The company's financials were in a declining state, and while my group was still profitable, the company decided to cut costs by initiating a round of layoffs. As the least experienced member of the group, I was among those chosen to be let go.
+                        </p>
+                    </FadeInEmploymentSection>
+                    <FadeInEmploymentSection>
+                        <p>
+                            This position was an excellent opportunity for me to learn and grow as a developer. I learned a lot about the software development processes, and I was provided plenty of opportunities to cultivate my web development skills. I was also able to learn more about the warehouse automation industry, which I find to be an interesting one. I am grateful to have been given the opportunity to work on this team, considering I had no professional development experience at the time.
                         </p>
                     </FadeInEmploymentSection>
                 </div>
