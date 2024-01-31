@@ -127,13 +127,6 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
                             </a>
                         </div>
                         <div className="contact-method">
-                            <FontAwesomeIcon icon={faMobileScreen} size="2x" fixedWidth className="contact-icon" />
-                            <a href="tel:1-757-254-9224">
-                                <FontAwesomeIcon icon={faMobileScreen} size="2x" fixedWidth className="contact-link-icon" />
-                                <span className="contact-link-text">(757) 254-9224</span>
-                            </a>
-                        </div>
-                        <div className="contact-method">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" fixedWidth className="contact-icon"/>
                             <a href="https://www.linkedin.com/in/dylan-j-dotti/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} size="2x" fixedWidth className="contact-link-icon" />
