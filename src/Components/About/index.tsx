@@ -49,7 +49,7 @@ const About: React.FC = () => {
     const showcaseProjects = [
         projectData[0],
         projectData[1],
-        projectData[2],
+        projectData[3],
     ];
 
     const generateIconDelay = (index: number) => {
