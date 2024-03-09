@@ -263,7 +263,7 @@ const fileEncryptorData: IProjectData = {
     imgSrc: "./img/FileEncryptor/file_encryptor.png",
     codeSrc: "https://github.com/Dylan-Dotti/File-Encryptor/tree/main/FileEncryptor/FileEncryptor",
     demoSrc: "https://youtu.be/BYaNSRBgr2g",
-}
+};
 
 const portfolioWebsiteData: IProjectData = {
     id: 9,
@@ -297,12 +297,41 @@ const portfolioWebsiteData: IProjectData = {
     features: ["Responsive"],
     imgSrc: "./img/PortfolioWebsite/website_home.png",
     codeSrc: "https://github.com/Dylan-Dotti/React-Portfolio-Website"
-}
+};
+
+const unityQLearnerData: IProjectData = {
+    id: 10,
+    name: "Unity Q-Learner",
+    hashName: "unity-q-learner",
+    description: "A project that implements the Q-Learning algorithm in the Unity engine. Trains an AI agent to navigate a grid.",
+    overviewSections: [
+        {
+            title: "Overview",
+            content: [
+                "During my study of AI at my university, I took a particular interest in reinforcement learning. This subset of machine learning teaches AI agents to make decisions via trial and error and a reward system. I created this project to practice the implementation of reinforcement learning, and to try it out in different environments. The project implements the Q-Learning algorithm, which is a model-free reinforcement learning algorithm that seeks to learn a mapping from states to actions that maximizes the expected cumulative reward.",
+                "I used the Unity engine and C# for the project due to my familiarity with the technologies, and because I felt that Unity would provide a good visualiztion of the learning process."
+            ]
+        },
+        {
+            title: "Results",
+            content: [
+                "In the provided demo, an AI agent is trained using Q-Learning to navigate a simple grid with a good and bad exit. The agent must learn to press a series of two buttons to reach the reward. While its actions are initially random, the agent becomes increasingly efficient at reaching the reward as it learns the optimal policy. Eventually, it is able to follow the optimal path to the reward every time."
+            ]
+        }
+    ],
+    startDate: new Date(2021, 0, 1),
+    technologies: ["C#", "Unity", "Visual Studio"],
+    skills: ["Game Development", "Mathematics", "AI", "Reinforcement Learning"],
+    imgSrc: "./img/UnityQLearner/unity_q_learner.png",
+    codeSrc: "https://github.com/Dylan-Dotti/Unity-Q-Learner",
+    demoSrc: "https://youtu.be/9RCV6qFoxgg",
+};
 
 const projectData: IProjectData[] = [
     deviantProjectData,
     ghdAutoTimeEntryData,
     pokemonMonopolyData,
+    unityQLearnerData,
     emeraldAutoTrainerData,
     pokemonClassifierData,
     missingBinFinderData,
